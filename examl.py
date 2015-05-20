@@ -9,7 +9,7 @@ if len(sys.argv) < 2:
 
 # Open a log file to monitor progress
 
-fh = open('examl.log','w')
+fh = open('demodel.log','a')
 
 # Converting the fasta file to relaxed phylip format
 # This is because ExaML only accepts relaxed phylip files
