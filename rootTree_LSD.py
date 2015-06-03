@@ -16,6 +16,9 @@ if len(sys.argv) < 3:
   print('\nUSAGE: rootTree_LSD.py treeFile dateFile\n')
   sys.exit(0)
   
+fh = open('demodel.log','a') # lsd.log will contain the progress information
+
+
 treeFile = sys.argv[1]
 dateFile = sys.argv[2]
 
@@ -25,7 +28,9 @@ dates = [`len(dates)`] + dates # first line contains the number of taxa for LSD
 
 dateStr = '\n'.join(dates) # all the lines are joined in a string for writing in the file
 
-print('\nWriting dates into file lsd.dates to be used by LSD\n')
+msg = '\nWriting dates into file lsd.dates to be used by LSD\n'
+print(msg)
+fh.write(msg)
 
 fh = open('lsd.dates','w') # dates are stored in lsd.dates for LSD run
 fh.write(dateStr)
@@ -35,10 +40,10 @@ fh.close()
 cl = '~/apps/lsd -i %s -d lsd.dates -c -r' % treeFile # command line for running LSD
 # -c poses constraints for dating, -r roots the tree
 
-print('\nRunning LSD with the following command:\n')
-print('\n\t%s'%cl)
-
-fh = open('lsd.log','w') # lsd.log will contain the progress information
+msg = '\nRunning LSD with the following command:\n'
+msg += '\n\t%s'%cl
+print(msg)
+fh.write(msg)
 
 
 
@@ -49,8 +54,13 @@ rval = process.wait()
 fh.close()
 
 if os.stat('ExaML_result_result_newick_date.txt').st_size != 0:
-  print('\nLSD run is completed\n')
+  msg = '\nLSD run is completed'
+  msg += '\nRooted time tree is written in <ExaML_result_result_newick_date.txt>\n'
+  print(msg)
+  fh.write(msg)
 else:
-  print('\nLSD run could not finish properly.')
-  print('\nPlease refer to the lsd.log file for more information\n')
+  msg = '\nLSD run could not finish properly.'
+  msg += '\nPlease refer to the demodel.log file for more information\n'
+  print(msg)
+  fh.write(msg)
 

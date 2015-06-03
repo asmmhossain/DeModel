@@ -1,5 +1,5 @@
 '''
-This program runs rtt() finction from ape package to root the tree
+This program runs rtt() function from ape package to root the tree
 
 '''
 
