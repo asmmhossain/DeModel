@@ -1,0 +1,51 @@
+<tool id="genie" name="GENIE" version="3.0">
+	<description>GENIE(Genealogy Interval Explorer) is a program for the inference of demographic history from reconstructed molecular phylogenies</description>
+	<command interpreter="python"> genie.py -i $inTree -m $modType.mod -l $log -o $output</command>
+	
+		<inputs>
+		
+			<page>
+			
+				<param format="txt" name="inTree" type="data" label="Input tree file"/>
+				
+				<conditional name="modType">
+				
+					<param name="mod" type="select" label="Demographic model">
+						<option value="const" selected="True">Constant</option>
+						<option value="expo">Exponential growth</option>
+						<option value="expan">Expansion growth</option>
+						<option value="log">Logistic growth</option>
+						<option value="step">Piecewise constant</option>
+						<option value="pexpan">Piecewise expansion growth</option>
+						<option value="plog">Piecewise logistic growth</option>
+						<option value="all">Run all models</option>
+					</param>
+					
+				</conditional>
+				
+				<param name="outname" label="GENIE output file" type="text" size="50" value="genieOut.txt"/>
+			
+			</page>
+		
+		</inputs>
+		
+		<outputs>
+			<data format="txt" name="output" label="$outname"/>
+			<data format="txt" name="log" label="genie.log.txt"/>
+		</outputs>
+		
+		<help>
+		
+**Note** 
+		
+```GENIE``` (Genealogy Interval Explorer) is a program for the inference of demographic history from reconstructed molecular phylogenies. It is primarily designed for the analysis of phylogenies reconstructed from highly variable viral gene sequences, but can be applied to other types of sequence data that contains a significant amount of phylogenetic information. The following papers describe the methods and models that are implemented in GENIE: Pybus, O. G., Rambaut, A. and Harvey, P. H. 2000. An integrated framework for the inference of viral population history from reconstructed genealogies. Genetics 155:1429-1437. Pybus, O. G., Charleston, M. A., Gupta, S., Rambaut, A., Holmes, E. C. and Harvey, P. H. 2001. The epidemic behavior of the Hepatitis C Virus. Science 292:2323-2325. Strimmer, K. and Pybus, O. G. 2001. Exploring the demographic history of DNA sequences using the generalised skyline plot. Mol. Biol. Evol. 18:2298-2305. 
+
+----
+
+**Attribution**
+
+Please contact the authors of GENIE to collect a copy of it.
+		
+		</help>
+		
+</tool>		
