@@ -3,13 +3,23 @@ This program runs rtt() function from ape package to root the tree
 
 '''
 
-import sys, subprocess, os
+import sys, subprocess, os, argparse
 
-if len(sys.argv) < 2:
-  print('\nUSAGE: rootTree_RTT.py treeFile')
-  sys.exit(0)
+#**********************************************************
+
+desStr = 'Roots a phologenetic tree using rtt() method of "ape" package'
+
+
+parser = argparse.ArgumentParser(description=desStr,
+              formatter_class=argparse.RawDescriptionHelpFormatter)
+              
+parser.add_argument('treeFileName', help='Tree file in "newick" format')
+
+args = parser.parse_args()
+
+#**********************************************************
   
-inTree = sys.argv[1] # contains the name of the input tree
+inTree = args.treeFileName # contains the name of the input tree
 
 fh = open('demodel.log','a')
 

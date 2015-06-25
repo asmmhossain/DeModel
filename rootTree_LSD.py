@@ -10,17 +10,30 @@ This program will run LSD to get a rooted time tree
     - <ExaML_result_result_nexus.txt> new rooted time tree as nexus file 
 '''
 
-import sys, subprocess, os
+import sys, subprocess, os, argparse
 
-if len(sys.argv) < 3:
-  print('\nUSAGE: rootTree_LSD.py treeFile dateFile\n')
-  sys.exit(0)
+#************************************************
+
+desStr = 'Converts a phylogenetic tree into a rooted time tree. '
+desStr += 'The taxa of the tree are time sampled'
+
+
+parser = argparse.ArgumentParser(description=desStr,
+              formatter_class=argparse.RawDescriptionHelpFormatter)
+              
+parser.add_argument('treeFileName', help='Tree file in "newick" format')
+parser.add_argument('dateFileName', help='Tab separated date file')
+
+args = parser.parse_args()
+
+
+#************************************************
   
 fh = open('demodel.log','a') # lsd.log will contain the progress information
 
 
-treeFile = sys.argv[1]
-dateFile = sys.argv[2]
+treeFile = args.treeFileName
+dateFile = args.dateFileName
 
 dates = [line.strip('\n') for line in open(dateFile,'r')] # get all the date information
 
@@ -32,9 +45,9 @@ msg = '\nWriting dates into file lsd.dates to be used by LSD\n'
 print(msg)
 fh.write(msg)
 
-fh = open('lsd.dates','w') # dates are stored in lsd.dates for LSD run
-fh.write(dateStr)
-fh.close()
+lh = open('lsd.dates','w') # dates are stored in lsd.dates for LSD run
+lh.write(dateStr)
+lh.close()
 
 
 cl = '~/apps/lsd -i %s -d lsd.dates -c -r' % treeFile # command line for running LSD
@@ -51,7 +64,7 @@ process = subprocess.Popen(cl,shell=True, stderr=fh,stdout=fh)
 
 rval = process.wait()
 
-fh.close()
+#fh.close()
 
 if os.stat('ExaML_result_result_newick_date.txt').st_size != 0:
   msg = '\nLSD run is completed'

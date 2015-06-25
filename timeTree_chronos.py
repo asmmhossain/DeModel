@@ -3,15 +3,29 @@ This program runs chronos() function to make rooted time tree
 
 '''
 
-import sys, subprocess, os
+import sys, subprocess, os, argparse
 
-if len(sys.argv) < 4:
-  print('\nUSAGE: timeTree_chronos.py treeFile outFile numCat')
-  sys.exit(0)
+
+#*********************************************************
+
+desStr = 'Convert into rooted time tree from rooted tree of time sampled sequences'
+
+
+parser = argparse.ArgumentParser(description=desStr,
+              formatter_class=argparse.RawDescriptionHelpFormatter)
+              
+parser.add_argument('treeFileName', help='Tree file in "newick" format')
+parser.add_argument('outFileName', help='Output tree file name')
+parser.add_argument('-c','--ncat',default=4,type=int,help='number of discrete rate categories')
+
+args = parser.parse_args()
+
+inTree = args.treeFileName
+outTree = args.outFileName
+numCat = args.ncat
+
+#**********************************************************  
   
-inTree = sys.argv[1] # contains the name of the input tree
-outTree = sys.argv[2]
-numCat = sys.argv[3]
 
 fh = open('demodel.log','a')
 

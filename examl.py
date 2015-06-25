@@ -1,11 +1,18 @@
 from Bio import SeqIO
 
-import sys, subprocess
+import sys, subprocess, argparse
 
-if len(sys.argv) < 2:
-  print('\n\tUSAGE: examl.py alnFile')
-  sys.exit(0)
-  
+#**********************************************
+desStr = 'Infers ExaML trees from an alignment'
+
+parser = argparse.ArgumentParser(description=desStr,
+              formatter_class=argparse.RawDescriptionHelpFormatter)
+              
+parser.add_argument('alnFileName', help='Alignment file in FASTA format')
+
+args = parser.parse_args()
+ 
+#*************************************************
 
 # Open a log file to monitor progress
 
@@ -14,7 +21,7 @@ fh = open('demodel.log','a')
 # Converting the fasta file to relaxed phylip format
 # This is because ExaML only accepts relaxed phylip files
 
-SeqIO.convert(sys.argv[1],'fasta','input.phy','phylip-relaxed')
+SeqIO.convert(args.alnFileName,'fasta','input.phy','phylip-relaxed')
 
 # Now ExaML parser is called to transform the alignment into binary
 # The binary file will be called input.binary

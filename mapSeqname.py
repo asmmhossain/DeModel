@@ -1,15 +1,23 @@
-import sys
+import sys,argparse
 
 from Bio import SeqIO
 
-if len(sys.argv) < 3:
-  print('\n\tUSAGE: mapSeqName.py seqFile dateFile\n')
-  sys.exit(0) # terminate if both alignment file and date file is not given
-  
+#************************************************************
+desStr = 'A python script to convert long sequence headers '
+desStr += 'into short format. e.g. X1, X2, X3...'
+
+
+parser = argparse.ArgumentParser(description=desStr,
+              formatter_class=argparse.RawDescriptionHelpFormatter)
+              
+parser.add_argument('alnFileName', help='Alignment file in FASTA format')
+parser.add_argument('dateFileName', help='Tab separated date file')
+
+args = parser.parse_args()
 
 #************ get the sequences******************
   
-seqFile = sys.argv[1]  
+seqFile = args.alnFileName  
 seqs = list(SeqIO.parse(seqFile,'fasta')) # read in the alignment in a list
 
 #print(len(seqs))
@@ -18,7 +26,7 @@ nSeqs = len(seqs) # nSeqs holds the number of sequences
 
 #*************get the dates*******************
 
-dateLines = [line.strip('\n') for line in open(sys.argv[2],'r')]
+dateLines = [line.strip('\n') for line in open(args.dateFileName,'r')]
 
 seqIds = []
 seqDates = []
