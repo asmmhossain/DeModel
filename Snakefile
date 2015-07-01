@@ -2,8 +2,8 @@ workdir : "examples/"
 
 rule all:
     input:
-        "RAxML_parsimonyTree.Vill_01_pol.fas.new.muscle.startTree",
-        "RAxML_parsimonyTree.Vill_02_pol.fas.new.muscle.startTree"
+        "ExaML_result.Vill_01_pol.fas.new.muscle.outTree",
+        "ExaML_result.Vill_02_pol.fas.new.muscle.outTree"
 '''
 rule mapSeqs:
     input:
@@ -68,7 +68,7 @@ rule examlTree:
         "ExaML_result.{ds6}.outTree"
         
     shell:
-        "~/Downloads/ExaML/examl/examl -a -B 10 -D -m GAMMA -n {params.prefix} -s {input[0]} -t {input[1]}; rm ExaML_binaryCheckpoint.*; rm ExaML_info.{params.prefix}; rm ExaML_log.{params.prefix}; rm ExaML_modelFile.{params.prefix}; rm RAxML_10_goodTrees.{params.prefix}; mv ExaML_result.{params.prefix} examples/"
+        "~/Downloads/ExaML/examl/examl -a -B 10 -D -m GAMMA -n {params.prefix} -s {input[0]} -t {input[1]}; rm ExaML_binaryCheckpoint.*; rm ExaML_info.{params.prefix}; rm ExaML_log.{params.prefix}; rm ExaML_modelFile.{params.prefix}; rm RAxML_10_goodTrees.{params.prefix}"
         
 '''        
 rule LSD:
