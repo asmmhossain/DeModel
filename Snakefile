@@ -1,54 +1,77 @@
+workdir : "examples/"
+
+rule all:
+    input:
+        "RAxML_parsimonyTree.Vill_01_pol.fas.new.muscle.startTree",
+        "RAxML_parsimonyTree.Vill_02_pol.fas.new.muscle.startTree"
+'''
+rule mapSeqs:
+    input:
+        "{ds1}_pol.fas",
+    output:
+        "{ds1}_pol.fas.new",
+        "{ds1}_pol.fas.map",
+        "{ds1}_pol.fas.nDate"
+    shell:
+        "python ../mapSeqname.py {input} {input}.dates"
+           
 rule muscle:
     input:
-        "examples/Vill_01_pol.fas"
+        "{ds2}.new"
         
     output:
-        "examples/Vill_01_pol.muscle"
+        "{ds2}.new.muscle"
     log: 
-        "examples/muscle.log"
+        "muscle.log"
     shell:
         "muscle -in {input} -out {output}"
-        
+
 rule makephylip:
     input: 
-        "examples/Vill_01_pol.muscle"
+        "{ds3}.muscle"
     output:
-        "examples/input.phy"
-    run:
-        from Bio import SeqIO
-        SeqIO.convert(input[0],'fasta',output[0],'phylip-relaxed')
+        "{ds3}.muscle.phy"
+    shell:
+        "python ../fasta2phylip.py {input} {output}"
         
 rule examlParser:
     input:
-        "examples/input.phy"
+        "{ds4}.phy"
     params:
-        prefix = "input"
+        prefix = "{ds4}"
     output:
-        "input.binary",
-        temp("RAxML_info.input")
+        "{ds4}.binary",
+        temp("RAxML_info.{ds4}")
     shell:
         "~/Downloads/ExaML/parser/parse-examl -s {input} -m DNA -n {params.prefix}"
 
-        
+
 rule parsimonyTree:
     input:
-        "examples/input.phy"
+        "{ds5}.phy"
     output:
-        "RAxML_parsimonyTree.startTree",
-        temp("RAxML_info.startTree")
+        "RAxML_parsimonyTree.{ds5}.startTree",
+        temp("RAxML_info.{ds5}.startTree")
     params:
-        prefix = "startTree"
+        prefix = "{ds5}.startTree"
     shell:
         "~/Downloads/RAxML/raxmlHPC-SSE3 -y -m GTRCAT -p 12345 -s {input} -n {params.prefix}"
-        
+
+'''        
 rule examlTree:
     input:
-        "input.binary",
-        "RAxML_parsimonyTree.startTree"
+        "{ds6}.binary",
+        "RAxML_parsimonyTree.{ds6}.startTree"
     params:
-        prefix = "outTree"
+        prefix = "{ds6}.outTree"
     output:
-        "ExaML_result.outTree"
+        "ExaML_result.{ds6}.outTree"
+        
     shell:
-        "~/Downloads/ExaML/examl/examl -a -B 10 -D -m GAMMA -n {params.prefix} -s {input[0]} -t {input[1]}"    
-
+        "~/Downloads/ExaML/examl/examl -a -B 10 -D -m GAMMA -n {params.prefix} -s {input[0]} -t {input[1]}; rm ExaML_binaryCheckpoint.*; rm ExaML_info.{params.prefix}; rm ExaML_log.{params.prefix}; rm ExaML_modelFile.{params.prefix}; rm RAxML_10_goodTrees.{params.prefix}; mv ExaML_result.{params.prefix} examples/"
+        
+'''        
+rule LSD:
+    input:
+        "Examl_result.outTree",
+'''                 
