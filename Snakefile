@@ -2,8 +2,8 @@ workdir : "examples/"
 
 rule all:
     input:
-        "ExaML_result.Vill_01_pol.fas.new.muscle_result_newick_date.txt",
-        "ExaML_result.Vill_02_pol.fas.new.muscle_result_newick_date.txt"
+        "Vill_01_pol.fas.genie.result",
+        "Vill_02_pol.fas.genie.result"
 
 '''
 rule mapSeqs:
@@ -93,4 +93,25 @@ rule LSD:
     shell:
         "~/apps/lsd -i {input[0]} -d {input[1]} -c -r"    
         
-'''        
+
+rule makeNexus:
+    input:
+        "ExaML_result.{ds9}.new.muscle_result_newick_date.txt"
+    output:
+        "{ds9}.ExaML.LSD.nexus"
+    shell:
+        "python ../newick2nexus.py {input} {output}"        
+        
+'''
+
+rule genie:
+    input:
+        "{ds10}.ExaML.LSD.nexus"
+    params:
+        prefix="expo"
+    output:
+        "{ds10}.genie.result"
+              
+    shell:
+        "python ../runGenie.py {input[0]} {params.prefix} > {output}; rm genieIn.nex; rm tempGenie.txt"
+        

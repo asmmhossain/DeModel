@@ -1,14 +1,21 @@
-import sys,os,subprocess
+import sys,os,subprocess, argparse
 
-if len(sys.argv) < 3:
-  msg = '\nUSAGE: runGenie.py inputNexusTreeFile demographicModel\n'
-  msg += '\nSupported demographic models:'
-  msg += '\nconst\texpo\tlog\texpan\tstep\tplog\tpexpan\n\n'
-  print(msg)
-  sys.exit(0)
+#**********************************************
+desStr = 'Find the ML value of a rooted time tree under a demographic model using GENIE_3.0'
+
+parser = argparse.ArgumentParser(description=desStr,
+              formatter_class=argparse.RawDescriptionHelpFormatter)
+              
+parser.add_argument('treeFileName', help='Input tree in "Nexus" format')
+parser.add_argument('dModel', default = 'const', help='Demographic Model (default: constant)')
+
+
+args = parser.parse_args()
+ 
+#*************************************************
   
-inTree = sys.argv[1]
-mod = sys.argv[2]
+inTree = args.treeFileName
+mod = args.dModel
 
 deModels = ['const','expo','log','expan','step','plog','pexpan']
 
@@ -43,7 +50,7 @@ fh.close()
 
 fh = open('tempGenie.txt','w')
 
-print('\n\nGENIE is started with %s model\n' % mod.lower())
+print('\n\nGENIE is started with %s model on %s' % (mod.lower(),inTree))
   
 cl = '(echo "quit") | genie genieIn.nex'
 
