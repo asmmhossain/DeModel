@@ -8,17 +8,34 @@ physher command line:
 
 '''
 
-import sys, subprocess, os
+import sys, subprocess, os, argparse, shutil
+#from Bio import Phylo
 
-if len(sys.argv) < 6:
-  print('\nUSAGE: timeTree_physher.py alignmentFile treeFile subModel clockType outStem')
-  sys.exit(0)
-  
-aln = sys.argv[1]
-inTree = sys.argv[2]
-subMod = sys.argv[3]
-clock = sys.argv[4]
-outStem = sys.argv[5]
+#**********************************************************
+
+desStr = 'Creating a rooted time tree using Physher'
+
+
+parser = argparse.ArgumentParser(description=desStr,
+              formatter_class=argparse.RawDescriptionHelpFormatter)
+              
+parser.add_argument('alnFileName', help='Alignment file in "FASTA/NEXUS" format')
+parser.add_argument('treeFileName', help='Tree file in "newick/NEXUS" format')
+parser.add_argument('subModel', default = 'GTR', help='Nucleotide/codon substitution model (default: GTR; others: HKY, K80, JC69, GY94)')
+parser.add_argument('clockType', default = 'strict', help='strict/local/discrete clock (default: strict)')
+parser.add_argument('outStem', help='Output is written to <outStem>.[strict/local/discrete].newick.tree')
+
+
+
+args = parser.parse_args()
+
+#**********************************************************
+
+aln = args.alnFileName
+inTree = args.treeFileName
+subMod = args.subModel
+clock = args.clockType
+outStem = args.outStem
 
 fh = open('demodel.log','a')
 
@@ -37,10 +54,10 @@ fh.write(msg)
 
 
 
-#process = subprocess.Popen(cl,shell=True,stderr=fh,stdout=fh)
-#rval = process.wait()
+process = subprocess.Popen(cl,shell=True,stderr=fh,stdout=fh)
+rval = process.wait()
 
-fName = outStem + '.strict.tree'
+fName = outStem + '.' + clock +'.tree'
 #print(fName)
 
 if os.stat(fName).st_size != 0:
@@ -49,12 +66,38 @@ if os.stat(fName).st_size != 0:
   print(msg)
   fh.write(msg)
   
-  newickName = outStem + '.strict.newick'
-  cl = 'Rscript nexus2newick.R %s %s' % (fName,newickName)
+  newickName = outStem + '.' + clock + '.newick.tree'
   
-  process = subprocess.Popen(cl,shell=True,stderr=fh,stdout=fh)
-  rval = process.wait()
+  #Phylo.convert(fName,'nexus',newickName,'newick')
+  #cl = 'Rscript nexus2newick.R %s %s' % (fName,newickName)
+  
+  #process = subprocess.Popen(cl,shell=True,stderr=fh,stdout=fh)
+  #rval = process.wait()
 
+#*****************************************************  
+  import rpy2.robjects as rob
+  from rpy2.robjects.packages import importr
+  
+  r = rob.r
+  g = rob.globalenv
+  
+  ape = importr('ape')
+  
+#**********************************************************
+
+  shutil.copy(fName,'in.tre')
+  
+  r('''
+    tre <- read.nexus('in.tre')
+    write.tree(tre,'out.tre')
+  ''')  
+
+  if os.stat('out.tre').st_size != 0:
+    os.rename('out.tre',newickName)
+    
+  if os.stat('in.tre').st_size != 0:
+    os.remove('in.tre')
+      
   if os.stat(newickName).st_size != 0:
     msg ='Rooted time tree in newick format is written in <%s>\n' % newickName
     print(msg)
