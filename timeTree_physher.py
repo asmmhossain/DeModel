@@ -1,5 +1,5 @@
 '''
-This program calls physher to amke rooted time tree
+This program calls physher to make rooted time tree
 
 physher command line:
 
@@ -44,15 +44,24 @@ print(msg)
 fh.write(msg)
 
 cl = ''
-cl += '~/Downloads/physher-src.v0.2/Release/physher '
+#cl += '~/Downloads/physher-src.v0.2/Release/physher '
+cl += 'physher '
+
+fName = outStem + '.info'
+
+if os.stat(fName).st_size != 0:
+  msg = '\n%s file already exist. using --overwrite option' % fName
+  print(msg)
+  fh.write(msg)
+  
+  cl += '--overwrite ' 
+
 cl += '-i %s -t %s -m %s ' % (aln,inTree,subMod)
 cl += '-C %s -o %s' % (clock,outStem)
 
 msg = '\t%s\n' % cl
 print(msg)
 fh.write(msg)
-
-
 
 process = subprocess.Popen(cl,shell=True,stderr=fh,stdout=fh)
 rval = process.wait()
