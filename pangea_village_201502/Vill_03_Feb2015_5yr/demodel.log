@@ -1,0 +1,3136 @@
+gappyness: 0.000000
+Pattern compression: ON
+
+
+Your alignment has 4695 unique patterns
+
+
+Under CAT the memory required by ExaML for storing CLVs and tip vectors will be
+120384495 bytes
+117562 kiloBytes
+114 MegaBytes
+0 GigaBytes
+
+
+Under GAMMA the memory required by ExaML for storing CLVs and tip vectors will be
+470593935 bytes
+459564 kiloBytes
+448 MegaBytes
+0 GigaBytes
+
+Please note that, these are just the memory requirements for doing likelihood calculations!
+To be on the safe side, we recommend that you execute ExaML on a system with twice that memory.
+
+
+Binary and compressed alignment file written to file input.binary
+
+Parsing completed, exiting now ... 
+
+
+
+This is RAxML version 7.8.4 released by Alexandros Stamatakis on Nov 1 2013.
+
+With greatly appreciated code contributions by:
+Andre Aberer (HITS)
+Simon Berger (HITS)
+Nick Pattengale (Sandia)
+Wayne Pfeiffer (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+
+Alignment has 4695 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 0.00%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 4695
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-SSE3 -y -m GTRCAT -p 12345 -s input.phy -n startTree 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.378 0.175 0.229 0.218 
+
+
+This is ExaML FINE-GRAIN MPI Process Number: 0
+
+proc	offset	length	part
+0	0	4695	0
+
+#proc	#part	#sites
+0	1	4695
+
+
+
+This is ExaML version 3.0.11 released by Alexandros Stamatakis, Andre Aberer, and Alexey Kozlov in April 10 2014.
+
+
+Alignment has 4695 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 0.00%
+
+ExaML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by ExaML
+GAMMA with Median model of rate heteorgeneity, ML estimate of alpha-parameter
+
+Partition: 0
+Alignment Patterns: 4695
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+ExaML was called as follows:
+
+/home/mukarram/Downloads/ExaML/examl/examl -a -B 10 -D -m GAMMA -n outTree -s input.binary -t RAxML_parsimonyTree.startTree 
+
+
+Memory Saving Option: DISABLED
+
+Best rearrangement radius: 5
+ML search convergence criterion fast cycle 0->1 Relative Robinson-Foulds 0.014212
+ML search convergence criterion thorough cycle 0->1 Relative Robinson-Foulds 0.015504
+ML search converged at thorough SPR cycle 2 with stopping criterion
+Relative Robinson-Foulds (RF) distance between respective best trees after one succseful SPR cycle: 0.002584%
+
+Likelihood of best tree: -655986.318868
+
+
+Evaluating 10 other good ML trees
+
+tree 1 likelihood -655989.35447001480497419834136962890625000000000000000000000000000000000000000000000000
+tree 2 likelihood -655989.43145558144897222518920898437500000000000000000000000000000000000000000000000000
+tree 3 likelihood -655989.44911548576783388853073120117187500000000000000000000000000000000000000000000000
+tree 4 likelihood -655989.65866750013083219528198242187500000000000000000000000000000000000000000000000000
+tree 5 likelihood -655989.68555887485854327678680419921875000000000000000000000000000000000000000000000000
+tree 6 likelihood -655989.78661180706694722175598144531250000000000000000000000000000000000000000000000000
+tree 7 likelihood -655989.88861265359446406364440917968750000000000000000000000000000000000000000000000000
+tree 8 likelihood -655990.18458597594872117042541503906250000000000000000000000000000000000000000000000000
+tree 9 likelihood -655990.22394714853726327419281005859375000000000000000000000000000000000000000000000000
+tree 10 likelihood -655990.28106841468252241611480712890625000000000000000000000000000000000000000000000000
+
+
+Other good trees written to file /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_03_Feb2015_5yr/RAxML_10_goodTrees.outTree
+
+
+Overall Time for 1 Inference 1937.783262
+
+Overall accumulated Time (in case of restarts): 1937.783262
+
+Likelihood   : -655990.281068
+
+
+Model parameters written to:           /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_03_Feb2015_5yr/ExaML_modelFile.outTree
+Final tree written to:                 /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_03_Feb2015_5yr/ExaML_result.outTree
+Execution Log File written to:         /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_03_Feb2015_5yr/ExaML_log.outTree
+Execution information file written to: /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_03_Feb2015_5yr/ExaML_info.outTree
+Reading the tree 1...
+The dates of some taxa are missing. If the input tree contains some outgroups, use option -g to specify the file name of outgroups. 
+
+Writing dates into file lsd.dates to be used by LSD
+
+Running LSD with the following command:
+
+	~/apps/lsd -i ExaML_result.outTree -d lsd.dates -c -r
+LSD run could not finish properly.
+Please refer to the demodel.log file for more information
+Reading the tree 1...
+The dates of some taxa are missing. If the input tree contains some outgroups, use option -g to specify the file name of outgroups. 
+
+Writing dates into file lsd.dates to be used by LSD
+
+Running LSD with the following command:
+
+	~/apps/lsd -i ExaML_result.outTree -d lsd.dates -c -r
+LSD run could not finish properly.
+Please refer to the demodel.log file for more information
+Reading the tree 1...
+Pre-estimating the root without constraints ...
+Optimizing the branch 1 ... 0.0180308221
+Optimizing the branch 2 ... 0.0182706529
+Optimizing the branch 3 ... 0.0183785586
+Optimizing the branch 4 ... 0.0258676047
+Optimizing the branch 5 ... 0.0266442554
+Optimizing the branch 6 ... 0.0286125351
+Optimizing the branch 7 ... 0.0301575743
+Optimizing the branch 8 ... 0.0306672995
+Optimizing the branch 9 ... 0.0301366916
+Optimizing the branch 10 ... 0.0311004459
+Optimizing the branch 11 ... 0.0313895825
+Optimizing the branch 12 ... 0.0266246067
+Optimizing the branch 13 ... 0.0284955995
+Optimizing the branch 14 ... 0.0325654573
+Optimizing the branch 15 ... 0.0330934638
+Optimizing the branch 16 ... 0.0331519280
+Optimizing the branch 17 ... 0.0333467581
+Optimizing the branch 18 ... 0.0283969851
+Optimizing the branch 19 ... 0.0259961788
+Optimizing the branch 20 ... 0.0306697010
+Optimizing the branch 21 ... 0.0327308184
+Optimizing the branch 22 ... 0.0335129631
+Optimizing the branch 23 ... 0.0335021054
+Optimizing the branch 24 ... 0.0352737959
+Optimizing the branch 25 ... 0.0356969109
+Optimizing the branch 26 ... 0.0359563120
+Optimizing the branch 27 ... 0.0364728766
+Optimizing the branch 28 ... 0.0364962794
+Optimizing the branch 29 ... 0.0351583751
+Optimizing the branch 30 ... 0.0370565151
+Optimizing the branch 31 ... 0.0304753765
+Optimizing the branch 32 ... 0.0395891107
+Optimizing the branch 33 ... 0.0399044551
+Optimizing the branch 34 ... 0.0406175209
+Optimizing the branch 35 ... 0.0399329695
+Optimizing the branch 36 ... 0.0407286820
+Optimizing the branch 37 ... 0.0415996979
+Optimizing the branch 38 ... 0.0419590433
+Optimizing the branch 39 ... 0.0182721190
+Optimizing the branch 40 ... 0.0222952675
+Optimizing the branch 41 ... 0.0266535242
+Optimizing the branch 42 ... 0.0275774524
+Optimizing the branch 43 ... 0.0282797698
+Optimizing the branch 44 ... 0.0316836207
+Optimizing the branch 45 ... 0.0323111169
+Optimizing the branch 46 ... 0.0324801829
+Optimizing the branch 47 ... 0.0323079037
+Optimizing the branch 48 ... 0.0277059539
+Optimizing the branch 49 ... 0.0284448970
+Optimizing the branch 50 ... 0.0287832213
+Optimizing the branch 51 ... 0.0290168681
+Optimizing the branch 52 ... 0.0334368919
+Optimizing the branch 53 ... 0.0289498685
+Optimizing the branch 54 ... 0.0334516639
+Optimizing the branch 55 ... 0.0333096839
+Optimizing the branch 56 ... 0.0287926456
+Optimizing the branch 57 ... 0.0291638832
+Optimizing the branch 58 ... 0.0266644367
+Optimizing the branch 59 ... 0.0285836839
+Optimizing the branch 60 ... 0.0183561768
+Optimizing the branch 61 ... 0.0183386589
+Optimizing the branch 62 ... 0.0183708983
+Optimizing the branch 63 ... 0.0184330715
+Optimizing the branch 64 ... 0.0184176131
+Optimizing the branch 65 ... 0.0184755392
+Optimizing the branch 66 ... 0.0186108135
+Optimizing the branch 67 ... 0.0186322517
+Optimizing the branch 68 ... 0.0188847569
+Optimizing the branch 69 ... 0.0212817520
+Optimizing the branch 70 ... 0.0238579131
+Optimizing the branch 71 ... 0.0270358779
+Optimizing the branch 72 ... 0.0275780210
+Optimizing the branch 73 ... 0.0280750751
+Optimizing the branch 74 ... 0.0284090132
+Optimizing the branch 75 ... 0.0284436197
+Optimizing the branch 76 ... 0.0284552747
+Optimizing the branch 77 ... 0.0289392792
+Optimizing the branch 78 ... 0.0283788898
+Optimizing the branch 79 ... 0.0299946723
+Optimizing the branch 80 ... 0.0274948628
+Optimizing the branch 81 ... 0.0271181585
+Optimizing the branch 82 ... 0.0274813126
+Optimizing the branch 83 ... 0.0317761633
+Optimizing the branch 84 ... 0.0332349367
+Optimizing the branch 85 ... 0.0214623338
+Optimizing the branch 86 ... 0.0219305698
+Optimizing the branch 87 ... 0.0257696515
+Optimizing the branch 88 ... 0.0260889330
+Optimizing the branch 89 ... 0.0268572527
+Optimizing the branch 90 ... 0.0306447606
+Optimizing the branch 91 ... 0.0311648788
+Optimizing the branch 92 ... 0.0306102260
+Optimizing the branch 93 ... 0.0261981601
+Optimizing the branch 94 ... 0.0262088773
+Optimizing the branch 95 ... 0.0266273712
+Optimizing the branch 96 ... 0.0282310472
+Optimizing the branch 97 ... 0.0262461518
+Optimizing the branch 98 ... 0.0219379359
+Optimizing the branch 99 ... 0.0399907491
+Optimizing the branch 100 ... 0.0188815159
+Optimizing the branch 101 ... 0.0224148404
+Optimizing the branch 102 ... 0.0239517420
+Optimizing the branch 103 ... 0.0242249003
+Optimizing the branch 104 ... 0.0245605379
+Optimizing the branch 105 ... 0.0247512083
+Optimizing the branch 106 ... 0.0254596692
+Optimizing the branch 107 ... 0.0267981707
+Optimizing the branch 108 ... 0.0269840032
+Optimizing the branch 109 ... 0.0270065985
+Optimizing the branch 110 ... 0.0280381589
+Optimizing the branch 111 ... 0.0280535243
+Optimizing the branch 112 ... 0.0282623744
+Optimizing the branch 113 ... 0.0282575442
+Optimizing the branch 114 ... 0.0279518587
+Optimizing the branch 115 ... 0.0283450955
+Optimizing the branch 116 ... 0.0269832226
+Optimizing the branch 117 ... 0.0254404217
+Optimizing the branch 118 ... 0.0257422497
+Optimizing the branch 119 ... 0.0257765400
+Optimizing the branch 120 ... 0.0258096443
+Optimizing the branch 121 ... 0.0258552731
+Optimizing the branch 122 ... 0.0258582524
+Optimizing the branch 123 ... 0.0260643942
+Optimizing the branch 124 ... 0.0258593857
+Optimizing the branch 125 ... 0.0258644080
+Optimizing the branch 126 ... 0.0258722793
+Optimizing the branch 127 ... 0.0287230549
+Optimizing the branch 128 ... 0.0290556613
+Optimizing the branch 129 ... 0.0290710212
+Optimizing the branch 130 ... 0.0258650646
+Optimizing the branch 131 ... 0.0269842525
+Optimizing the branch 132 ... 0.0258509152
+Optimizing the branch 133 ... 0.0258109056
+Optimizing the branch 134 ... 0.0260979939
+Optimizing the branch 135 ... 0.0257671221
+Optimizing the branch 136 ... 0.0259899941
+Optimizing the branch 137 ... 0.0267883364
+Optimizing the branch 138 ... 0.0270641295
+Optimizing the branch 139 ... 0.0270224492
+Optimizing the branch 140 ... 0.0267797586
+Optimizing the branch 141 ... 0.0259540476
+Optimizing the branch 142 ... 0.0257542683
+Optimizing the branch 143 ... 0.0247211059
+Optimizing the branch 144 ... 0.0250989880
+Optimizing the branch 145 ... 0.0245568078
+Optimizing the branch 146 ... 0.0275257148
+Optimizing the branch 147 ... 0.0273448261
+Optimizing the branch 148 ... 0.0241753889
+Optimizing the branch 149 ... 0.0240367208
+Optimizing the branch 150 ... 0.0241165483
+Optimizing the branch 151 ... 0.0252700285
+Optimizing the branch 152 ... 0.0242048766
+Optimizing the branch 153 ... 0.0307813994
+Optimizing the branch 154 ... 0.0314456779
+Optimizing the branch 155 ... 0.0317169017
+Optimizing the branch 156 ... 0.0220191281
+Optimizing the branch 157 ... 0.0396306196
+Optimizing the branch 158 ... 0.0418340040
+Optimizing the branch 159 ... 0.0186478913
+Optimizing the branch 160 ... 0.0256193615
+Optimizing the branch 161 ... 0.0263676529
+Optimizing the branch 162 ... 0.0267343882
+Optimizing the branch 163 ... 0.0266954660
+Optimizing the branch 164 ... 0.0299702784
+Optimizing the branch 165 ... 0.0263938384
+Optimizing the branch 166 ... 0.0252735468
+Optimizing the branch 167 ... 0.0261474372
+Optimizing the branch 168 ... 0.0262132863
+Optimizing the branch 169 ... 0.0262575648
+Optimizing the branch 170 ... 0.0305528286
+Optimizing the branch 171 ... 0.0314264928
+Optimizing the branch 172 ... 0.0318222804
+Optimizing the branch 173 ... 0.0318194162
+Optimizing the branch 174 ... 0.0318685357
+Optimizing the branch 175 ... 0.0262905235
+Optimizing the branch 176 ... 0.0263054412
+Optimizing the branch 177 ... 0.0268788083
+Optimizing the branch 178 ... 0.0279386757
+Optimizing the branch 179 ... 0.0287368672
+Optimizing the branch 180 ... 0.0262805531
+Optimizing the branch 181 ... 0.0273817823
+Optimizing the branch 182 ... 0.0299168955
+Optimizing the branch 183 ... 0.0305352054
+Optimizing the branch 184 ... 0.0310679248
+Optimizing the branch 185 ... 0.0311378236
+Optimizing the branch 186 ... 0.0312199734
+Optimizing the branch 187 ... 0.0312066642
+Optimizing the branch 188 ... 0.0320164806
+Optimizing the branch 189 ... 0.0300074049
+Optimizing the branch 190 ... 0.0311816670
+Optimizing the branch 191 ... 0.0313372990
+Optimizing the branch 192 ... 0.0313490876
+Optimizing the branch 193 ... 0.0317427174
+Optimizing the branch 194 ... 0.0311457061
+Optimizing the branch 195 ... 0.0274149068
+Optimizing the branch 196 ... 0.0280543788
+Optimizing the branch 197 ... 0.0332333888
+Optimizing the branch 198 ... 0.0184686302
+Optimizing the branch 199 ... 0.0186839053
+Optimizing the branch 200 ... 0.0190031334
+Optimizing the branch 201 ... 0.0192010128
+Optimizing the branch 202 ... 0.0197512909
+Optimizing the branch 203 ... 0.0230364959
+Optimizing the branch 204 ... 0.0280407870
+Optimizing the branch 205 ... 0.0282797723
+Optimizing the branch 206 ... 0.0287256127
+Optimizing the branch 207 ... 0.0292610023
+Optimizing the branch 208 ... 0.0292610532
+Optimizing the branch 209 ... 0.0327100261
+Optimizing the branch 210 ... 0.0286329395
+Optimizing the branch 211 ... 0.0197765951
+Optimizing the branch 212 ... 0.0201206238
+Optimizing the branch 213 ... 0.0202895986
+Optimizing the branch 214 ... 0.0207944959
+Optimizing the branch 215 ... 0.0208775688
+Optimizing the branch 216 ... 0.0209175925
+Optimizing the branch 217 ... 0.0213823118
+Optimizing the branch 218 ... 0.0224877663
+Optimizing the branch 219 ... 0.0238965176
+Optimizing the branch 220 ... 0.0240925024
+Optimizing the branch 221 ... 0.0246231535
+Optimizing the branch 222 ... 0.0249670612
+Optimizing the branch 223 ... 0.0255005190
+Optimizing the branch 224 ... 0.0255615447
+Optimizing the branch 225 ... 0.0245993510
+Optimizing the branch 226 ... 0.0247174386
+Optimizing the branch 227 ... 0.0247095959
+Optimizing the branch 228 ... 0.0224844458
+Optimizing the branch 229 ... 0.0227222119
+Optimizing the branch 230 ... 0.0227735535
+Optimizing the branch 231 ... 0.0228144692
+Optimizing the branch 232 ... 0.0229405834
+Optimizing the branch 233 ... 0.0229632255
+Optimizing the branch 234 ... 0.0230890162
+Optimizing the branch 235 ... 0.0255811315
+Optimizing the branch 236 ... 0.0262775546
+Optimizing the branch 237 ... 0.0229793356
+Optimizing the branch 238 ... 0.0228130316
+Optimizing the branch 239 ... 0.0228121590
+Optimizing the branch 240 ... 0.0238715698
+Optimizing the branch 241 ... 0.0228097401
+Optimizing the branch 242 ... 0.0256879042
+Optimizing the branch 243 ... 0.0260466190
+Optimizing the branch 244 ... 0.0260460269
+Optimizing the branch 245 ... 0.0255043768
+Optimizing the branch 246 ... 0.0213540408
+Optimizing the branch 247 ... 0.0215901364
+Optimizing the branch 248 ... 0.0220857177
+Optimizing the branch 249 ... 0.0221850163
+Optimizing the branch 250 ... 0.0221859534
+Optimizing the branch 251 ... 0.0288915697
+Optimizing the branch 252 ... 0.0221691348
+Optimizing the branch 253 ... 0.0235201428
+Optimizing the branch 254 ... 0.0235069489
+Optimizing the branch 255 ... 0.0259843351
+Optimizing the branch 256 ... 0.0209126134
+Optimizing the branch 257 ... 0.0241445583
+Optimizing the branch 258 ... 0.0257671693
+Optimizing the branch 259 ... 0.0279720233
+Optimizing the branch 260 ... 0.0280502233
+Optimizing the branch 261 ... 0.0280751618
+Optimizing the branch 262 ... 0.0289158671
+Optimizing the branch 263 ... 0.0244030537
+Optimizing the branch 264 ... 0.0247240784
+Optimizing the branch 265 ... 0.0264159593
+Optimizing the branch 266 ... 0.0247764297
+Optimizing the branch 267 ... 0.0253344087
+Optimizing the branch 268 ... 0.0208993098
+Optimizing the branch 269 ... 0.0210107713
+Optimizing the branch 270 ... 0.0210785818
+Optimizing the branch 271 ... 0.0213502801
+Optimizing the branch 272 ... 0.0246288522
+Optimizing the branch 273 ... 0.0248215740
+Optimizing the branch 274 ... 0.0251066708
+Optimizing the branch 275 ... 0.0253457158
+Optimizing the branch 276 ... 0.0254862325
+Optimizing the branch 277 ... 0.0255781850
+Optimizing the branch 278 ... 0.0255647053
+Optimizing the branch 279 ... 0.0255003186
+Optimizing the branch 280 ... 0.0255512937
+Optimizing the branch 281 ... 0.0260248263
+Optimizing the branch 282 ... 0.0251206591
+Optimizing the branch 283 ... 0.0248782415
+Optimizing the branch 284 ... 0.0253401628
+Optimizing the branch 285 ... 0.0245794094
+Optimizing the branch 286 ... 0.0280528774
+Optimizing the branch 287 ... 0.0213862187
+Optimizing the branch 288 ... 0.0215581332
+Optimizing the branch 289 ... 0.0216149555
+Optimizing the branch 290 ... 0.0244641356
+Optimizing the branch 291 ... 0.0315657449
+Optimizing the branch 292 ... 0.0215968547
+Optimizing the branch 293 ... 0.0263188300
+Optimizing the branch 294 ... 0.0211106652
+Optimizing the branch 295 ... 0.0210665347
+Optimizing the branch 296 ... 0.0211370709
+Optimizing the branch 297 ... 0.0335444402
+Optimizing the branch 298 ... 0.0338386001
+Optimizing the branch 299 ... 0.0346887205
+Optimizing the branch 300 ... 0.0350641493
+Optimizing the branch 301 ... 0.0211247987
+Optimizing the branch 302 ... 0.0210123969
+Optimizing the branch 303 ... 0.0210511796
+Optimizing the branch 304 ... 0.0211246831
+Optimizing the branch 305 ... 0.0310444555
+Optimizing the branch 306 ... 0.0211263894
+Optimizing the branch 307 ... 0.0222253181
+Optimizing the branch 308 ... 0.0231641488
+Optimizing the branch 309 ... 0.0290873532
+Optimizing the branch 310 ... 0.0210673640
+Optimizing the branch 311 ... 0.0207265063
+Optimizing the branch 312 ... 0.0217988872
+Optimizing the branch 313 ... 0.0219307387
+Optimizing the branch 314 ... 0.0202814871
+Optimizing the branch 315 ... 0.0214404826
+Optimizing the branch 316 ... 0.0253294545
+Optimizing the branch 317 ... 0.0258916255
+Optimizing the branch 318 ... 0.0201153969
+Optimizing the branch 319 ... 0.0212228139
+Optimizing the branch 320 ... 0.0258023828
+Optimizing the branch 321 ... 0.0265338598
+Optimizing the branch 322 ... 0.0265592682
+Optimizing the branch 323 ... 0.0258624002
+Optimizing the branch 324 ... 0.0292682062
+Optimizing the branch 325 ... 0.0212194079
+Optimizing the branch 326 ... 0.0225874855
+Optimizing the branch 327 ... 0.0226857748
+Optimizing the branch 328 ... 0.0226433243
+Optimizing the branch 329 ... 0.0234106850
+Optimizing the branch 330 ... 0.0240236453
+Optimizing the branch 331 ... 0.0244208081
+Optimizing the branch 332 ... 0.0243275846
+Optimizing the branch 333 ... 0.0247445129
+Optimizing the branch 334 ... 0.0233201151
+Optimizing the branch 335 ... 0.0259545979
+Optimizing the branch 336 ... 0.0267834077
+Optimizing the branch 337 ... 0.0190456404
+Optimizing the branch 338 ... 0.0236149461
+Optimizing the branch 339 ... 0.0274246989
+Optimizing the branch 340 ... 0.0304851722
+Optimizing the branch 341 ... 0.0310842460
+Optimizing the branch 342 ... 0.0325212438
+Optimizing the branch 343 ... 0.0333188067
+Optimizing the branch 344 ... 0.0340906480
+Optimizing the branch 345 ... 0.0325048698
+Optimizing the branch 346 ... 0.0326870742
+Optimizing the branch 347 ... 0.0337263175
+Optimizing the branch 348 ... 0.0310152863
+Optimizing the branch 349 ... 0.0186935454
+Optimizing the branch 350 ... 0.0289848520
+Optimizing the branch 351 ... 0.0306245905
+Optimizing the branch 352 ... 0.0307785793
+Optimizing the branch 353 ... 0.0314397586
+Optimizing the branch 354 ... 0.0317241881
+Optimizing the branch 355 ... 0.0322167152
+Optimizing the branch 356 ... 0.0313893982
+Optimizing the branch 357 ... 0.0330286361
+Optimizing the branch 358 ... 0.0308397384
+Optimizing the branch 359 ... 0.0325620074
+Optimizing the branch 360 ... 0.0323809765
+Optimizing the branch 361 ... 0.0289174709
+Optimizing the branch 362 ... 0.0325084456
+Optimizing the branch 363 ... 0.0184051228
+Optimizing the branch 364 ... 0.0239762092
+Optimizing the branch 365 ... 0.0406298104
+Optimizing the branch 366 ... 0.0418523091
+Optimizing the branch 367 ... 0.0421546528
+Optimizing the branch 368 ... 0.0422692202
+Optimizing the branch 369 ... 0.0422807540
+Optimizing the branch 370 ... 0.0422996289
+Optimizing the branch 371 ... 0.0421734790
+Optimizing the branch 372 ... 0.0418946292
+Optimizing the branch 373 ... 0.0401662950
+Optimizing the branch 374 ... 0.0426053018
+Optimizing the branch 375 ... 0.0437729992
+Optimizing the branch 376 ... 0.0439279340
+Optimizing the branch 377 ... 0.0441385498
+Optimizing the branch 378 ... 0.0239144280
+Optimizing the branch 379 ... 0.0245747099
+Optimizing the branch 380 ... 0.0249789968
+Optimizing the branch 381 ... 0.0268260945
+Optimizing the branch 382 ... 0.0269678368
+Optimizing the branch 383 ... 0.0269831296
+Optimizing the branch 384 ... 0.0373927651
+Optimizing the branch 385 ... 0.0381794841
+Optimizing the branch 386 ... 0.0269678056
+Optimizing the branch 387 ... 0.0269985677
+Optimizing the branch 388 ... 0.0277038295
+Optimizing the branch 389 ... 0.0277373594
+Optimizing the branch 390 ... 0.0278086923
+Optimizing the branch 391 ... 0.0277945511
+Optimizing the branch 392 ... 0.0277808832
+Optimizing the branch 393 ... 0.0281997554
+Optimizing the branch 394 ... 0.0283139219
+Optimizing the branch 395 ... 0.0285227818
+Optimizing the branch 396 ... 0.0287499424
+Optimizing the branch 397 ... 0.0294174714
+Optimizing the branch 398 ... 0.0299160289
+Optimizing the branch 399 ... 0.0293878356
+Optimizing the branch 400 ... 0.0297622092
+Optimizing the branch 401 ... 0.0283114813
+Optimizing the branch 402 ... 0.0286641747
+Optimizing the branch 403 ... 0.0281991410
+Optimizing the branch 404 ... 0.0282448349
+Optimizing the branch 405 ... 0.0282761595
+Optimizing the branch 406 ... 0.0283243171
+Optimizing the branch 407 ... 0.0283349513
+Optimizing the branch 408 ... 0.0282751562
+Optimizing the branch 409 ... 0.0283885667
+Optimizing the branch 410 ... 0.0283911494
+Optimizing the branch 411 ... 0.0284179548
+Optimizing the branch 412 ... 0.0285366804
+Optimizing the branch 413 ... 0.0286191886
+Optimizing the branch 414 ... 0.0299263057
+Optimizing the branch 415 ... 0.0282368841
+Optimizing the branch 416 ... 0.0277815669
+Optimizing the branch 417 ... 0.0277496445
+Optimizing the branch 418 ... 0.0277740061
+Optimizing the branch 419 ... 0.0288262722
+Optimizing the branch 420 ... 0.0336418409
+Optimizing the branch 421 ... 0.0288807358
+Optimizing the branch 422 ... 0.0291851137
+Optimizing the branch 423 ... 0.0297402233
+Optimizing the branch 424 ... 0.0298746679
+Optimizing the branch 425 ... 0.0299092059
+Optimizing the branch 426 ... 0.0292438124
+Optimizing the branch 427 ... 0.0292854046
+Optimizing the branch 428 ... 0.0269775167
+Optimizing the branch 429 ... 0.0289945524
+Optimizing the branch 430 ... 0.0290026357
+Optimizing the branch 431 ... 0.0269496252
+Optimizing the branch 432 ... 0.0323420374
+Optimizing the branch 433 ... 0.0245232593
+Optimizing the branch 434 ... 0.0287726031
+Optimizing the branch 435 ... 0.0184145660
+Optimizing the branch 436 ... 0.0184696529
+Optimizing the branch 437 ... 0.0202515155
+Optimizing the branch 438 ... 0.0246234791
+Optimizing the branch 439 ... 0.0257849178
+Optimizing the branch 440 ... 0.0258182387
+Optimizing the branch 441 ... 0.0283897089
+Optimizing the branch 442 ... 0.0289102624
+Optimizing the branch 443 ... 0.0323234017
+Optimizing the branch 444 ... 0.0325410830
+Optimizing the branch 445 ... 0.0289211167
+Optimizing the branch 446 ... 0.0292993660
+Optimizing the branch 447 ... 0.0293586638
+Optimizing the branch 448 ... 0.0302479381
+Optimizing the branch 449 ... 0.0308953227
+Optimizing the branch 450 ... 0.0308575674
+Optimizing the branch 451 ... 0.0315911940
+Optimizing the branch 452 ... 0.0293229413
+Optimizing the branch 453 ... 0.0283250366
+Optimizing the branch 454 ... 0.0245579120
+Optimizing the branch 455 ... 0.0203120521
+Optimizing the branch 456 ... 0.0206302919
+Optimizing the branch 457 ... 0.0232166150
+Optimizing the branch 458 ... 0.0246308977
+Optimizing the branch 459 ... 0.0246908080
+Optimizing the branch 460 ... 0.0247589657
+Optimizing the branch 461 ... 0.0248349151
+Optimizing the branch 462 ... 0.0252731624
+Optimizing the branch 463 ... 0.0252837708
+Optimizing the branch 464 ... 0.0253589837
+Optimizing the branch 465 ... 0.0253645344
+Optimizing the branch 466 ... 0.0254255504
+Optimizing the branch 467 ... 0.0254399901
+Optimizing the branch 468 ... 0.0254539575
+Optimizing the branch 469 ... 0.0253596636
+Optimizing the branch 470 ... 0.0253888397
+Optimizing the branch 471 ... 0.0255164708
+Optimizing the branch 472 ... 0.0257193217
+Optimizing the branch 473 ... 0.0257481117
+Optimizing the branch 474 ... 0.0257233932
+Optimizing the branch 475 ... 0.0258974025
+Optimizing the branch 476 ... 0.0264094506
+Optimizing the branch 477 ... 0.0264680009
+Optimizing the branch 478 ... 0.0264797957
+Optimizing the branch 479 ... 0.0267092932
+Optimizing the branch 480 ... 0.0267171173
+Optimizing the branch 481 ... 0.0258598294
+Optimizing the branch 482 ... 0.0261568616
+Optimizing the branch 483 ... 0.0266543775
+Optimizing the branch 484 ... 0.0267944980
+Optimizing the branch 485 ... 0.0267915590
+Optimizing the branch 486 ... 0.0255200376
+Optimizing the branch 487 ... 0.0255492618
+Optimizing the branch 488 ... 0.0278656446
+Optimizing the branch 489 ... 0.0278623709
+Optimizing the branch 490 ... 0.0253505275
+Optimizing the branch 491 ... 0.0255747249
+Optimizing the branch 492 ... 0.0263917951
+Optimizing the branch 493 ... 0.0264175757
+Optimizing the branch 494 ... 0.0265161154
+Optimizing the branch 495 ... 0.0271164048
+Optimizing the branch 496 ... 0.0252890696
+Optimizing the branch 497 ... 0.0248799935
+Optimizing the branch 498 ... 0.0268247882
+Optimizing the branch 499 ... 0.0248043531
+Optimizing the branch 500 ... 0.0246776869
+Optimizing the branch 501 ... 0.0247810591
+Optimizing the branch 502 ... 0.0247783626
+Optimizing the branch 503 ... 0.0258880209
+Optimizing the branch 504 ... 0.0292042453
+Optimizing the branch 505 ... 0.0293160948
+Optimizing the branch 506 ... 0.0294263377
+Optimizing the branch 507 ... 0.0258677162
+Optimizing the branch 508 ... 0.0261849806
+Optimizing the branch 509 ... 0.0275618265
+Optimizing the branch 510 ... 0.0294542335
+Optimizing the branch 511 ... 0.0295981344
+Optimizing the branch 512 ... 0.0261946257
+Optimizing the branch 513 ... 0.0267890950
+Optimizing the branch 514 ... 0.0247869946
+Optimizing the branch 515 ... 0.0251281924
+Optimizing the branch 516 ... 0.0302703445
+Optimizing the branch 517 ... 0.0251198685
+Optimizing the branch 518 ... 0.0251487508
+Optimizing the branch 519 ... 0.0251621152
+Optimizing the branch 520 ... 0.0251676481
+Optimizing the branch 521 ... 0.0256896405
+Optimizing the branch 522 ... 0.0259919238
+Optimizing the branch 523 ... 0.0260602041
+Optimizing the branch 524 ... 0.0261831726
+Optimizing the branch 525 ... 0.0261285919
+Optimizing the branch 526 ... 0.0260880826
+Optimizing the branch 527 ... 0.0275415364
+Optimizing the branch 528 ... 0.0279407876
+Optimizing the branch 529 ... 0.0281585500
+Optimizing the branch 530 ... 0.0259952086
+Optimizing the branch 531 ... 0.0256151835
+Optimizing the branch 532 ... 0.0274449693
+Optimizing the branch 533 ... 0.0251830437
+Optimizing the branch 534 ... 0.0267374771
+Optimizing the branch 535 ... 0.0277515461
+Optimizing the branch 536 ... 0.0278579011
+Optimizing the branch 537 ... 0.0251514975
+Optimizing the branch 538 ... 0.0251815901
+Optimizing the branch 539 ... 0.0252095480
+Optimizing the branch 540 ... 0.0257348476
+Optimizing the branch 541 ... 0.0268943621
+Optimizing the branch 542 ... 0.0256241113
+Optimizing the branch 543 ... 0.0251823095
+Optimizing the branch 544 ... 0.0254765373
+Optimizing the branch 545 ... 0.0256924617
+Optimizing the branch 546 ... 0.0264742614
+Optimizing the branch 547 ... 0.0273362759
+Optimizing the branch 548 ... 0.0280365727
+Optimizing the branch 549 ... 0.0280589136
+Optimizing the branch 550 ... 0.0273077466
+Optimizing the branch 551 ... 0.0278062926
+Optimizing the branch 552 ... 0.0247671626
+Optimizing the branch 553 ... 0.0332889087
+Optimizing the branch 554 ... 0.0371964997
+Optimizing the branch 555 ... 0.0234925362
+Optimizing the branch 556 ... 0.0301295563
+Optimizing the branch 557 ... 0.0205864721
+Optimizing the branch 558 ... 0.0207584185
+Optimizing the branch 559 ... 0.0212730561
+Optimizing the branch 560 ... 0.0263561264
+Optimizing the branch 561 ... 0.0265539765
+Optimizing the branch 562 ... 0.0266155379
+Optimizing the branch 563 ... 0.0266416729
+Optimizing the branch 564 ... 0.0266752120
+Optimizing the branch 565 ... 0.0267532556
+Optimizing the branch 566 ... 0.0277316833
+Optimizing the branch 567 ... 0.0288205235
+Optimizing the branch 568 ... 0.0267266111
+Optimizing the branch 569 ... 0.0266841592
+Optimizing the branch 570 ... 0.0266370274
+Optimizing the branch 571 ... 0.0275449754
+Optimizing the branch 572 ... 0.0291816921
+Optimizing the branch 573 ... 0.0295401442
+Optimizing the branch 574 ... 0.0296284356
+Optimizing the branch 575 ... 0.0296135082
+Optimizing the branch 576 ... 0.0275384174
+Optimizing the branch 577 ... 0.0213314074
+Optimizing the branch 578 ... 0.0243633188
+Optimizing the branch 579 ... 0.0261356923
+Optimizing the branch 580 ... 0.0264063168
+Optimizing the branch 581 ... 0.0265160275
+Optimizing the branch 582 ... 0.0308482498
+Optimizing the branch 583 ... 0.0263663259
+Optimizing the branch 584 ... 0.0261633190
+Optimizing the branch 585 ... 0.0270809101
+Optimizing the branch 586 ... 0.0272532735
+Optimizing the branch 587 ... 0.0320397847
+Optimizing the branch 588 ... 0.0318598355
+Optimizing the branch 589 ... 0.0242507954
+Optimizing the branch 590 ... 0.0207747436
+Optimizing the branch 591 ... 0.0184463449
+Optimizing the branch 592 ... 0.0188697103
+Optimizing the branch 593 ... 0.0193100940
+Optimizing the branch 594 ... 0.0283900435
+Optimizing the branch 595 ... 0.0299680162
+Optimizing the branch 596 ... 0.0310145755
+Optimizing the branch 597 ... 0.0326642713
+Optimizing the branch 598 ... 0.0326898056
+Optimizing the branch 599 ... 0.0354015561
+Optimizing the branch 600 ... 0.0309564750
+Optimizing the branch 601 ... 0.0311074530
+Optimizing the branch 602 ... 0.0283940827
+Optimizing the branch 603 ... 0.0319632069
+Optimizing the branch 604 ... 0.0332907537
+Optimizing the branch 605 ... 0.0194145383
+Optimizing the branch 606 ... 0.0227569023
+Optimizing the branch 607 ... 0.0231969684
+Optimizing the branch 608 ... 0.0232183399
+Optimizing the branch 609 ... 0.0245389161
+Optimizing the branch 610 ... 0.0247339312
+Optimizing the branch 611 ... 0.0248851399
+Optimizing the branch 612 ... 0.0251608035
+Optimizing the branch 613 ... 0.0249322342
+Optimizing the branch 614 ... 0.0246957012
+Optimizing the branch 615 ... 0.0248961348
+Optimizing the branch 616 ... 0.0248453375
+Optimizing the branch 617 ... 0.0248201339
+Optimizing the branch 618 ... 0.0288261519
+Optimizing the branch 619 ... 0.0291544766
+Optimizing the branch 620 ... 0.0291508769
+Optimizing the branch 621 ... 0.0248565962
+Optimizing the branch 622 ... 0.0245186044
+Optimizing the branch 623 ... 0.0249456738
+Optimizing the branch 624 ... 0.0232611959
+Optimizing the branch 625 ... 0.0235610936
+Optimizing the branch 626 ... 0.0310913841
+Optimizing the branch 627 ... 0.0332729473
+Optimizing the branch 628 ... 0.0333804779
+Optimizing the branch 629 ... 0.0310919575
+Optimizing the branch 630 ... 0.0317243720
+Optimizing the branch 631 ... 0.0319454276
+Optimizing the branch 632 ... 0.0331807198
+Optimizing the branch 633 ... 0.0317131896
+Optimizing the branch 634 ... 0.0321118825
+Optimizing the branch 635 ... 0.0235856739
+Optimizing the branch 636 ... 0.0227307982
+Optimizing the branch 637 ... 0.0246856040
+Optimizing the branch 638 ... 0.0249357410
+Optimizing the branch 639 ... 0.0246845126
+Optimizing the branch 640 ... 0.0250155440
+Optimizing the branch 641 ... 0.0254247676
+Optimizing the branch 642 ... 0.0253947335
+Optimizing the branch 643 ... 0.0250846975
+Optimizing the branch 644 ... 0.0251430768
+Optimizing the branch 645 ... 0.0253690915
+Optimizing the branch 646 ... 0.0254165679
+Optimizing the branch 647 ... 0.0297800200
+Optimizing the branch 648 ... 0.0301491322
+Optimizing the branch 649 ... 0.0304026267
+Optimizing the branch 650 ... 0.0301790116
+Optimizing the branch 651 ... 0.0253153987
+Optimizing the branch 652 ... 0.0313026984
+Optimizing the branch 653 ... 0.0187616598
+Optimizing the branch 654 ... 0.0261438293
+Optimizing the branch 655 ... 0.0272651633
+Optimizing the branch 656 ... 0.0274696570
+Optimizing the branch 657 ... 0.0298400376
+Optimizing the branch 658 ... 0.0299582989
+Optimizing the branch 659 ... 0.0309115411
+Optimizing the branch 660 ... 0.0312233912
+Optimizing the branch 661 ... 0.0299841036
+Optimizing the branch 662 ... 0.0275026700
+Optimizing the branch 663 ... 0.0290590143
+Optimizing the branch 664 ... 0.0320374000
+Optimizing the branch 665 ... 0.0322150687
+Optimizing the branch 666 ... 0.0331458066
+Optimizing the branch 667 ... 0.0321568685
+Optimizing the branch 668 ... 0.0291872287
+Optimizing the branch 669 ... 0.0272756844
+Optimizing the branch 670 ... 0.0313496377
+Optimizing the branch 671 ... 0.0326840881
+Optimizing the branch 672 ... 0.0331412818
+Optimizing the branch 673 ... 0.0328671420
+Optimizing the branch 674 ... 0.0255964715
+Optimizing the branch 675 ... 0.0183890562
+Optimizing the branch 676 ... 0.0423655414
+Optimizing the branch 677 ... 0.0447431306
+Optimizing the branch 678 ... 0.0452576398
+Optimizing the branch 679 ... 0.0454376040
+Optimizing the branch 680 ... 0.0455660606
+Optimizing the branch 681 ... 0.0455956233
+Optimizing the branch 682 ... 0.0455735548
+Optimizing the branch 683 ... 0.0453949987
+Optimizing the branch 684 ... 0.0452366689
+Optimizing the branch 685 ... 0.0470087906
+Optimizing the branch 686 ... 0.0472657416
+Optimizing the branch 687 ... 0.0473838465
+Optimizing the branch 688 ... 0.0469704592
+Optimizing the branch 689 ... 0.0498867540
+Optimizing the branch 690 ... 0.0444644340
+Optimizing the branch 691 ... 0.0506143671
+Optimizing the branch 692 ... 0.0429184861
+Optimizing the branch 693 ... 0.0487777440
+Optimizing the branch 694 ... 0.0485554998
+Optimizing the branch 695 ... 0.0183489400
+Optimizing the branch 696 ... 0.0229218401
+Optimizing the branch 697 ... 0.0273237833
+Optimizing the branch 698 ... 0.0279461509
+Optimizing the branch 699 ... 0.0279453735
+Optimizing the branch 700 ... 0.0290375358
+Optimizing the branch 701 ... 0.0290284055
+Optimizing the branch 702 ... 0.0301086302
+Optimizing the branch 703 ... 0.0355378970
+Optimizing the branch 704 ... 0.0358049127
+Optimizing the branch 705 ... 0.0273967083
+Optimizing the branch 706 ... 0.0275738614
+Optimizing the branch 707 ... 0.0386102458
+Optimizing the branch 708 ... 0.0393700943
+Optimizing the branch 709 ... 0.0399238375
+Optimizing the branch 710 ... 0.0400571239
+Optimizing the branch 711 ... 0.0394847637
+Optimizing the branch 712 ... 0.0400893764
+Optimizing the branch 713 ... 0.0383014147
+Optimizing the branch 714 ... 0.0276829793
+Optimizing the branch 715 ... 0.0342955521
+Optimizing the branch 716 ... 0.0350985240
+Optimizing the branch 717 ... 0.0352233835
+Optimizing the branch 718 ... 0.0353631749
+Optimizing the branch 719 ... 0.0353707203
+Optimizing the branch 720 ... 0.0354342937
+Optimizing the branch 721 ... 0.0355130250
+Optimizing the branch 722 ... 0.0227023720
+Optimizing the branch 723 ... 0.0235506894
+Optimizing the branch 724 ... 0.0256068376
+Optimizing the branch 725 ... 0.0260038946
+Optimizing the branch 726 ... 0.0263384988
+Optimizing the branch 727 ... 0.0268378559
+Optimizing the branch 728 ... 0.0276499021
+Optimizing the branch 729 ... 0.0284884771
+Optimizing the branch 730 ... 0.0287020941
+Optimizing the branch 731 ... 0.0289967671
+Optimizing the branch 732 ... 0.0292069201
+Optimizing the branch 733 ... 0.0284883280
+Optimizing the branch 734 ... 0.0302530670
+Optimizing the branch 735 ... 0.0277013951
+Optimizing the branch 736 ... 0.0307368976
+Optimizing the branch 737 ... 0.0333943124
+Optimizing the branch 738 ... 0.0346410668
+Optimizing the branch 739 ... 0.0268104923
+Optimizing the branch 740 ... 0.0262756358
+Optimizing the branch 741 ... 0.0279990893
+Optimizing the branch 742 ... 0.0279979019
+Optimizing the branch 743 ... 0.0312634845
+Optimizing the branch 744 ... 0.0321763510
+Optimizing the branch 745 ... 0.0323898812
+Optimizing the branch 746 ... 0.0260270400
+Optimizing the branch 747 ... 0.0263029057
+Optimizing the branch 748 ... 0.0271185479
+Optimizing the branch 749 ... 0.0272500805
+Optimizing the branch 750 ... 0.0273360292
+Optimizing the branch 751 ... 0.0277889053
+Optimizing the branch 752 ... 0.0278493899
+Optimizing the branch 753 ... 0.0289210427
+Optimizing the branch 754 ... 0.0292546177
+Optimizing the branch 755 ... 0.0288621487
+Optimizing the branch 756 ... 0.0273674166
+Optimizing the branch 757 ... 0.0274298486
+Optimizing the branch 758 ... 0.0274747685
+Optimizing the branch 759 ... 0.0281467038
+Optimizing the branch 760 ... 0.0291970215
+Optimizing the branch 761 ... 0.0296408231
+Optimizing the branch 762 ... 0.0296707409
+Optimizing the branch 763 ... 0.0296390282
+Optimizing the branch 764 ... 0.0273000357
+Optimizing the branch 765 ... 0.0290217160
+Optimizing the branch 766 ... 0.0292515857
+Optimizing the branch 767 ... 0.0295465450
+Optimizing the branch 768 ... 0.0292328639
+Optimizing the branch 769 ... 0.0290752589
+Optimizing the branch 770 ... 0.0294058923
+Optimizing the branch 771 ... 0.0310840830
+Optimizing the branch 772 ... 0.0271295063
+Optimizing the branch 773 ... 0.0262914333
+Optimizing the branch 774 ... 0.0249936249
+Optimizing the branch 775 ... 0.0493093464
+Optimizing the branch 776 ... 0.0492415125
+Optimizing the branch 777 ... 0.0349397961
+Optimizing the branch 778 ... 0.0348047091
+Optimizing the branch 779 ... 0.0299316511
+Optimizing the branch 780 ... 0.0300002431
+Optimizing the branch 781 ... 0.0319669734
+Optimizing the branch 782 ... 0.0319585128
+Optimizing the branch 783 ... 0.0309753487
+Optimizing the branch 784 ... 0.0293954658
+Optimizing the branch 785 ... 0.0308470746
+Optimizing the branch 786 ... 0.0307004952
+Optimizing the branch 787 ... 0.0295159458
+Optimizing the branch 788 ... 0.0304294245
+Optimizing the branch 789 ... 0.0304374050
+Optimizing the branch 790 ... 0.0281582916
+Optimizing the branch 791 ... 0.0301038420
+Optimizing the branch 792 ... 0.0300901900
+Optimizing the branch 793 ... 0.0296265583
+Optimizing the branch 794 ... 0.0298168020
+Optimizing the branch 795 ... 0.0297948415
+Optimizing the branch 796 ... 0.0289716623
+Optimizing the branch 797 ... 0.0279576502
+Optimizing the branch 798 ... 0.0278922567
+Optimizing the branch 799 ... 0.0276573582
+Optimizing the branch 800 ... 0.0278248786
+Optimizing the branch 801 ... 0.0298962346
+Optimizing the branch 802 ... 0.0299465694
+Optimizing the branch 803 ... 0.0293011636
+Optimizing the branch 804 ... 0.0294049920
+Optimizing the branch 805 ... 0.0294532484
+Optimizing the branch 806 ... 0.0320910847
+Optimizing the branch 807 ... 0.0323686503
+Optimizing the branch 808 ... 0.0327692371
+Optimizing the branch 809 ... 0.0327524697
+Optimizing the branch 810 ... 0.0310891813
+Optimizing the branch 811 ... 0.0280200799
+Optimizing the branch 812 ... 0.0281839056
+Optimizing the branch 813 ... 0.0303988454
+Optimizing the branch 814 ... 0.0308293833
+Optimizing the branch 815 ... 0.0305213041
+Optimizing the branch 816 ... 0.0358087189
+Optimizing the branch 817 ... 0.0358212985
+Optimizing the branch 818 ... 0.0345831460
+Optimizing the branch 819 ... 0.0331364692
+Optimizing the branch 820 ... 0.0300298118
+Optimizing the branch 821 ... 0.0308935540
+Optimizing the branch 822 ... 0.0309830630
+Optimizing the branch 823 ... 0.0286343360
+Optimizing the branch 824 ... 0.0289889413
+Optimizing the branch 825 ... 0.0292173461
+Optimizing the branch 826 ... 0.0297219237
+Optimizing the branch 827 ... 0.0298491424
+Optimizing the branch 828 ... 0.0286475594
+Optimizing the branch 829 ... 0.0291291384
+Optimizing the branch 830 ... 0.0336815196
+Optimizing the branch 831 ... 0.0350603797
+Optimizing the branch 832 ... 0.0352313694
+Optimizing the branch 833 ... 0.0355135092
+Optimizing the branch 834 ... 0.0377618771
+Optimizing the branch 835 ... 0.0375473689
+Optimizing the branch 836 ... 0.0354245895
+Optimizing the branch 837 ... 0.0371911638
+Optimizing the branch 838 ... 0.0370989770
+Optimizing the branch 839 ... 0.0398160380
+Optimizing the branch 840 ... 0.0398478039
+Optimizing the branch 841 ... 0.0401196502
+Optimizing the branch 842 ... 0.0402680416
+Optimizing the branch 843 ... 0.0402810744
+Optimizing the branch 844 ... 0.0398109413
+Optimizing the branch 845 ... 0.0400504862
+Optimizing the branch 846 ... 0.0402636830
+Optimizing the branch 847 ... 0.0403043382
+Optimizing the branch 848 ... 0.0303109778
+Optimizing the branch 849 ... 0.0352338885
+Optimizing the branch 850 ... 0.0361791919
+Optimizing the branch 851 ... 0.0361414337
+Optimizing the branch 852 ... 0.0357557326
+Optimizing the branch 853 ... 0.0348608582
+Optimizing the branch 854 ... 0.0350145032
+Optimizing the branch 855 ... 0.0398995128
+Optimizing the branch 856 ... 0.0398747690
+Optimizing the branch 857 ... 0.0495671814
+Optimizing the branch 858 ... 0.0498152189
+Optimizing the branch 859 ... 0.0564347923
+Optimizing the branch 860 ... 0.0562663429
+Optimizing the branch 861 ... 0.0509261855
+Optimizing the branch 862 ... 0.0508027641
+Optimizing the branch 863 ... 0.0501832249
+Optimizing the branch 864 ... 0.0497923958
+Optimizing the branch 865 ... 0.0506750976
+Optimizing the branch 866 ... 0.0507462625
+Optimizing the branch 867 ... 0.0474163015
+Optimizing the branch 868 ... 0.0476280110
+Optimizing the branch 869 ... 0.0475559658
+Optimizing the branch 870 ... 0.0471874434
+Optimizing the branch 871 ... 0.0480809412
+Optimizing the branch 872 ... 0.0481635457
+Optimizing the branch 873 ... 0.0462404205
+Optimizing the branch 874 ... 0.0462182503
+Optimizing the branch 875 ... 0.0494217301
+Optimizing the branch 876 ... 0.0495170793
+Optimizing the branch 877 ... 0.0456172744
+Optimizing the branch 878 ... 0.0265492354
+Optimizing the branch 879 ... 0.0264633774
+Optimizing the branch 880 ... 0.0309768844
+Optimizing the branch 881 ... 0.0328866905
+Optimizing the branch 882 ... 0.0329554049
+Optimizing the branch 883 ... 0.0330622264
+Optimizing the branch 884 ... 0.0348948838
+Optimizing the branch 885 ... 0.0347924423
+Optimizing the branch 886 ... 0.0292506803
+Optimizing the branch 887 ... 0.0293799304
+Optimizing the branch 888 ... 0.0318474242
+Optimizing the branch 889 ... 0.0349605903
+Optimizing the branch 890 ... 0.0349288048
+Optimizing the branch 891 ... 0.0333013944
+Optimizing the branch 892 ... 0.0333024275
+Optimizing the branch 893 ... 0.0330875606
+Optimizing the branch 894 ... 0.0348084601
+Optimizing the branch 895 ... 0.0349025884
+Optimizing the branch 896 ... 0.0308487342
+Optimizing the branch 897 ... 0.0315934612
+Optimizing the branch 898 ... 0.0316713644
+Optimizing the branch 899 ... 0.0311751844
+Optimizing the branch 900 ... 0.0296602481
+Optimizing the branch 901 ... 0.0251502233
+Optimizing the branch 902 ... 0.0372497083
+Optimizing the branch 903 ... 0.0372962787
+Optimizing the branch 904 ... 0.0308403662
+Optimizing the branch 905 ... 0.0254475428
+Optimizing the branch 906 ... 0.0293558444
+Optimizing the branch 907 ... 0.0337350352
+Optimizing the branch 908 ... 0.0337462438
+Optimizing the branch 909 ... 0.0302486190
+Optimizing the branch 910 ... 0.0305240768
+Optimizing the branch 911 ... 0.0305334909
+Optimizing the branch 912 ... 0.0255898017
+Optimizing the branch 913 ... 0.0257732516
+Optimizing the branch 914 ... 0.0260009894
+Optimizing the branch 915 ... 0.0262418454
+Optimizing the branch 916 ... 0.0407693598
+Optimizing the branch 917 ... 0.0408316642
+Optimizing the branch 918 ... 0.0249597204
+Optimizing the branch 919 ... 0.0412938077
+Optimizing the branch 920 ... 0.0412664365
+Optimizing the branch 921 ... 0.0324302678
+Optimizing the branch 922 ... 0.0324179966
+Optimizing the branch 923 ... 0.0319830850
+Optimizing the branch 924 ... 0.0319039220
+Optimizing the branch 925 ... 0.0330932510
+Optimizing the branch 926 ... 0.0358168471
+Optimizing the branch 927 ... 0.0358070295
+Optimizing the branch 928 ... 0.0330499037
+Optimizing the branch 929 ... 0.0339069397
+Optimizing the branch 930 ... 0.0339298935
+Optimizing the branch 931 ... 0.0333887156
+Optimizing the branch 932 ... 0.0248868666
+Optimizing the branch 933 ... 0.0270849091
+Optimizing the branch 934 ... 0.0273734779
+Optimizing the branch 935 ... 0.0325578357
+Optimizing the branch 936 ... 0.0327216177
+Optimizing the branch 937 ... 0.0327392137
+Optimizing the branch 938 ... 0.0327241671
+Optimizing the branch 939 ... 0.0292976570
+Optimizing the branch 940 ... 0.0292406716
+Optimizing the branch 941 ... 0.0284674230
+Optimizing the branch 942 ... 0.0349803233
+Optimizing the branch 943 ... 0.0352196840
+Optimizing the branch 944 ... 0.0249084151
+Optimizing the branch 945 ... 0.0248895792
+Optimizing the branch 946 ... 0.0252130362
+Optimizing the branch 947 ... 0.0258424417
+Optimizing the branch 948 ... 0.0257499435
+Optimizing the branch 949 ... 0.0231873599
+Optimizing the branch 950 ... 0.0320273392
+Optimizing the branch 951 ... 0.0364143153
+Optimizing the branch 952 ... 0.0363132377
+Optimizing the branch 953 ... 0.0331366701
+Optimizing the branch 954 ... 0.0296706559
+Optimizing the branch 955 ... 0.0310938394
+Optimizing the branch 956 ... 0.0340582008
+Optimizing the branch 957 ... 0.0339605468
+Optimizing the branch 958 ... 0.0353211277
+Optimizing the branch 959 ... 0.0359143400
+Optimizing the branch 960 ... 0.0360419769
+Optimizing the branch 961 ... 0.0345536621
+Optimizing the branch 962 ... 0.0343707495
+Optimizing the branch 963 ... 0.0247534148
+Optimizing the branch 964 ... 0.0247934942
+Optimizing the branch 965 ... 0.0363873083
+Optimizing the branch 966 ... 0.0361064133
+Optimizing the branch 967 ... 0.0329592917
+Optimizing the branch 968 ... 0.0329663350
+Optimizing the branch 969 ... 0.0340421599
+Optimizing the branch 970 ... 0.0340169368
+Optimizing the branch 971 ... 0.0338535878
+Optimizing the branch 972 ... 0.0337541892
+Optimizing the branch 973 ... 0.0308101977
+Optimizing the branch 974 ... 0.0310670069
+Optimizing the branch 975 ... 0.0264817452
+Optimizing the branch 976 ... 0.0333950013
+Optimizing the branch 977 ... 0.0334389723
+Optimizing the branch 978 ... 0.0306734436
+Optimizing the branch 979 ... 0.0260126276
+Optimizing the branch 980 ... 0.0317507153
+Optimizing the branch 981 ... 0.0316357429
+Optimizing the branch 982 ... 0.0290985701
+Optimizing the branch 983 ... 0.0294708160
+Optimizing the branch 984 ... 0.0296604351
+Optimizing the branch 985 ... 0.0296419496
+Optimizing the branch 986 ... 0.0303253880
+Optimizing the branch 987 ... 0.0304126768
+Optimizing the branch 988 ... 0.0296342010
+Optimizing the branch 989 ... 0.0296022329
+Optimizing the branch 990 ... 0.0324232997
+Optimizing the branch 991 ... 0.0324399798
+Optimizing the branch 992 ... 0.0286956816
+Optimizing the branch 993 ... 0.0289398715
+Optimizing the branch 994 ... 0.0289697819
+Optimizing the branch 995 ... 0.0277230020
+Optimizing the branch 996 ... 0.0283495848
+Optimizing the branch 997 ... 0.0283053130
+Optimizing the branch 998 ... 0.0312313307
+Optimizing the branch 999 ... 0.0313653135
+Optimizing the branch 1000 ... 0.0297824367
+Optimizing the branch 1001 ... 0.0241133109
+Optimizing the branch 1002 ... 0.0327854162
+Optimizing the branch 1003 ... 0.0369704059
+Optimizing the branch 1004 ... 0.0382236172
+Optimizing the branch 1005 ... 0.0381870527
+Optimizing the branch 1006 ... 0.0254451820
+Optimizing the branch 1007 ... 0.0257372691
+Optimizing the branch 1008 ... 0.0263746366
+Optimizing the branch 1009 ... 0.0277938627
+Optimizing the branch 1010 ... 0.0282614115
+Optimizing the branch 1011 ... 0.0282624132
+Optimizing the branch 1012 ... 0.0279423994
+Optimizing the branch 1013 ... 0.0280597572
+Optimizing the branch 1014 ... 0.0284901253
+Optimizing the branch 1015 ... 0.0284426954
+Optimizing the branch 1016 ... 0.0252175198
+Optimizing the branch 1017 ... 0.0290678468
+Optimizing the branch 1018 ... 0.0290108798
+Optimizing the branch 1019 ... 0.0273174242
+Optimizing the branch 1020 ... 0.0271974973
+Optimizing the branch 1021 ... 0.0269669925
+Optimizing the branch 1022 ... 0.0267970863
+Optimizing the branch 1023 ... 0.0276917112
+Optimizing the branch 1024 ... 0.0285856712
+Optimizing the branch 1025 ... 0.0285524637
+Optimizing the branch 1026 ... 0.0278337134
+Optimizing the branch 1027 ... 0.0272340841
+Optimizing the branch 1028 ... 0.0320870298
+Optimizing the branch 1029 ... 0.0320382233
+Optimizing the branch 1030 ... 0.0261790373
+Optimizing the branch 1031 ... 0.0261967503
+Optimizing the branch 1032 ... 0.0272599859
+Optimizing the branch 1033 ... 0.0281529566
+Optimizing the branch 1034 ... 0.0281479758
+Optimizing the branch 1035 ... 0.0281099985
+Optimizing the branch 1036 ... 0.0279282665
+Optimizing the branch 1037 ... 0.0261467046
+Optimizing the branch 1038 ... 0.0261577675
+Optimizing the branch 1039 ... 0.0316176208
+Optimizing the branch 1040 ... 0.0318313028
+Optimizing the branch 1041 ... 0.0251588401
+Optimizing the branch 1042 ... 0.0302119291
+Optimizing the branch 1043 ... 0.0322164008
+Optimizing the branch 1044 ... 0.0321194815
+Optimizing the branch 1045 ... 0.0276168249
+Optimizing the branch 1046 ... 0.0275736065
+Optimizing the branch 1047 ... 0.0267982639
+Optimizing the branch 1048 ... 0.0275940597
+Optimizing the branch 1049 ... 0.0293313596
+Optimizing the branch 1050 ... 0.0294900066
+Optimizing the branch 1051 ... 0.0296297361
+Optimizing the branch 1052 ... 0.0296351903
+Optimizing the branch 1053 ... 0.0289013349
+Optimizing the branch 1054 ... 0.0293683670
+Optimizing the branch 1055 ... 0.0294354375
+Optimizing the branch 1056 ... 0.0300164546
+Optimizing the branch 1057 ... 0.0300929669
+Optimizing the branch 1058 ... 0.0255049894
+Optimizing the branch 1059 ... 0.0253610241
+Optimizing the branch 1060 ... 0.0268075486
+Optimizing the branch 1061 ... 0.0277226477
+Optimizing the branch 1062 ... 0.0276307782
+Optimizing the branch 1063 ... 0.0251570492
+Optimizing the branch 1064 ... 0.0258047057
+Optimizing the branch 1065 ... 0.0257844392
+Optimizing the branch 1066 ... 0.0255483433
+Optimizing the branch 1067 ... 0.0265112286
+Optimizing the branch 1068 ... 0.0270632226
+Optimizing the branch 1069 ... 0.0272332469
+Optimizing the branch 1070 ... 0.0272515171
+Optimizing the branch 1071 ... 0.0264555926
+Optimizing the branch 1072 ... 0.0263549551
+Optimizing the branch 1073 ... 0.0253762630
+Optimizing the branch 1074 ... 0.0294131062
+Optimizing the branch 1075 ... 0.0293108834
+Optimizing the branch 1076 ... 0.0296939695
+Optimizing the branch 1077 ... 0.0296777880
+Optimizing the branch 1078 ... 0.0255588890
+Optimizing the branch 1079 ... 0.0261679832
+Optimizing the branch 1080 ... 0.0265957444
+Optimizing the branch 1081 ... 0.0272845254
+Optimizing the branch 1082 ... 0.0272855912
+Optimizing the branch 1083 ... 0.0269867907
+Optimizing the branch 1084 ... 0.0269936118
+Optimizing the branch 1085 ... 0.0263945791
+Optimizing the branch 1086 ... 0.0266613169
+Optimizing the branch 1087 ... 0.0267184404
+Optimizing the branch 1088 ... 0.0268148469
+Optimizing the branch 1089 ... 0.0268298860
+Optimizing the branch 1090 ... 0.0265754335
+Optimizing the branch 1091 ... 0.0266272539
+Optimizing the branch 1092 ... 0.0257265839
+Optimizing the branch 1093 ... 0.0278167538
+Optimizing the branch 1094 ... 0.0278820927
+Optimizing the branch 1095 ... 0.0254154478
+Optimizing the branch 1096 ... 0.0254361574
+Optimizing the branch 1097 ... 0.0254425056
+Optimizing the branch 1098 ... 0.0258984010
+Optimizing the branch 1099 ... 0.0258395606
+Optimizing the branch 1100 ... 0.0488240177
+Optimizing the branch 1101 ... 0.0486592782
+Optimizing the branch 1102 ... 0.0293542237
+Optimizing the branch 1103 ... 0.0294233058
+Optimizing the branch 1104 ... 0.0292497948
+Optimizing the branch 1105 ... 0.0295789577
+Optimizing the branch 1106 ... 0.0295232227
+Optimizing the branch 1107 ... 0.0317495775
+Optimizing the branch 1108 ... 0.0317577376
+Optimizing the branch 1109 ... 0.0315318277
+Optimizing the branch 1110 ... 0.0311298112
+Optimizing the branch 1111 ... 0.0311041702
+Optimizing the branch 1112 ... 0.0301938080
+Optimizing the branch 1113 ... 0.0318647318
+Optimizing the branch 1114 ... 0.0329927337
+Optimizing the branch 1115 ... 0.0329471853
+Optimizing the branch 1116 ... 0.0325649192
+Optimizing the branch 1117 ... 0.0280698907
+Optimizing the branch 1118 ... 0.0279962211
+Optimizing the branch 1119 ... 0.0283187744
+Optimizing the branch 1120 ... 0.0326178699
+Optimizing the branch 1121 ... 0.0326472756
+Optimizing the branch 1122 ... 0.0249593467
+Optimizing the branch 1123 ... 0.0264779379
+Optimizing the branch 1124 ... 0.0317156790
+Optimizing the branch 1125 ... 0.0323495940
+Optimizing the branch 1126 ... 0.0324962550
+Optimizing the branch 1127 ... 0.0388369805
+Optimizing the branch 1128 ... 0.0388429613
+Optimizing the branch 1129 ... 0.0311888355
+Optimizing the branch 1130 ... 0.0312037258
+Optimizing the branch 1131 ... 0.0293209281
+Optimizing the branch 1132 ... 0.0294043545
+Optimizing the branch 1133 ... 0.0293246219
+Optimizing the branch 1134 ... 0.0297328151
+Optimizing the branch 1135 ... 0.0303739210
+Optimizing the branch 1136 ... 0.0303890772
+Optimizing the branch 1137 ... 0.0298827046
+Optimizing the branch 1138 ... 0.0299200532
+Optimizing the branch 1139 ... 0.0335107671
+Optimizing the branch 1140 ... 0.0353213537
+Optimizing the branch 1141 ... 0.0353538524
+Optimizing the branch 1142 ... 0.0287666455
+Optimizing the branch 1143 ... 0.0289387162
+Optimizing the branch 1144 ... 0.0277619443
+Optimizing the branch 1145 ... 0.0284346659
+Optimizing the branch 1146 ... 0.0284399874
+Optimizing the branch 1147 ... 0.0283870603
+Optimizing the branch 1148 ... 0.0284129401
+Optimizing the branch 1149 ... 0.0284901724
+Optimizing the branch 1150 ... 0.0298540937
+Optimizing the branch 1151 ... 0.0301434408
+Optimizing the branch 1152 ... 0.0301856691
+Optimizing the branch 1153 ... 0.0286234844
+Optimizing the branch 1154 ... 0.0283965370
+Optimizing the branch 1155 ... 0.0283529286
+Optimizing the branch 1156 ... 0.0283796670
+Optimizing the branch 1157 ... 0.0283958049
+Optimizing the branch 1158 ... 0.0283207015
+Optimizing the branch 1159 ... 0.0286171148
+Optimizing the branch 1160 ... 0.0294505268
+Optimizing the branch 1161 ... 0.0292630647
+Optimizing the branch 1162 ... 0.0285400943
+Optimizing the branch 1163 ... 0.0287111083
+Optimizing the branch 1164 ... 0.0297310629
+Optimizing the branch 1165 ... 0.0301567819
+Optimizing the branch 1166 ... 0.0301891939
+Optimizing the branch 1167 ... 0.0298646096
+Optimizing the branch 1168 ... 0.0300734887
+Optimizing the branch 1169 ... 0.0300576431
+Optimizing the branch 1170 ... 0.0313350103
+Optimizing the branch 1171 ... 0.0311685274
+Optimizing the branch 1172 ... 0.0278031066
+Optimizing the branch 1173 ... 0.0365275363
+Optimizing the branch 1174 ... 0.0379597107
+Optimizing the branch 1175 ... 0.0387382879
+Optimizing the branch 1176 ... 0.0387264600
+Optimizing the branch 1177 ... 0.0419510639
+Optimizing the branch 1178 ... 0.0437494785
+Optimizing the branch 1179 ... 0.0441533067
+Optimizing the branch 1180 ... 0.0447367143
+Optimizing the branch 1181 ... 0.0447253846
+Optimizing the branch 1182 ... 0.0438334889
+Optimizing the branch 1183 ... 0.0461783756
+Optimizing the branch 1184 ... 0.0464589953
+Optimizing the branch 1185 ... 0.0438317632
+Optimizing the branch 1186 ... 0.0437416618
+Optimizing the branch 1187 ... 0.0422767045
+Optimizing the branch 1188 ... 0.0423342941
+Optimizing the branch 1189 ... 0.0423141502
+Optimizing the branch 1190 ... 0.0432056500
+Optimizing the branch 1191 ... 0.0431668139
+Optimizing the branch 1192 ... 0.0399515864
+Optimizing the branch 1193 ... 0.0401708559
+Optimizing the branch 1194 ... 0.0323036697
+Optimizing the branch 1195 ... 0.0300499734
+Optimizing the branch 1196 ... 0.0396282995
+Optimizing the branch 1197 ... 0.0396658561
+Optimizing the branch 1198 ... 0.0331357481
+Optimizing the branch 1199 ... 0.0330295400
+Optimizing the branch 1200 ... 0.0328533892
+Optimizing the branch 1201 ... 0.0363770961
+Optimizing the branch 1202 ... 0.0365782199
+Optimizing the branch 1203 ... 0.0320775651
+Optimizing the branch 1204 ... 0.0326064876
+Optimizing the branch 1205 ... 0.0325615349
+Optimizing the branch 1206 ... 0.0316867430
+Optimizing the branch 1207 ... 0.0237556336
+Optimizing the branch 1208 ... 0.0267452363
+Optimizing the branch 1209 ... 0.0302027565
+Optimizing the branch 1210 ... 0.0325175154
+Optimizing the branch 1211 ... 0.0325838911
+Optimizing the branch 1212 ... 0.0343653415
+Optimizing the branch 1213 ... 0.0343739348
+Optimizing the branch 1214 ... 0.0336141728
+Optimizing the branch 1215 ... 0.0326604016
+Optimizing the branch 1216 ... 0.0331115243
+Optimizing the branch 1217 ... 0.0341583764
+Optimizing the branch 1218 ... 0.0342504672
+Optimizing the branch 1219 ... 0.0342752769
+Optimizing the branch 1220 ... 0.0267980970
+Optimizing the branch 1221 ... 0.0273035318
+Optimizing the branch 1222 ... 0.0272812802
+Optimizing the branch 1223 ... 0.0256182473
+Optimizing the branch 1224 ... 0.0239840405
+Optimizing the branch 1225 ... 0.0246881774
+Optimizing the branch 1226 ... 0.0297395562
+Optimizing the branch 1227 ... 0.0296910403
+Optimizing the branch 1228 ... 0.0269937919
+Optimizing the branch 1229 ... 0.0270984694
+Optimizing the branch 1230 ... 0.0348167953
+Optimizing the branch 1231 ... 0.0351626698
+Optimizing the branch 1232 ... 0.0227995952
+Optimizing the branch 1233 ... 0.0291690468
+Optimizing the branch 1234 ... 0.0301399030
+Optimizing the branch 1235 ... 0.0302421932
+Optimizing the branch 1236 ... 0.0292482388
+Optimizing the branch 1237 ... 0.0288813387
+Optimizing the branch 1238 ... 0.0273096176
+Optimizing the branch 1239 ... 0.0273689821
+Optimizing the branch 1240 ... 0.0212802614
+Optimizing the branch 1241 ... 0.0251068482
+Optimizing the branch 1242 ... 0.0259277366
+Optimizing the branch 1243 ... 0.0272637548
+Optimizing the branch 1244 ... 0.0271553295
+Optimizing the branch 1245 ... 0.0339285461
+Optimizing the branch 1246 ... 0.0341440298
+Optimizing the branch 1247 ... 0.0318577916
+Optimizing the branch 1248 ... 0.0319958517
+Optimizing the branch 1249 ... 0.0209666433
+Optimizing the branch 1250 ... 0.0209892916
+Optimizing the branch 1251 ... 0.0231037502
+Optimizing the branch 1252 ... 0.0288128215
+Optimizing the branch 1253 ... 0.0298660191
+Optimizing the branch 1254 ... 0.0298384345
+Optimizing the branch 1255 ... 0.0220215733
+Optimizing the branch 1256 ... 0.0300787297
+Optimizing the branch 1257 ... 0.0372921683
+Optimizing the branch 1258 ... 0.0373662737
+Optimizing the branch 1259 ... 0.0210986728
+Optimizing the branch 1260 ... 0.0363567665
+Optimizing the branch 1261 ... 0.0359347119
+Optimizing the branch 1262 ... 0.0345600623
+Optimizing the branch 1263 ... 0.0350584631
+Optimizing the branch 1264 ... 0.0356171860
+Optimizing the branch 1265 ... 0.0355517829
+Optimizing the branch 1266 ... 0.0344765480
+Optimizing the branch 1267 ... 0.0343786048
+Optimizing the branch 1268 ... 0.0261525960
+Optimizing the branch 1269 ... 0.0310921417
+Optimizing the branch 1270 ... 0.0311380363
+Optimizing the branch 1271 ... 0.0216311831
+Optimizing the branch 1272 ... 0.0242518350
+Optimizing the branch 1273 ... 0.0312357902
+Optimizing the branch 1274 ... 0.0320321024
+Optimizing the branch 1275 ... 0.0320216353
+Optimizing the branch 1276 ... 0.0277740163
+Optimizing the branch 1277 ... 0.0282439601
+Optimizing the branch 1278 ... 0.0282898071
+Optimizing the branch 1279 ... 0.0255554243
+Optimizing the branch 1280 ... 0.0257122917
+Optimizing the branch 1281 ... 0.0254000464
+Optimizing the branch 1282 ... 0.0255498211
+Optimizing the branch 1283 ... 0.0255994853
+Optimizing the branch 1284 ... 0.0255612457
+Optimizing the branch 1285 ... 0.0259883518
+Optimizing the branch 1286 ... 0.0261119974
+Optimizing the branch 1287 ... 0.0261388012
+Optimizing the branch 1288 ... 0.0271169270
+Optimizing the branch 1289 ... 0.0271129740
+Optimizing the branch 1290 ... 0.0266272801
+Optimizing the branch 1291 ... 0.0266969864
+Optimizing the branch 1292 ... 0.0253133462
+Optimizing the branch 1293 ... 0.0253661631
+Optimizing the branch 1294 ... 0.0298447861
+Optimizing the branch 1295 ... 0.0297663081
+Optimizing the branch 1296 ... 0.0263673395
+Optimizing the branch 1297 ... 0.0268959917
+Optimizing the branch 1298 ... 0.0268161940
+Optimizing the branch 1299 ... 0.0254662446
+Optimizing the branch 1300 ... 0.0277321015
+Optimizing the branch 1301 ... 0.0280131663
+Optimizing the branch 1302 ... 0.0280641449
+Optimizing the branch 1303 ... 0.0288556725
+Optimizing the branch 1304 ... 0.0291610181
+Optimizing the branch 1305 ... 0.0291733662
+Optimizing the branch 1306 ... 0.0215393526
+Optimizing the branch 1307 ... 0.0257041870
+Optimizing the branch 1308 ... 0.0264090666
+Optimizing the branch 1309 ... 0.0264092779
+Optimizing the branch 1310 ... 0.0254935596
+Optimizing the branch 1311 ... 0.0252766289
+Optimizing the branch 1312 ... 0.0221425614
+Optimizing the branch 1313 ... 0.0285061904
+Optimizing the branch 1314 ... 0.0307984244
+Optimizing the branch 1315 ... 0.0307841731
+Optimizing the branch 1316 ... 0.0221915087
+Optimizing the branch 1317 ... 0.0227067516
+Optimizing the branch 1318 ... 0.0289519723
+Optimizing the branch 1319 ... 0.0289735092
+Optimizing the branch 1320 ... 0.0263459479
+Optimizing the branch 1321 ... 0.0263372376
+Optimizing the branch 1322 ... 0.0261056550
+Optimizing the branch 1323 ... 0.0260860128
+Optimizing the branch 1324 ... 0.0316519358
+Optimizing the branch 1325 ... 0.0317016436
+Optimizing the branch 1326 ... 0.0238708878
+Optimizing the branch 1327 ... 0.0228459019
+Optimizing the branch 1328 ... 0.0228825500
+Optimizing the branch 1329 ... 0.0256682577
+Optimizing the branch 1330 ... 0.0256926293
+Optimizing the branch 1331 ... 0.0267989679
+Optimizing the branch 1332 ... 0.0267992268
+Optimizing the branch 1333 ... 0.0262279003
+Optimizing the branch 1334 ... 0.0254013493
+Optimizing the branch 1335 ... 0.0230857077
+Optimizing the branch 1336 ... 0.0238649589
+Optimizing the branch 1337 ... 0.0240258494
+Optimizing the branch 1338 ... 0.0255372622
+Optimizing the branch 1339 ... 0.0254878863
+Optimizing the branch 1340 ... 0.0257984335
+Optimizing the branch 1341 ... 0.0257546655
+Optimizing the branch 1342 ... 0.0249719745
+Optimizing the branch 1343 ... 0.0254313430
+Optimizing the branch 1344 ... 0.0258371301
+Optimizing the branch 1345 ... 0.0258174821
+Optimizing the branch 1346 ... 0.0255534819
+Optimizing the branch 1347 ... 0.0287056887
+Optimizing the branch 1348 ... 0.0288210975
+Optimizing the branch 1349 ... 0.0324465157
+Optimizing the branch 1350 ... 0.0344369418
+Optimizing the branch 1351 ... 0.0344371571
+Optimizing the branch 1352 ... 0.0315357500
+Optimizing the branch 1353 ... 0.0312333367
+Optimizing the branch 1354 ... 0.0301543598
+Optimizing the branch 1355 ... 0.0302402442
+Optimizing the branch 1356 ... 0.0226298844
+Optimizing the branch 1357 ... 0.0191892167
+Optimizing the branch 1358 ... 0.0186157200
+Optimizing the branch 1359 ... 0.0259137803
+Optimizing the branch 1360 ... 0.0345009322
+Optimizing the branch 1361 ... 0.0343669502
+Optimizing the branch 1362 ... 0.0330388576
+Optimizing the branch 1363 ... 0.0279809787
+Optimizing the branch 1364 ... 0.0321221328
+Optimizing the branch 1365 ... 0.0321806613
+Optimizing the branch 1366 ... 0.0317707258
+Optimizing the branch 1367 ... 0.0318525802
+Optimizing the branch 1368 ... 0.0318603404
+Optimizing the branch 1369 ... 0.0324840574
+Optimizing the branch 1370 ... 0.0325188802
+Optimizing the branch 1371 ... 0.0304290155
+Optimizing the branch 1372 ... 0.0319843098
+Optimizing the branch 1373 ... 0.0320714515
+Optimizing the branch 1374 ... 0.0320678433
+Optimizing the branch 1375 ... 0.0317400108
+Optimizing the branch 1376 ... 0.0317354753
+Optimizing the branch 1377 ... 0.0312747607
+Optimizing the branch 1378 ... 0.0313054205
+Optimizing the branch 1379 ... 0.0279717433
+Optimizing the branch 1380 ... 0.0285907377
+Optimizing the branch 1381 ... 0.0288246188
+Optimizing the branch 1382 ... 0.0288719945
+Optimizing the branch 1383 ... 0.0268882709
+Optimizing the branch 1384 ... 0.0262954992
+Optimizing the branch 1385 ... 0.0301978667
+Optimizing the branch 1386 ... 0.0313162078
+Optimizing the branch 1387 ... 0.0341760057
+Optimizing the branch 1388 ... 0.0342026537
+Optimizing the branch 1389 ... 0.0318378944
+Optimizing the branch 1390 ... 0.0331428091
+Optimizing the branch 1391 ... 0.0331368663
+Optimizing the branch 1392 ... 0.0418052716
+Optimizing the branch 1393 ... 0.0414278955
+Optimizing the branch 1394 ... 0.0297458130
+Optimizing the branch 1395 ... 0.0330886116
+Optimizing the branch 1396 ... 0.0330523812
+Optimizing the branch 1397 ... 0.0303424337
+Optimizing the branch 1398 ... 0.0302169102
+Optimizing the branch 1399 ... 0.0383278521
+Optimizing the branch 1400 ... 0.0414497132
+Optimizing the branch 1401 ... 0.0450514531
+Optimizing the branch 1402 ... 0.0450584600
+Optimizing the branch 1403 ... 0.0300707904
+Optimizing the branch 1404 ... 0.0314613855
+Optimizing the branch 1405 ... 0.0316188336
+Optimizing the branch 1406 ... 0.0361205376
+Optimizing the branch 1407 ... 0.0363310843
+Optimizing the branch 1408 ... 0.0252374556
+Optimizing the branch 1409 ... 0.0252695901
+Optimizing the branch 1410 ... 0.0253513895
+Optimizing the branch 1411 ... 0.0302230868
+Optimizing the branch 1412 ... 0.0298155570
+Optimizing the branch 1413 ... 0.0278281681
+Optimizing the branch 1414 ... 0.0279043772
+Optimizing the branch 1415 ... 0.0282709604
+Optimizing the branch 1416 ... 0.0282939755
+Optimizing the branch 1417 ... 0.0249364466
+Optimizing the branch 1418 ... 0.0288451595
+Optimizing the branch 1419 ... 0.0290817084
+Optimizing the branch 1420 ... 0.0265704700
+Optimizing the branch 1421 ... 0.0265500057
+Optimizing the branch 1422 ... 0.0259930276
+Optimizing the branch 1423 ... 0.0259358202
+Optimizing the branch 1424 ... 0.0282770605
+Optimizing the branch 1425 ... 0.0282091586
+Optimizing the branch 1426 ... 0.0296294798
+Optimizing the branch 1427 ... 0.0296516328
+Optimizing the branch 1428 ... 0.0271590349
+Optimizing the branch 1429 ... 0.0271048190
+Optimizing the branch 1430 ... 0.0260472129
+Optimizing the branch 1431 ... 0.0285390586
+Optimizing the branch 1432 ... 0.0282681823
+Optimizing the branch 1433 ... 0.0258714147
+Optimizing the branch 1434 ... 0.0258922906
+Optimizing the branch 1435 ... 0.0268995276
+Optimizing the branch 1436 ... 0.0273016573
+Optimizing the branch 1437 ... 0.0273615651
+Optimizing the branch 1438 ... 0.0258726015
+Optimizing the branch 1439 ... 0.0285572806
+Optimizing the branch 1440 ... 0.0291699859
+Optimizing the branch 1441 ... 0.0291323905
+Optimizing the branch 1442 ... 0.0301277489
+Optimizing the branch 1443 ... 0.0300916884
+Optimizing the branch 1444 ... 0.0260443849
+Optimizing the branch 1445 ... 0.0265610858
+Optimizing the branch 1446 ... 0.0265478341
+Optimizing the branch 1447 ... 0.0269272937
+Optimizing the branch 1448 ... 0.0287708410
+Optimizing the branch 1449 ... 0.0286856544
+Optimizing the branch 1450 ... 0.0284065678
+Optimizing the branch 1451 ... 0.0283614579
+Optimizing the branch 1452 ... 0.0282987467
+Optimizing the branch 1453 ... 0.0290646806
+Optimizing the branch 1454 ... 0.0290986142
+Optimizing the branch 1455 ... 0.0283688929
+Optimizing the branch 1456 ... 0.0283663275
+Optimizing the branch 1457 ... 0.0280729522
+Optimizing the branch 1458 ... 0.0268829726
+Optimizing the branch 1459 ... 0.0391234150
+Optimizing the branch 1460 ... 0.0409064332
+Optimizing the branch 1461 ... 0.0408794186
+Optimizing the branch 1462 ... 0.0254486134
+Optimizing the branch 1463 ... 0.0304881453
+Optimizing the branch 1464 ... 0.0303952972
+Optimizing the branch 1465 ... 0.0265488428
+Optimizing the branch 1466 ... 0.0281865026
+Optimizing the branch 1467 ... 0.0309444714
+Optimizing the branch 1468 ... 0.0307482341
+Optimizing the branch 1469 ... 0.0266935660
+Optimizing the branch 1470 ... 0.0319426726
+Optimizing the branch 1471 ... 0.0319645116
+Optimizing the branch 1472 ... 0.0311422518
+Optimizing the branch 1473 ... 0.0312353045
+Optimizing the branch 1474 ... 0.0312468322
+Optimizing the branch 1475 ... 0.0234834665
+Optimizing the branch 1476 ... 0.0272430313
+Optimizing the branch 1477 ... 0.0316251187
+Optimizing the branch 1478 ... 0.0345942806
+Optimizing the branch 1479 ... 0.0344566195
+Optimizing the branch 1480 ... 0.0330625484
+Optimizing the branch 1481 ... 0.0304472618
+Optimizing the branch 1482 ... 0.0305837082
+Optimizing the branch 1483 ... 0.0280932607
+Optimizing the branch 1484 ... 0.0303927416
+Optimizing the branch 1485 ... 0.0303424982
+Optimizing the branch 1486 ... 0.0299890689
+Optimizing the branch 1487 ... 0.0289183608
+Optimizing the branch 1488 ... 0.0290531517
+Optimizing the branch 1489 ... 0.0290366273
+Optimizing the branch 1490 ... 0.0284935322
+Optimizing the branch 1491 ... 0.0284808128
+Optimizing the branch 1492 ... 0.0214501729
+Optimizing the branch 1493 ... 0.0284435441
+Optimizing the branch 1494 ... 0.0304217371
+Optimizing the branch 1495 ... 0.0305149909
+Optimizing the branch 1496 ... 0.0283316646
+Optimizing the branch 1497 ... 0.0296663355
+Optimizing the branch 1498 ... 0.0297294510
+Optimizing the branch 1499 ... 0.0291551020
+Optimizing the branch 1500 ... 0.0336164530
+Optimizing the branch 1501 ... 0.0336614985
+Optimizing the branch 1502 ... 0.0355075178
+Optimizing the branch 1503 ... 0.0355070199
+Optimizing the branch 1504 ... 0.0348700697
+Optimizing the branch 1505 ... 0.0349071143
+Optimizing the branch 1506 ... 0.0334248727
+Optimizing the branch 1507 ... 0.0280993629
+Optimizing the branch 1508 ... 0.0313238196
+Optimizing the branch 1509 ... 0.0337864424
+Optimizing the branch 1510 ... 0.0336405794
+Optimizing the branch 1511 ... 0.0325174498
+Optimizing the branch 1512 ... 0.0352612182
+Optimizing the branch 1513 ... 0.0352691510
+Optimizing the branch 1514 ... 0.0389445462
+Optimizing the branch 1515 ... 0.0407236244
+Optimizing the branch 1516 ... 0.0415410757
+Optimizing the branch 1517 ... 0.0419331690
+Optimizing the branch 1518 ... 0.0420407682
+Optimizing the branch 1519 ... 0.0420385253
+Optimizing the branch 1520 ... 0.0404021496
+Optimizing the branch 1521 ... 0.0421177626
+Optimizing the branch 1522 ... 0.0420652920
+Optimizing the branch 1523 ... 0.0324815284
+Optimizing the branch 1524 ... 0.0367624959
+Optimizing the branch 1525 ... 0.0370293124
+Optimizing the branch 1526 ... 0.0369511635
+Optimizing the branch 1527 ... 0.0356295354
+Optimizing the branch 1528 ... 0.0359697183
+Optimizing the branch 1529 ... 0.0363396715
+Optimizing the branch 1530 ... 0.0371460148
+Optimizing the branch 1531 ... 0.0370572370
+Optimizing the branch 1532 ... 0.0364867084
+Optimizing the branch 1533 ... 0.0367381903
+Optimizing the branch 1534 ... 0.0367824425
+Optimizing the branch 1535 ... 0.0296345937
+Optimizing the branch 1536 ... 0.0299074736
+Optimizing the branch 1537 ... 0.0331195411
+Optimizing the branch 1538 ... 0.0343101135
+Optimizing the branch 1539 ... 0.0341848631
+Optimizing the branch 1540 ... 0.0333757386
+Optimizing the branch 1541 ... 0.0331432828
+Optimizing the branch 1542 ... 0.0319865549
+Optimizing the branch 1543 ... 0.0314679953
+Optimizing the branch 1544 ... 0.0316615263
+Optimizing the branch 1545 ... 0.0316041207
+Optimizing the branch 1546 ... 0.0310563855
+Optimizing the branch 1547 ... 0.0398021702
+Optimizing the branch 1548 ... 0.0397483015
+Optimizing the branch 1549 ... 0.0306409035
+Optimizing the branch 1550 ... 0.0284976153
+Optimizing the branch 1551 ... 0.0244231874
+The tree is rooted on the branch 1, the branches are re-enumerated
+Improving the root position with constraints around the pre-estimated root ...
+Optimizing the branches containing the root (1, 2) ... 0.0184161749
+Optimizing the branch 61 ... 0.0187134169
+Optimizing the branch 3 ... 0.0187134169
+Optimizing the branch 1552 ... 0.0271820748
+Optimizing the branch 724 ... 0.0271820748
+The tree is re-rooted on the branch 1
+Starting QPD on the new rooted tree ...
+rate	0.00483374	tMRCA	-2.24092	objective_function	0.0184162
+Elapsed time: 2.73612 seconds
+
+Writing dates into file lsd.dates to be used by LSD
+
+Running LSD with the following command:
+
+	~/apps/lsd -i ExaML_result.outTree -d lsd.dates -c -r
+LSD run is completed
+Rooted time tree is written in <ExaML_result_result_newick_date.txt>
+Fatal error: cannot open file 'rtt.R': No such file or directory
+
+running rtt() from ape package
+
+Phylogenetic tree with 777 tips and 776 internal nodes.
+
+Tip labels:
+	X25_43.9850095223792, X24_44.3292255140841, X27_40.2626864670281, X26_40.8584818814383, X28_44.4283097749576, X29_41.6501973250507, ...
+
+Rooted; includes branch lengths.
+
+running rtt() from ape package
+
+rtt() run is completed
+
+Rooted tree is written in <ExaML_result.outTree.rtt.newick>
+Fatal error: cannot open file 'chronos.R': No such file or directory
+
+running chronos() for dating the tree
+Loading required package: optparse
+Loading required package: ape
+Loading required package: adephylo
+Loading required package: methods
+Loading required package: ade4
+
+Attaching package: ‘adephylo’
+
+The following object is masked from ‘package:ade4’:
+
+    orthogram
+
+Loading required package: magrittr
+
+Setting initial dates...
+Initial dates set.
+Fitting in progress... get a first set of estimates
+         Penalised log-lik = -161.7509 
+Optimising rates... frequencies... dates... -161.7509 
+Optimising rates... frequencies... dates... -158.3923 
+Optimising rates... frequencies... dates... -157.7 
+Optimising rates... frequencies... dates... -157.611 
+Optimising rates... frequencies... dates... -154.9655 
+Optimising rates... frequencies... dates... -154.9087 
+Optimising rates... frequencies... dates... -154.5983 
+Optimising rates... frequencies... dates... -153.5264 
+Optimising rates... frequencies... dates... -153.519 
+Optimising rates... frequencies... dates... -153.3838 
+Optimising rates... frequencies... dates... -153.3797 
+Optimising rates... frequencies... dates... -152.9993 
+Optimising rates... frequencies... dates... -152.9425 
+Optimising rates... frequencies... dates... -152.9389 
+Optimising rates... frequencies... dates... -152.8882 
+Optimising rates... frequencies... dates... -152.8861 
+Optimising rates... frequencies... dates... -152.8851 
+Optimising rates... frequencies... dates... -152.8845 
+Optimising rates... frequencies... dates... -152.8795 
+Optimising rates... frequencies... dates... -152.4866 
+Optimising rates... frequencies... dates... -152.4471 
+Optimising rates... frequencies... dates... -152.4433 
+
+Done.
+
+running chronos() for dating the tree
+
+chronos() run is completed
+
+Rooted time tree is written in <ExaML_result.outTree.rtt.newick.chronos>
+Methods selected:
+  * No clock
+  * Strict clock
+
+Random seed: 1435157016
+
+Sequence file: Vill_03_Feb2015_5yr.muscle.new
+Tree file: ExaML_result.outTree.rtt.newick
+
+Number of sequences: 777
+Alignment length: 6987
+Sequence type: Nucleotide
+Number of polymorphic sites: 4703/6987 (0.673107)
+Number of patterns: 4695
+Unconstrained likelihood: -47261.582193
+
+(((X25_43.9850095223792:0.01162143,X24_44.3292255140841:0.01224825)node2:0.09109546,(((X27_40.2626864670281:0.03335702,X26_40.8584818814383:0.03271233)node7:0.06694095,((X28_44.4283097749576:0.06848463,X29_41.6501973250507:0.05822244)node11:0.03305700,(((((X32_43.7876403064001:0.02557425,X33_43.1873535339027:0.02210792)node18:0.01275023,X31_40.4378556041047:0.02135995)node17:0.02416648,X30_41.0658541146972:0.05184554)node16:0.00491439,((X34_41.0865034544497:0.02821223,X35_43.7529835160405:0.03246746)node24:0.02222012,(X38_42.3830290418118:0.04671974,(X36_40.1895514066665:0.01923749,X37_40.2100391802378:0.01993762)node29:0.01822657)node27:0.00688686)node23:0.00187442)node15:0.03207517,(((X44_41.6356176712094:0.05997107,(((X54_40.0931876315735:0.01637276,X53_43.4611488543315:0.03111583)node38:0.00988072,(X52_43.7038775205885:0.03790199,(X50_42.4491124305136:0.03466607,X49_44.9739613735196:0.04248548)node43:0.01072213)node41:0.00000291)node37:0.01286565,X51_41.1980243108701:0.03115988)node36:0.01581378)node34:0.02301865,(X47_30.2994205327705:0.00417950,X48_44.0289656120427:0.06396353)node47:0.00980049)node33:0.00547281,(X45_42.0036888874083:0.05867252,(X46_40.4896833853053:0.05601414,((X42_40.1529644006229:0.01792979,X43_44.9992778482433:0.04439587)node55:0.01385335,(X39_42.9785333446722:0.04848915,(X41_41.4786384467403:0.02573728,X40_41.7361682199407:0.03314006)node60:0.00315519)node58:0.00719206)node54:0.02758767)node52:0.00556677)node50:0.00950303)node32:0.00177801)node14:0.00278501)node10:0.01797984)node6:0.00677450,((((X20_43.0196315710665:0.03542121,(X21_42.023891749559:0.02673277,(X22_41.4902331714984:0.01536975,X23_40.6196679687127:0.00930264)node70:0.00988298)node68:0.00377115)node66:0.00984804,X19_40.0471997001361:0.03347800)node65:0.03126096,(X18_40.0998437116504:0.05543283,X17_44.9542859250416:0.09713260)node74:0.00101109)node64:0.02381983,((X2_44.0510170243215:0.05446611,X3_43.8212061754894:0.06992513)node78:0.04056567,((X4_43.7387643440161:0.05362083,(((X8_44.8459137380813:0.00305743,X7_44.4409102310325:0.00188976)node86:0.01574506,X6_40.4833426268306:0.00030461)node85:0.01556919,X5_41.5409579592546:0.01649884)node84:0.02658312)node82:0.03576422,((X9_41.8797687673941:0.03472378,(X10_40.3275375022521:0.01915362,X11_43.1438109627925:0.03994619)node94:0.01266052)node92:0.02223114,(X12_40.4127648197211:0.04747830,(X13_40.1484362383536:0.04280552,(X14_41.30977810793:0.04156998,(X15_43.3693091721513:0.02873677,X16_41.7899163800757:0.03243541)node103:0.01272566)node101:0.00651572)node99:0.01085085)node97:0.00300000)node91:0.01276993)node81:0.01790757)node77:0.01450019)node63:0.00629057)node5:0.00665646)node1:0.00729838,(((((X630_40.0862229113544:0.09156565,X631_24.0147617744957:0.02623218)node109:0.03903060,(((X522_43.0218825423976:0.06577967,(X523_40.1253611365211:0.05299598,(X524_40.6200652731404:0.05175531,(((X529_40.052462260044:0.03385005,(X527_42.1193302640464:0.01555420,X528_44.7865829162104:0.01790420)node124:0.03186040)node122:0.00492575,X530_40.2386399076267:0.03784754)node121:0.00247093,(X525_43.8626042423593:0.03217622,X526_43.8381579634733:0.02697679)node128:0.02739130)node120:0.00405440)node118:0.00164612)node116:0.00839223)node114:0.05756816,((X534_40.248824810254:0.02086240,X535_40.0923963970719:0.02134186)node132:0.00533180,((X533_41.6755947829103:0.03092229,(X531_44.9064903729595:0.03555307,X532_44.3060332328307:0.03421446)node138:0.00262225)node136:0.00823500,(X537_43.1866325298324:0.02944955,(X536_43.9997195435357:0.03430057,(X539_43.5883555529077:0.02088751,X538_44.0885660535308:0.02902101)node145:0.00753406)node143:0.00333054)node141:0.00420817)node135:0.00282663)node131:0.07135160)node113:0.00000291,(((X544_40.5815581323928:0.07613035,(X545_44.3947432516143:0.03429223,((X548_40.9755289907741:0.00907615,X547_42.669686130248:0.01327498)node155:0.00700002,X546_41.7134729647413:0.01830574)node154:0.00000291)node152:0.03881414)node150:0.01608839,(X542_44.4879873492173:0.05375528,X543_41.2145358789712:0.04269666)node159:0.04842024)node149:0.01455506,(X540_40.5601736515369:0.02945618,X541_41.1376423635902:0.03170245)node162:0.07333578)node148:0.00355655)node112:0.03765443)node108:0.05293920,((((X111_44.78937855519:0.05602252,X112_42.4876924499707:0.05602003)node168:0.00423225,(X109_42.901031013303:0.02488288,X110_43.2893081667404:0.02245095)node171:0.04179399)node167:0.02401765,(((X106_43.0971090111416:0.03162396,X108_40.4419399867766:0.01014520)node176:0.00000291,X107_41.7446393764112:0.01972351)node175:0.03320805,(((X96_41.7404777639842:0.00603943,(X98_44.9103881450814:0.00578134,X97_44.002572105758:0.00612880)node184:0.00880636)node182:0.02776156,((X92_44.1792039736174:0.04542785,(X94_44.3028372328263:0.03635002,X93_44.9955127237395:0.03009046)node190:0.00545564)node188:0.00571517,X95_43.2340012537315:0.03742159)node187:0.00241235)node181:0.02127049,((X105_41.4432541344668:0.01686047,X104_40.6840157537521:0.01699816)node195:0.03228261,((X103_40.0186701700377:0.03041243,X102_41.8377101619262:0.03697276)node199:0.01652237,((X99_44.4043383231947:0.01450570,X100_44.0229271104929:0.01618846)node203:0.04157411,X101_41.2507047795334:0.05095573)node202:0.00161600)node198:0.00520163)node194:0.00178230)node180:0.00224714)node174:0.00400629)node166:0.13827979,(((((X323_44.9650937329746:0.11353148,X325_40.6542714698859:0.08892984)node211:0.00208932,((X343_30.7914941762793:0.01329244,((X341_41.5755845465226:0.05277520,X340_43.6226640428948:0.07373774)node218:0.00068915,(X342_41.865173988736:0.04071053,(X344_41.77643236375:0.02117344,X345_41.7580723983701:0.01557211)node223:0.02393935)node221:0.00316111)node217:0.01703893)node215:0.03690784,(((X326_44.2140990519603:0.07955963,X324_40.8694580872543:0.08136435)node228:0.00317116,(X327_44.2087395447593:0.05345698,((X328_41.8390603870977:0.00421679,X329_43.6421298314832:0.01145231)node234:0.03076246,((X332_44.9272204330819:0.03484722,X331_40.5037403627108:0.01389436)node238:0.00340497,X330_44.9878844304476:0.03809297)node237:0.01857197)node233:0.00056704)node231:0.02690792)node227:0.02663834,(((X334_44.0704864135478:0.02837316,X335_41.8921047998737:0.02108049)node244:0.04955978,(X333_43.3595541940258:0.05462173,((X339_42.1728118959983:0.02876592,X338_40.5425797701986:0.02927462)node250:0.01151475,X336_44.7163534944411:0.05333321)node249:0.00620300)node247:0.01641578)node243:0.00134851,X337_32.2678010614331:0.02149835)node242:0.02918278)node226:0.00217266)node214:0.01064108)node210:0.05771098,(((((X169_24.2226215687792:0.01926717,(((X142_44.2749485136208:0.00808667,X141_44.5336728961499:0.01062584)node263:0.04153720,X140_44.4910437486199:0.04601923)node262:0.05155514,(X168_30.2312900475226:0.04168165,(X153_43.2941446765981:0.04782110,((X155_44.868726479717:0.01813032,X154_42.7580054232385:0.00857338)node272:0.03830033,(X156_41.936568801575:0.02648823,(X157_42.6674934581388:0.03753305,X158_41.0367570270768:0.03168447)node277:0.01108857)node275:0.00395568)node271:0.00436502)node269:0.04356321)node267:0.00535246)node261:0.00720436)node259:0.00138714,((X152_43.3611778818588:0.07740317,X150_42.4780604972806:0.09325848)node281:0.00659499,(X161_40.392035348608:0.05892654,X151_40.9175015459217:0.08123595)node284:0.01479611)node280:0.00603287)node258:0.00358938,((X143_43.4189905531095:0.02190392,X144_44.3181987900047:0.02725599)node288:0.08635534,X167_31.6364209212618:0.05829802)node287:0.00194095)node257:0.01888791,((((X127_41.6983601282824:0.01341981,X126_42.3017374135088:0.01581350)node295:0.10230138,((((X134_40.8373521897011:0.02734124,X133_41.3877554667248:0.02844316)node301:0.01019457,X129_44.3119615195664:0.04397922)node300:0.00384627,(X135_40.6350520794816:0.03262431,(X130_42.7287289628293:0.02193956,(X131_44.2610569448998:0.00081042,X132_44.9283987654192:0.00357820)node309:0.02983577)node307:0.02112927)node305:0.00166681)node299:0.00201570,(X136_42.5344610852363:0.03657049,((X139_41.7906017077262:0.01902253,X138_40.1929470333858:0.01343554)node315:0.01080514,X137_40.0564460700843:0.02698221)node314:0.00000291)node312:0.01346476)node298:0.06458238)node294:0.01286739,((X174_24.8309563174788:0.00410686,(X171_40.756758546485:0.04627833,X162_41.5965266295561:0.06397071)node322:0.03094908)node320:0.00574255,(((X166_41.2966019548085:0.01261227,X165_40.4395992454429:0.01291375)node327:0.06163756,((((X148_41.7752673199773:0.00016299,X149_44.9884548711896:0.01515035)node333:0.03774623,(X145_44.9840538491655:0.05545082,X146_44.9734366300981:0.04670199)node336:0.00252597)node332:0.00401094,X147_40.3124842406632:0.03125398)node331:0.05785312,(X163_43.5369620018173:0.00920362,X164_44.9986811910126:0.02182993)node340:0.06999460)node330:0.00038239)node326:0.00391101,((X172_32.4995626089446:0.04128610,X160_40.0126903866961:0.08920344)node344:0.00000291,(X173_30.6314442897322:0.02400419,(X159_44.5151430822563:0.07395386,X170_41.6361783225968:0.05243208)node349:0.01095072)node347:0.00663617)node343:0.00666732)node325:0.00244467)node319:0.02170626)node293:0.00000291,X128_41.7442235464253:0.12754039)node292:0.00383477)node256:0.04762997,((X113_40.1720573007272:0.06619133,((X115_40.0053742916189:0.01306881,X116_40.7002504577395:0.01240548)node357:0.03038743,X114_40.8404076460283:0.04387424)node356:0.00904334)node354:0.02156376,(X117_41.758109820519:0.07942604,((X118_42.6465821790043:0.06991126,(X120_44.7366856399458:0.04579423,X119_40.1134392093087:0.01955584)node366:0.03467768)node364:0.00088770,((X121_44.397113988897:0.03364480,(X123_41.74677206875:0.00570927,X122_43.5773876298144:0.02377950)node372:0.00634039)node370:0.02800933,(X125_44.9885168997964:0.04692147,X124_40.1716013543394:0.01450876)node375:0.01979893)node369:0.02298768)node363:0.01453546)node361:0.00774498)node353:0.06666276)node255:0.01862113)node209:0.01074974,((((X650_24.0012192026443:0.01705419,X649_24.8542872060318:0.02280882)node381:0.04566527,(((X629_41.1884111573454:0.02878991,X628_43.6432828821794:0.03427246)node386:0.06699649,((((X618_42.3977612878662:0.01440406,X619_41.1028560530394:0.00863338)node392:0.00719916,(X621_43.6609969742968:0.01929089,X620_41.0947422175762:0.00597334)node395:0.01772670)node391:0.04901838,(X616_42.3798803450403:0.01490123,X617_43.0450953754994:0.01522755)node398:0.04770927)node390:0.01292161,((X626_42.3922882135274:0.02723007,X627_43.216274935985:0.04003416)node402:0.04293273,(X625_40.8030925496694:0.06686328,((X624_44.3604590879672:0.01522769,X623_43.5718231252427:0.01329201)node408:0.02167127,X622_40.8887834497328:0.02448146)node407:0.04920164)node405:0.00252157)node401:0.00200749)node389:0.02010863)node385:0.03980712,(X666_24.8914307174234:0.00148550,((((X662_40.6602605543266:0.01734854,X663_41.5544651155837:0.01751369)node417:0.04063431,(X651_42.1024910960287:0.04097511,(X652_43.1144894938916:0.03716159,((X654_41.2591408241393:0.02721011,X653_44.1033793821201:0.03625221)node425:0.00127976,(X655_41.0622668717058:0.00681356,X656_44.5324211338031:0.03110087)node428:0.01903899)node424:0.00325955)node422:0.00519749)node420:0.02247119)node416:0.02079915,((X659_40.0835140282921:0.03348935,X660_40.1436816214792:0.03236072)node432:0.04232353,((X657_43.2198432716059:0.02427154,X658_43.4485477826092:0.02590500)node436:0.05310903,((X669_40.9113270661328:0.02973533,(X668_40.3680555319912:0.02615447,X667_43.5533889256362:0.04622702)node442:0.00308149)node440:0.01573848,X661_40.5048019829347:0.05022351)node439:0.02511139)node435:0.00343965)node431:0.00249682)node415:0.00000291,(X664_42.6958003373412:0.06170023,X665_31.247821940342:0.00350960)node446:0.02196900)node414:0.00111074)node412:0.04600435)node384:0.01235682)node380:0.00336087,(((X369_43.420561987441:0.07047684,X367_44.2049685877282:0.08131340)node451:0.00966023,X368_40.3670256455578:0.06941220)node450:0.05358370,(X377_40.4122811171692:0.08482408,(((X373_44.1120438758208:0.04423932,(X374_43.0186846792674:0.01238246,(X376_44.4330208321446:0.00923154,X375_43.8971953280569:0.00458484)node463:0.00919806)node461:0.02737590)node459:0.06929506,(((((X458_42.3614324335851:0.07986221,(X459_44.0948816831224:0.08581007,(X464_31.822412442416:0.00158410,((X461_43.0288667637882:0.03283145,(X463_42.7337163303866:0.01947575,X462_43.0959317635279:0.02130297)node479:0.00910886)node477:0.00795747,(X465_40.9697684712955:0.01930560,(X466_40.5025014664809:0.02187920,(X468_44.8035282618566:0.03099518,X467_43.0249540542383:0.01727957)node486:0.01243117)node484:0.00031440)node482:0.01186990)node476:0.01696286)node474:0.01329096)node472:0.00885735)node470:0.01133963,(X460_32.0446984646603:0.04164841,((X456_40.1266582675908:0.02163351,X457_44.2190570221283:0.03888993)node492:0.03298131,((X436_43.6423198424745:0.05453144,X437_43.9142903843498:0.04518716)node496:0.00470017,X435_41.139320726243:0.05326988)node495:0.02518148)node491:0.01409190)node489:0.00249402)node469:0.00190165,(((X417_44.5193486497737:0.07631226,(X419_40.5111905012745:0.03420281,((X420_41.0197366157081:0.01935799,X421_42.7132114255801:0.02468625)node507:0.01628583,X418_44.774542964761:0.05078991)node506:0.00093129)node504:0.01191241)node502:0.03600022,((X452_43.7321072278507:0.04562846,(X454_42.5021282525424:0.00460219,X453_43.6386840229419:0.00841632)node514:0.04295846)node512:0.02242875,((X439_43.6394596198176:0.06436798,X438_44.1062624966108:0.06930797)node518:0.00582210,((X443_40.1776434332146:0.01976134,(((X442_44.9756485004023:0.04658426,X446_43.5126165603288:0.03163231)node526:0.00031374,X445_40.3125365511581:0.01490889)node525:0.00558745,X444_41.8718706844906:0.03237146)node524:0.01214080)node522:0.02824449,(X448_41.1111466298102:0.04536798,(X447_41.4620849678667:0.04689637,(X440_44.5966716902117:0.01069458,X441_44.4311178485523:0.01638990)node535:0.06209319)node533:0.00000291)node531:0.00308107)node521:0.00257365)node517:0.00989941)node511:0.01128159)node501:0.00361937,X455_40.8664622087963:0.08561937)node500:0.00037422)node468:0.00039848,(X449_44.3768947653007:0.05738374,(X450_41.0226731005793:0.01980733,X451_41.3973904459272:0.01725997)node541:0.01522547)node539:0.05269582)node467:0.01889048,((((X423_41.2254699563331:0.03900541,X422_43.5991888466743:0.04712239)node547:0.01355755,X424_40.0638501496157:0.05038799)node546:0.01259633,(X425_32.8399805899244:0.00662770,(X428_42.3755550582428:0.02248893,(X429_44.0537031996854:0.02359933,(X427_42.5290402001701:0.02366083,X426_42.1570554375648:0.02396740)node557:0.00420691)node555:0.00063654)node553:0.02075848)node551:0.02179102)node545:0.00517583,(X434_41.099758768687:0.03728354,(X430_43.794222111036:0.05814509,(X433_40.9216494284124:0.03307333,(X431_43.986174034327:0.02693212,X432_43.8170264909475:0.03273654)node566:0.01337607)node564:0.00175634)node562:0.00127116)node560:0.03528796)node544:0.02182245)node466:0.00136694)node458:0.00404103,((X378_40.8474617905449:0.09444878,X395_31.8812121514094:0.03776537)node570:0.02287777,((X370_42.3911789909471:0.07154067,(X371_42.7407197191124:0.05987814,X372_42.0518106024448:0.05037571)node576:0.01078410)node574:0.03356486,(X393_40.2665774989873:0.06997941,((X379_42.4809594628818:0.07498298,X385_40.3368607948652:0.06255952)node582:0.01775555,((X413_30.3140186599921:0.01428319,(((X412_42.5820078150236:0.04646833,(X414_43.2764729787596:0.03308357,(X416_40.7337058824487:0.01761462,X415_42.5596808495941:0.02941766)node594:0.00371255)node592:0.01433244)node590:0.00212711,X410_42.022823067382:0.05624520)node589:0.00053015,X411_41.8849774676835:0.05385586)node588:0.01893042)node586:0.00779603,((X392_41.9428966652393:0.07500657,((((X390_44.5087836286141:0.03043545,X391_43.2351007358435:0.01887165)node605:0.01575999,(X388_41.336845275946:0.01032436,X389_44.7089501330568:0.02565709)node608:0.01857680)node604:0.03431579,X386_41.9666626573187:0.07134444)node603:0.00188436,(((X397_44.9606202181894:0.06038259,(X398_41.194685163471:0.02575319,((X400_41.7774339811007:0.01277524,X399_41.4425427262573:0.01127717)node619:0.01252948,(X401_40.2596235706005:0.01143623,X402_42.3072614461049:0.02232579)node622:0.00680174)node618:0.00467503)node616:0.01036379)node614:0.00711577,(X403_42.0897086141086:0.04574667,((X407_40.4371618740099:0.02320680,(X406_40.7083160508117:0.03057079,(X409_40.8525327489481:0.02176586,X408_40.4269319906223:0.02296936)node632:0.00627012)node630:0.00110480)node628:0.00871534,(X405_40.0143862169134:0.02002638,X404_42.5732728064098:0.04127532)node635:0.00496496)node627:0.00160546)node625:0.01652369)node613:0.00592204,(X396_40.3693686719951:0.05108314,(X383_44.882100996267:0.04199380,X384_42.5243970064912:0.03398626)node640:0.03521301)node638:0.00045243)node612:0.00762717)node602:0.00967905)node600:0.00170750,(X382_43.3242457127199:0.08274722,((X380_42.0231567044751:0.08161742,X381_43.0862141307159:0.07802694)node646:0.00308093,(X394_40.2618114068173:0.05416037,X387_43.1925873516593:0.06188215)node649:0.01127150)node645:0.00341258)node643:0.00689348)node599:0.00041931)node585:0.00422102)node581:0.00160555)node579:0.00849314)node573:0.00187838)node569:0.00795094)node457:0.00387134)node455:0.01009820)node449:0.03828621)node379:0.00471622,((X573_40.2797834910281:0.00966940,X572_40.3909730109848:0.00767745)node653:0.10040759,(((X577_40.7590262919815:0.05695766,X576_44.7457425374108:0.08015425)node658:0.01032155,((X582_43.2525718177203:0.06813194,((X583_43.979469030432:0.06310615,X584_43.6436170490924:0.05416041)node665:0.00569609,((((X589_40.2620466682242:0.00334441,X590_43.0829782364589:0.01804905)node671:0.00377761,X588_44.4501254024736:0.02685163)node670:0.01139983,(X586_44.0970683221491:0.03884398,X587_40.5359876854345:0.01835563)node675:0.00526074)node669:0.01264160,X585_40.0035680393179:0.03414017)node668:0.02473589)node664:0.00191996)node662:0.00667008,(X579_40.1401991834138:0.01975359,((X580_41.1698670440819:0.02267424,X581_42.783768252988:0.02590565)node682:0.00881129,X578_42.4666553956922:0.04191126)node681:0.00406688)node679:0.03480241)node661:0.00590757)node657:0.02778788,(X575_42.2675386292394:0.08414260,X574_32.4383062276543:0.03326188)node686:0.02316597)node656:0.01061711)node652:0.03943870)node378:0.03668863)node208:0.00155462,((((X237_24.3654358171166:0.00373398,(X224_40.9726432524621:0.05838303,X223_40.6400396092919:0.05785612)node694:0.03437227)node692:0.03637271,(X238_16.7271472494832:0.00599283,(X217_40.5020209250506:0.08790275,((X207_42.8740701261451:0.04990825,(X206_41.7825740133412:0.04942053,X205_40.7578668748741:0.06178633)node704:0.00063937)node702:0.05149078,((((X208_42.2595017017413:0.00036888,X209_43.3523853568322:0.00566043)node710:0.06333181,(X211_40.159634907598:0.02989613,X210_40.1091290945932:0.03035762)node713:0.02295026)node709:0.03143287,((((X242_44.4690673972946:0.07608956,(X256_43.0926309444476:0.06216188,X262_32.9425424011359:0.00012663)node721:0.00261806)node719:0.00315571,(X258_40.7396071986609:0.03931113,((X255_44.7129869699489:0.03854579,X257_42.1277206040546:0.02790749)node727:0.01356204,(X261_41.7015337313014:0.02799669,X260_40.1196926642208:0.02812898)node730:0.00010436)node726:0.00327252)node724:0.00968914)node718:0.00709835,(X252_40.5054228812557:0.01329714,(X254_44.6586982638624:0.01226352,X253_42.132383564578:0.00185730)node735:0.01451658)node733:0.04279587)node717:0.02145811,((((X226_43.3422840968706:0.04641157,X228_40.2548875214447:0.04250621)node741:0.01473242,X216_42.9050340867106:0.08975388)node740:0.01085497,(((X241_40.583215200095:0.04316106,X227_42.2210964109672:0.05177777)node747:0.00692668,((X240_40.5171810813977:0.04396248,((X249_40.0929994102882:0.03577101,(X244_41.1906439682795:0.03079940,((X246_43.6339412722737:0.01927798,(X248_43.7458405673067:0.01288079,X247_41.3909373001661:0.00656347)node761:0.00416489)node759:0.02379661,X245_41.0701466208701:0.03385305)node758:0.00872657)node756:0.00703843)node754:0.00156427,X218_44.153706652819:0.06107266)node753:0.00000291)node751:0.00611343,((X225_41.6003897017799:0.05322027,(X236_42.9493915595283:0.04592647,X243_40.354020895862:0.03720622)node769:0.00153294)node767:0.00262249,X219_44.2736441118177:0.06427855)node766:0.00347076)node750:0.00193012)node746:0.00057436,((X220_41.099567792844:0.03968708,(X222_44.9670206243172:0.05280220,X221_41.0718448242411:0.01868209)node776:0.01710359)node774:0.00991163,(X239_40.4666843891181:0.04355108,(X229_42.7792495056082:0.04134192,((X233_42.9135476821102:0.01899841,(X234_42.4807465434234:0.00556185,X235_43.7794845920719:0.01514631)node786:0.00995269)node784:0.00656912,(X230_43.2377014192753:0.01988615,(X232_42.0431533455849:0.01314523,X231_40.6143236358184:0.00376846)node791:0.00475932)node789:0.01026494)node783:0.01722997)node781:0.00579495)node779:0.00758844)node773:0.00291170)node745:0.01063569)node739:0.00111256,((X251_41.0202834477492:0.02565282,X250_40.1916233511072:0.01527934)node795:0.04035981,X259_30.7858579717577:0.01534264)node794:0.00063268)node738:0.00001977)node716:0.02309022)node708:0.00033224,(X213_40.8992597312783:0.01858459,(X212_44.5700531049685:0.03471464,(X215_41.6587344322501:0.01955040,X214_40.3970607323572:0.01251933)node803:0.01171322)node801:0.00495814)node799:0.08496420)node707:0.00125265)node701:0.00470399)node699:0.02542251)node697:0.00610078)node691:0.00349876,((X199_41.0998544630379:0.03536758,(X203_41.2663204794147:0.03621331,((X202_42.1153611061163:0.03154540,(X200_44.2008255621066:0.02403064,X201_43.4429034338507:0.01947749)node814:0.01268953)node812:0.01030080,X204_40.8057912966068:0.02323901)node811:0.00097193)node809:0.01375524)node807:0.00609238,((X192_44.8533328750636:0.03040956,X191_40.1830805177781:0.01810642)node819:0.03425205,((X193_40.7390125814619:0.02366047,X194_44.7483415603385:0.03731090)node823:0.02188933,((X196_40.0354202941245:0.03156509,(X190_43.4995247458573:0.05404148,X195_41.5541245276227:0.03570986)node829:0.00568873)node827:0.00000291,(X198_42.9203455825336:0.03084285,X197_41.297398072632:0.02030218)node832:0.01710255)node826:0.00123409)node822:0.00114740)node818:0.00360446)node806:0.08394448)node690:0.07079503,(((((X177_41.7747811237086:0.02372461,X176_42.7174408417697:0.03365023)node839:0.04686624,X175_43.4346291948562:0.08422822)node838:0.01952497,(X182_40.2838389021626:0.07488274,(((X181_42.1769267369932:0.01460729,X180_42.981758402467:0.01936389)node847:0.04879922,(X178_44.7523683216423:0.08514904,X179_41.7419048068746:0.06118492)node850:0.01063765)node846:0.03220494,((X183_40.8310704605759:0.04537902,(X184_44.3109885795697:0.02731193,X185_42.9549114115071:0.02868218)node856:0.03589241)node854:0.02072787,((X189_40.1116458435761:0.04756222,(X188_41.8333975692253:0.05823163,X187_44.0276579411118:0.06318453)node862:0.01416392)node860:0.01269060,X186_41.2064445670694:0.06863134)node859:0.00665712)node853:0.01160789)node845:0.00552967)node843:0.00736626)node837:0.08140106,((X469_31.7764303407166:0.07638750,(X470_40.7438414246965:0.06960527,(X471_43.8596732207131:0.06895007,((X481_43.2747683732305:0.03587540,X480_44.6151684932437:0.04591823)node874:0.01900616,((((X478_42.9842071033219:0.00594844,X479_44.679906065491:0.01465730)node880:0.01263845,X477_40.903448673198:0.00477257)node879:0.01879839,X476_40.5520282492812:0.02402552)node878:0.00151624,(X472_42.9483755875845:0.02227388,(X473_44.3464028930799:0.02773692,(X475_44.8862037176267:0.01592746,X474_41.0016181678907:0.00047607)node889:0.00189807)node887:0.01931066)node885:0.01060231)node877:0.02308035)node873:0.00766372)node871:0.03097606)node869:0.02484687)node867:0.05112548,((((((((X563_43.2697278979937:0.05102124,(X565_43.7703719653655:0.04006853,X564_40.2218498871662:0.02127379)node901:0.00797888)node899:0.01342068,X562_43.709731673589:0.05484160)node898:0.02701470,(X566_40.4684395027427:0.06770577,((X569_41.671707003843:0.04820017,(X571_43.8867777201255:0.01429489,X570_41.9749549661821:0.00364776)node910:0.04769201)node908:0.00600996,(X568_42.1525697303955:0.03262260,X567_41.9870727090749:0.03664880)node913:0.03779776)node907:0.00898268)node905:0.01304681)node897:0.01166309,((X561_44.6065688030062:0.01700884,X560_40.5423545616213:0.00466151)node917:0.07138571,X559_44.9490768450778:0.11108854)node916:0.00123641)node896:0.01996226,((X591_43.4018414283609:0.05274418,(X593_41.1833095175593:0.02511123,X592_41.7382563045248:0.03388267)node924:0.00870231)node922:0.02673935,((X594_40.1891419149899:0.03266352,X595_44.0373114694376:0.03452954)node928:0.02727684,(X596_40.2697771344284:0.03763657,X597_43.6494676235482:0.05791183)node931:0.01030371)node927:0.00512592)node921:0.04535363)node895:0.02065066,((X648_40.4238287103362:0.09774889,(X716_30.4201937704347:0.01568112,(X715_30.1039278795943:0.00990096,(X713_43.127584902104:0.05136332,X714_43.7777793528115:0.04819923)node941:0.01677540)node939:0.00593268)node937:0.04260229)node935:0.02121099,(((X685_41.6971296931417:0.01750539,X686_44.3032144755125:0.03451042)node946:0.07879423,(X720_43.9027685606239:0.03229049,X721_40.2432370933676:0.01805241)node949:0.06303147)node945:0.01740348,((((X707_42.7683190058451:0.12570315,X766_21.7201117413185:0.00000291)node955:0.00571936,(((X695_44.957792628388:0.08442152,(X732_40.9187324657877:0.01558606,(X733_43.5903742998729:0.02107801,X734_41.5496874123346:0.00974256)node964:0.00539388)node962:0.05044158)node960:0.02011839,X765_31.9103789635812:0.02925895)node959:0.02235205,(X735_42.1476978560405:0.02469180,(X737_44.4020092314488:0.00634769,X736_44.6110147086438:0.00936317)node970:0.04131988)node968:0.07503097)node958:0.00285883)node954:0.00289235,((X719_40.6902588712324:0.10453897,((X683_41.733543339885:0.01916132,X684_44.6344162942962:0.02474424)node977:0.09245090,((X702_41.6943516966421:0.02224843,(X701_44.7936503600795:0.03165882,(X706_44.7333157253222:0.02087855,X705_42.5210554580959:0.00442833)node985:0.00982394)node983:0.00444276)node981:0.00151129,(X703_42.6514781233568:0.02401559,X704_40.3854389893159:0.00920859)node988:0.00031417)node980:0.09167599)node976:0.01187457)node974:0.00000291,(((X710_40.8198495610526:0.03820712,(X711_44.4135762413498:0.01629937,X712_42.1328546936701:0.00685925)node995:0.03488914)node993:0.05328209,(X717_42.8795526647546:0.09182760,(X722_41.3526410595035:0.04286904,(X723_44.8299393402754:0.01116263,(X725_44.1799486643682:0.00384686,X724_44.6725130446788:0.00554219)node1004:0.00141540)node1002:0.05079286)node1000:0.03506331)node998:0.00116005)node992:0.00746387,((X747_42.7093904583218:0.02641598,(X749_40.0478523796462:0.01304184,X748_41.1995726787941:0.02298628)node1010:0.00161130)node1008:0.02799260,(((X762_42.4766870681196:0.02556343,X763_40.0097882549744:0.02982452)node1015:0.00559834,X761_40.3294668765739:0.03972154)node1014:0.01130874,((X750_44.1780219401699:0.03980481,X751_40.9782466604565:0.02967019)node1020:0.01048760,(((X757_40.0804779930536:0.02056825,(X759_40.188941762317:0.00323163,(X760_43.8689933154864:0.01609238,X758_44.061661974574:0.02196472)node1029:0.00326336)node1027:0.01250809)node1025:0.00306365,((X755_43.1014647073009:0.00167203,X756_43.3725989964215:0.00273171)node1033:0.02555145,(X753_44.796762474536:0.01333949,X754_41.6931288235691:0.00349983)node1036:0.02312849)node1032:0.00284661)node1024:0.00595152,X752_41.3131478673313:0.03062517)node1023:0.00511497)node1019:0.00470275)node1013:0.00100211)node1007:0.03897730)node991:0.00769409)node973:0.00452340)node953:0.00758395,((((X635_44.599389042712:0.07460273,(X637_44.4013125601345:0.02623032,X636_40.3658253140748:0.00433201)node1045:0.04130162)node1043:0.01314772,(X638_41.7451796330868:0.04321150,(X639_41.2245012897416:0.03456009,X640_43.7273741120484:0.03954394)node1050:0.00623247)node1048:0.02216084)node1042:0.00469083,(X641_40.0454969520539:0.03509597,(X642_43.160667940352:0.03002842,(X643_42.9128228197806:0.03241919,(X644_41.7366065015085:0.02744253,(X646_40.4147946008015:0.00286098,(X645_43.0167549210373:0.00979648,X647_41.9620020011925:0.00630729)node1063:0.00583828)node1061:0.02229715)node1059:0.00158307)node1057:0.00018725)node1055:0.02689670)node1053:0.01173109)node1041:0.04543279,((X699_42.2419687906997:0.09137023,(((X693_41.0386908028209:0.02346669,(X692_44.1812813003:0.03900300,X694_44.0642882953398:0.03846417)node1073:0.00709705)node1071:0.02638853,(X690_40.1891726139002:0.03397261,X691_41.219133408304:0.02764931)node1076:0.02281855)node1070:0.02576270,(X700_44.1577867791057:0.08149962,((X696_44.5272908055786:0.02482187,(X697_42.5805009237956:0.00096737,X698_44.8935409177221:0.01131239)node1084:0.01488231)node1082:0.05951184,X708_40.0306396830934:0.06717294)node1081:0.00000291)node1079:0.00023559)node1069:0.01609518)node1067:0.00483638,((X739_41.6539710623295:0.07407317,((((X729_44.749622922391:0.00942841,X728_42.6627406089261:0.00026882)node1094:0.02685347,((X730_43.7391533388291:0.02973293,X731_42.3629681929015:0.02214381)node1098:0.00621334,(X726_44.698050759444:0.04148807,X727_44.7991162845539:0.03835073)node1101:0.00041357)node1097:0.00475206)node1093:0.03741534,((X689_44.8583508418351:0.00305930,X688_43.9987527832812:0.00024284)node1105:0.05674597,X687_40.8425673784222:0.04613088)node1104:0.03039400)node1092:0.00332347,(X764_40.0369206625014:0.05806028,(X740_43.7177310281862:0.05955448,((X746_41.9638897303957:0.01779260,X745_40.5206324602477:0.01196868)node1114:0.04201044,((((X743_44.2431212787051:0.00331218,X744_44.4722942417504:0.00443095)node1120:0.00978569,X742_43.9975675531125:0.01239511)node1119:0.00931949,X741_44.0724760786096:0.02106553)node1118:0.03402230,X738_44.1288224801196:0.05741207)node1117:0.00430894)node1113:0.00504865)node1111:0.00287434)node1109:0.00108348)node1091:0.00241994)node1089:0.00366071,(X772_32.2513189141173:0.01477379,(X767_44.7438011213671:0.06554220,(((X768_44.0370377462378:0.03225438,X769_43.4055446251296:0.02523809)node1132:0.01648045,(X771_41.9910918917738:0.01937814,X770_42.5052877311341:0.01871938)node1135:0.02073446)node1131:0.00205448,(X773_41.1400572445243:0.03346837,(X774_42.5969760022409:0.02354008,((X776_41.9745920670064:0.01388965,X777_40.7836203358602:0.00548658)node1143:0.00992860,X775_42.5251704484638:0.02446188)node1142:0.00200513)node1140:0.01096876)node1138:0.00858767)node1130:0.01507947)node1128:0.00201020)node1126:0.01947368)node1088:0.02197987)node1066:0.01511856)node1040:0.00092924)node952:0.00455524)node944:0.01375621)node934:0.00484172)node894:0.00855553,((((X550_44.9933905105419:0.06787027,X553_41.3264861812:0.06310802)node1150:0.00085823,((X556_44.5896823750809:0.02972641,(X558_44.338844933091:0.01321217,X557_44.7763523791279:0.01527626)node1156:0.01896913)node1154:0.03738846,(X555_42.8873843072971:0.04076934,X554_41.4509228862603:0.01889443)node1159:0.02809540)node1153:0.01093062)node1149:0.00227081,(X552_43.5544465051498:0.05337196,X551_40.9930360321844:0.04480037)node1162:0.01387304)node1148:0.04705987,X598_42.3416746312285:0.10379446)node1147:0.03575253)node893:0.01410823,X718_20.7466215859007:0.05587915)node892:0.00398168)node866:0.00960818)node836:0.00797302,(X709_11.8898236027319:0.03686735,(((X521_31.9573464899292:0.05345784,(((((X490_44.276570630027:0.02884877,X491_41.0793788443105:0.00673489)node1177:0.00998185,X489_41.2059720256366:0.02485264)node1176:0.04939031,X488_40.0004404302553:0.06402944)node1175:0.01090263,(((X494_40.0467689725268:0.01354870,X495_41.1202488758136:0.02249829)node1184:0.01277840,((X496_43.0537925885224:0.03373775,(X497_41.5034279623069:0.01668509,X498_43.7102315598167:0.02830198)node1190:0.00212533)node1188:0.01036508,(X492_42.1680432150517:0.01491343,X493_40.8561774424743:0.01105573)node1193:0.01963826)node1187:0.00195972)node1183:0.01390414,(X499_41.2646980203662:0.03871755,(((X502_44.699262464419:0.02693179,(X504_44.2888719709952:0.02343303,X503_40.8464333158918:0.00651581)node1202:0.00054779)node1200:0.01725172,(X501_42.4099053721875:0.02204565,X500_43.254295947263:0.02556704)node1205:0.01525462)node1199:0.00241423,(X506_41.2772646639496:0.01994746,X505_40.3090942232891:0.01884120)node1208:0.00316356)node1198:0.01182329)node1196:0.00497183)node1182:0.02989129)node1174:0.02638502,((((X514_40.2251007856267:0.05498899,(X517_41.5892532643923:0.03888662,(X516_40.3423654043336:0.03272596,X515_44.5098913254237:0.06066574)node1218:0.00375210)node1216:0.01016775)node1214:0.01726296,X487_44.7547815780117:0.09592226)node1213:0.01970108,X520_30.0197411044501:0.03797265)node1212:0.00089108,(X507_43.7934209559404:0.05342792,(X508_40.4701438672092:0.03095224,(((X512_42.7221935675619:0.00064176,X513_44.4691047045049:0.01010357)node1229:0.03562416,X511_40.5894768214785:0.02125409)node1228:0.00027566,(X509_43.8385718277869:0.01943017,X510_43.1689956393206:0.01590732)node1233:0.02094108)node1227:0.00841728)node1225:0.01002590)node1223:0.04414891)node1211:0.00033042)node1173:0.00128981)node1171:0.00229894,((X483_42.6906991982833:0.03461449,X482_43.9548931242207:0.03318079)node1237:0.08556947,((X484_43.5567947058007:0.07202509,(X485_44.7628011864005:0.05168263,X486_41.9362628061256:0.03696151)node1243:0.02881273)node1241:0.03456839,(X519_41.0739506271236:0.06428099,X518_30.2019324707799:0.00722563)node1246:0.03988741)node1240:0.00449199)node1236:0.00602598)node1170:0.07027005,(((X263_44.9881299324867:0.04420816,(X264_43.7679426104296:0.02879616,(X266_43.5928995280783:0.00542498,X265_42.4532624720043:0.00034648)node1255:0.03041690)node1253:0.01115604)node1251:0.07918726,(((X271_40.0204078504594:0.04346878,(X273_40.1683053125654:0.05105259,(X272_40.9437560608085:0.03990220,(X269_43.4513536469587:0.00910838,X270_43.9893814877186:0.01876231)node1266:0.04865313)node1264:0.00350583)node1262:0.00785103)node1260:0.06350413,(X282_40.5536739456372:0.08291710,(X295_32.2291335810442:0.03400295,X280_43.648900706321:0.10060907)node1271:0.00000291)node1269:0.01618182)node1259:0.00174677,((X267_42.8264408081304:0.06259111,X268_44.6913682529703:0.05872671)node1275:0.05015004,(((X277_40.5809930501725:0.04168506,X276_42.898030866978:0.05787852)node1280:0.00340771,(X274_40.5590842577664:0.04800435,X275_40.0440243549221:0.04722549)node1283:0.00993402)node1279:0.03734180,((X281_41.8029872278271:0.07158136,(X278_40.642563838046:0.03203864,X279_44.7559051575078:0.06031358)node1289:0.05050082)node1287:0.00856863,(((X303_40.5153760639496:0.04755506,X302_42.6937320719134:0.05627564)node1294:0.01621915,(((X307_40.2149075725956:0.05103604,X306_44.42196132345:0.05780591)node1299:0.00037072,((X297_44.017386657438:0.03069791,X296_43.8699368108064:0.02593773)node1303:0.02091144,((X300_42.3411548217569:0.00000291,X301_44.050450067458:0.00914301)node1307:0.03115857,(X298_43.3444063930277:0.04585535,X299_40.1426451851148:0.01754385)node1310:0.00406263)node1306:0.00543639)node1302:0.02075668)node1298:0.00731504,((X314_40.2190040325289:0.04297617,(X305_44.7577115593711:0.04243410,X304_41.702400414506:0.01509077)node1316:0.03494628)node1314:0.01116298,((X313_43.4202366892714:0.06117111,X321_31.5872974987094:0.01184263)node1320:0.00234355,(((X317_40.3420408591515:0.02620843,(X315_44.8225775477294:0.03890445,X316_41.6392009693664:0.03028858)node1327:0.00767809)node1325:0.02617476,(X322_31.5935005130596:0.00961584,(X308_42.7062139939684:0.02274901,((X311_43.7764252818395:0.02329986,X312_44.4580785150174:0.02014380)node1335:0.00153439,(X309_44.8575025353296:0.00977130,X310_44.5912262621239:0.00607181)node1338:0.01630893)node1334:0.00394470)node1332:0.04021846)node1330:0.00125958)node1324:0.00134914,(X320_32.9895997439082:0.00712555,(X318_42.7658681410308:0.04248989,X319_40.2524920887685:0.02915949)node1343:0.01394022)node1341:0.00990900)node1323:0.00032160)node1319:0.00308254)node1313:0.00217290)node1297:0.00000291)node1293:0.00615760,((X292_40.9298125653938:0.04100981,((X293_40.6106927490328:0.01182800,X294_44.995289219529:0.02797696)node1350:0.02674008,(((X285_44.487880672731:0.03252950,X290_44.3637139908969:0.02206896)node1355:0.00126023,X291_42.1272231731564:0.01649528)node1354:0.00492459,(((X289_43.7632287044532:0.00911568,X288_42.7562248392496:0.00700467)node1361:0.01666963,(X287_40.5276115867309:0.00923134,X286_44.9436512042303:0.02980335)node1364:0.00367978)node1360:0.00631979,X284_41.8743059027474:0.03285341)node1359:0.00000291)node1353:0.02729929)node1349:0.00035663)node1347:0.00081960,X283_40.8594472836801:0.05626730)node1346:0.02219999)node1292:0.01897399)node1286:0.00525276)node1278:0.00879836)node1274:0.00201052)node1258:0.02221589)node1250:0.04322232,(((X634_40.0449582445621:0.02016970,(X632_42.5765040173248:0.02930016,X633_40.0233334593941:0.01605903)node1373:0.00169365)node1371:0.09856720,(X682_24.7232691073631:0.00240016,(((X670_40.1713953199602:0.03408823,X671_41.1756575971718:0.03554877)node1380:0.05386340,(X681_40.4739065223839:0.06089522,(X672_43.4509958104407:0.05550017,(X679_43.8376042568096:0.03098749,X680_40.7114236444016:0.00749417)node1387:0.02718204)node1385:0.02736664)node1383:0.00822877)node1379:0.00199962,(X678_43.9138562057633:0.07239865,((X675_42.9531459964346:0.01999656,X674_42.3949262476526:0.01842980)node1393:0.01129411,(X673_44.3461977471277:0.03625020,(X677_43.1080450874288:0.02548222,X676_41.5333029217115:0.01955770)node1398:0.00043310)node1396:0.00369618)node1392:0.04448501)node1390:0.00965618)node1378:0.00477577)node1376:0.03991898)node1370:0.00745029,(X615_44.124732442433:0.10904851,((X603_43.2914582995393:0.07181452,(X599_41.2171834216396:0.03244573,((X601_44.701875156906:0.01929744,X602_44.6617128247457:0.01097486)node1409:0.01739155,X600_43.6973415665258:0.02436573)node1408:0.01267235)node1406:0.05071779)node1404:0.00190507,((X604_42.2587978746742:0.02935877,X605_40.8981425450422:0.02847293)node1414:0.02937364,(X606_40.2178653925308:0.05164875,(((X614_43.5713015609756:0.02112025,X613_41.5061742952093:0.00672410)node1421:0.00481420,X612_41.6825580759905:0.02069384)node1420:0.02329907,((X607_43.5707197351736:0.04020133,(X608_42.9183164972346:0.03476473,X609_42.1685016674449:0.02821881)node1428:0.00310662)node1426:0.01534253,(X611_41.9913895358332:0.04398514,X610_43.2778785738628:0.04672740)node1431:0.00174588)node1425:0.00109877)node1419:0.00643102)node1417:0.00964847)node1413:0.00337431)node1403:0.03534333)node1401:0.02129453)node1369:0.03663456)node1249:0.00841622)node1169:0.00124919)node1167:0.00659048)node835:0.00129938)node689:0.00160447)node207:0.00177660)node165:0.01006569)node107:0.00093057,((X549_41.9608429749496:0.13032109,((X364_41.5502638127834:0.09411806,(X366_32.9920484253899:0.02951214,X365_40.4126545753768:0.07009732)node1440:0.02067093)node1438:0.01537628,((X346_44.753845668165:0.10436324,(((X356_41.9148568284392:0.06141996,X355_41.270496783373:0.06420933)node1448:0.01186187,X354_42.3285089672282:0.08020811)node1447:0.00943156,(((X352_42.7285470335002:0.02521988,X353_42.0912120328285:0.02513157)node1454:0.00015298,(X351_43.3945535687799:0.01890859,X350_44.1969281272031:0.02275121)node1457:0.01815995)node1453:0.04404059,((X349_43.9809055822553:0.02384127,X348_44.1878043816386:0.02667677)node1461:0.01212743,X347_42.4224174313713:0.03902855)node1460:0.05252965)node1452:0.00550690)node1446:0.00960837)node1444:0.01119381,(X363_41.1666743612415:0.07958553,(X357_40.238399883434:0.04325180,((X358_44.9683876277413:0.04681294,X359_42.9449710431297:0.02841379)node1470:0.01958670,(X360_42.1099907951429:0.04778872,(X362_42.3174033261288:0.00837528,X361_40.7148942234926:0.00096921)node1475:0.03177900)node1473:0.00331186)node1469:0.00901255)node1467:0.03944260)node1465:0.00644576)node1443:0.00795297)node1437:0.04869393)node1435:0.03699063,(((X55_44.4577507429719:0.05482913,((X56_42.9477617633529:0.03493462,(X60_40.4305099408638:0.00438257,(X59_41.4316082694483:0.00143626,(X57_44.7294363699799:0.01496441,X58_44.6803221348485:0.01428989)node1489:0.00229240)node1487:0.00695359)node1485:0.01318904)node1483:0.01175716,(X61_43.295424528073:0.02893375,(X63_44.3121061427519:0.02358378,X62_41.7320085067685:0.00811452)node1494:0.02700584)node1492:0.00877224)node1482:0.00000291)node1480:0.04906708,(X64_43.9654647232965:0.09193416,(((X69_44.2834807273837:0.03225067,(X67_44.8277014069115:0.05680239,X68_43.3905169938225:0.02533284)node1503:0.00056325)node1501:0.01789509,(X70_42.8528090804996:0.04877486,(X71_44.3883278972782:0.05359678,(X72_44.7635973743316:0.03468280,((X75_44.620403637206:0.03129240,X74_40.5076963221654:0.00343737)node1513:0.01912417,X73_43.1339937006123:0.03477677)node1512:0.00203807)node1510:0.01059204)node1508:0.00801138)node1506:0.00631420)node1500:0.02275890,(X65_42.4363575456041:0.04136372,X66_40.5311908367644:0.03399419)node1517:0.03449451)node1499:0.01180332)node1497:0.01664404)node1479:0.03098730,(((X91_43.3530644352542:0.07740442,X90_44.5178350887727:0.09788205)node1522:0.01412965,((X86_40.1510527124628:0.05579987,(((X88_40.30444211865:0.02456788,X89_41.8725059868302:0.02309765)node1530:0.01600473,X87_41.9156727047414:0.05136722)node1529:0.00718903,X85_42.8827020553582:0.06135039)node1528:0.00000291)node1526:0.00888271,X84_42.6302461023442:0.05904119)node1525:0.0363_calculate: rescaling
+9138)node1521:0.01963806,((((X78_42.2839418672923:0.06194803,(X79_42.1660196990706:0.04775773,X80_44.9828530224628:0.05512422)node1541:0.00367701)node1539:0.00580486,X77_40.5852248499418:0.05748540)node1538:0.01150665,((X83_42.6550288830323:0.00858131,X82_41.1369292852677:0.00000291)node1546:0.06405693,X81_40.7327962276501:0.06452393)node1545:0.00656782)node1537:0.01921138,X76_32.4670720277354:0.05266470)node1536:0.02090594)node1520:0.00287382)node1478:0.07681969)node1434:0.00058715)node106:0.07968989,X1_41.1764812982484:0.16274497)node1550:0.00000000);
+
+Model: HKY
+Frequencies:
+   A: 0.378139
+   C: 0.174892
+   G: 0.228987
+   T: 0.217981
+
+Rates:
+   Kappa: 5.791037 (Ts/Tv: 3.027845)
+approximation 0
+
+
+***************************************************
+* Rate-free estimation
+
+Not optimized LnL = -809066.907486
+
+
+Use upper for likelihood calculation
+Use SSE for likelihood calculation
+Estimation of branch length and substitution matrix parameters
+
+LnL: -809066.907486
+
+Branch lengths LnL: -764875.510344 tree length 19.831389 {44191.397142}
+Frequencies    LnL: -763109.827100 [0.381683,0.190144,0.207986,0.220187]  {45957.080386}
+Relative rates LnL: -763109.827100 [8.547386]  {45957.080386} [1] #4
+
+Branch lengths LnL: -763103.565179 tree length 19.659799 {6.261921}
+Frequencies    LnL: -763103.302600 [0.382236,0.190136,0.207321,0.220306]  {6.524500}
+Relative rates LnL: -763103.302600 [8.547386]  {6.524500} [1] #2
+
+Branch lengths LnL: -763103.288777 tree length 19.650783 {0.013823}
+Frequencies    LnL: -763103.288411 [0.382249,0.190136,0.207311,0.220304]  {0.014189}
+Relative rates LnL: -763103.288411 [8.547386]  {0.014189} [1] #1
+
+Branch lengths LnL: -763103.288407 tree length 19.650677 {0.000004}
+
+Optimized LnL = -763103.288407
+Frequencies:
+   A: 0.382249
+   C: 0.190136
+   G: 0.207311
+   T: 0.220304
+
+Rates:
+   Kappa: 8.547386 (Ts/Tv: 4.278734)
+
+Total runtime 15 mins: 6 secs
+
+
+***************************************************
+* Strict clock estimation
+
+Use SSE for likelihood calculation
+
+Rate approximation using linear regression: 0.002147
+Correlation coefficient: 0.371903 RSS: 2.882411e-01
+Not optimized
+LnL = -820711.617096
+Root height 75.336073
+
+
+Estimation of divergence times under a strict clock
+
+LnL: -820711.617096
+Rate        rate: 0.002147
+Root height height: 75.336073
+
+Root height    LnL: -775658.218540 height: 75.336073 {45053.398557}
+Root height    LnL: -771436.364024 height: 75.336073 {49275.253072}
+Root height    LnL: -769440.569321 height: 75.336073 {51271.047775}
+Root height    LnL: -768242.173925 height: 75.336073 {52469.443171}
+Root height    LnL: -767442.719599 height: 75.336073 {53268.897497}
+Root height    LnL: -766875.147684 height: 75.336073 {53836.469412}
+Root height    LnL: -766455.782899 height: 75.336073 {54255.834197}
+Root height    LnL: -766132.833112 height: 75.156854 {54578.783985}
+Root height    LnL: -765876.512680 height: 74.799317 {54835.104416}
+Root height    LnL: -765672.309268 height: 74.468131 {55039.307828}
+Rate           LnL: -765007.866760 rate: 0.001951 {55703.750336}
+
+Root height    LnL: -764872.506812 height: 74.456328 {135.359948}
+Rate           LnL: -764865.098386 rate: 0.001930 {142.768374}
+
+Root height    LnL: -764820.616324 height: 74.456327 {44.482062}
+Rate           LnL: -764819.669693 rate: 0.001923 {45.428693}
+
+Root height    LnL: -764793.112114 height: 74.456327 {26.557579}
+Rate           LnL: -764792.803609 rate: 0.001919 {26.866084}
+
+Root height    LnL: -764774.726832 height: 74.456327 {18.076777}
+Rate           LnL: -764774.587492 rate: 0.001916 {18.216117}
+
+Root height    LnL: -764761.451952 height: 74.456327 {13.135541}
+Rate           LnL: -764761.383230 rate: 0.001914 {13.204262}
+
+Root height    LnL: -764751.368924 height: 74.456327 {10.014307}
+Rate           LnL: -764751.334600 rate: 0.001912 {10.048631}
+
+Root height    LnL: -764743.451181 height: 74.456327 {7.883418}
+Rate           LnL: -764743.434618 rate: 0.001911 {7.899982}
+
+Root height    LnL: -764737.107292 height: 74.456327 {6.327325}
+Rate           LnL: -764737.100167 rate: 0.001911 {6.334451}
+
+Root height    LnL: -764731.899444 height: 74.456327 {5.200723}
+Rate           LnL: -764731.896890 rate: 0.001910 {5.203277}
+
+Root height    LnL: -764727.581917 height: 74.456327 {4.314973}
+Rate           LnL: -764727.581420 rate: 0.001910 {4.315469}
+
+Root height    LnL: -764723.917767 height: 74.456327 {3.663653}
+Rate           LnL: -764723.917767 rate: 0.001910 {3.663653}
+
+Root height    LnL: -764720.770937 height: 74.456327 {3.146830}
+Rate           LnL: -764720.770491 rate: 0.001910 {3.147276}
+
+Root height    LnL: -764718.054637 height: 74.456327 {2.715854}
+Rate           LnL: -764718.053578 rate: 0.001911 {2.716912}
+
+Root height    LnL: -764715.656209 height: 74.456327 {2.397369}
+Rate           LnL: -764715.653545 rate: 0.001911 {2.400034}
+
+Root height    LnL: -764713.547986 height: 74.456327 {2.105558}
+Rate           LnL: -764713.543855 rate: 0.001911 {2.109690}
+
+Root height    LnL: -764711.649634 height: 74.456327 {1.894221}
+Rate           LnL: -764711.644000 rate: 0.001912 {1.899855}
+
+Root height    LnL: -764709.925522 height: 74.456327 {1.718478}
+Rate           LnL: -764709.918550 rate: 0.001913 {1.725450}
+
+Root height    LnL: -764708.342566 height: 74.456327 {1.575984}
+Rate           LnL: -764708.295487 rate: 0.001914 {1.623064}
+
+Root height    LnL: -764706.806135 height: 74.456266 {1.489352}
+Rate           LnL: -764706.735458 rate: 0.001915 {1.560029}
+
+Root height    LnL: -764705.407996 height: 74.456246 {1.327462}
+Rate           LnL: -764705.332067 rate: 0.001916 {1.403391}
+
+Root height    LnL: -764704.101775 height: 74.456226 {1.230291}
+Rate           LnL: -764704.022800 rate: 0.001917 {1.309266}
+
+Root height    LnL: -764702.873266 height: 74.456205 {1.149534}
+Rate           LnL: -764702.792220 rate: 0.001918 {1.230580}
+
+Root height    LnL: -764701.720938 height: 74.456185 {1.071283}
+Rate           LnL: -764701.637973 rate: 0.001919 {1.154247}
+
+Root height    LnL: -764700.627370 height: 74.456164 {1.010603}
+Rate           LnL: -764700.544705 rate: 0.001920 {1.093268}
+
+Root height    LnL: -764699.578083 height: 74.456144 {0.966622}
+Rate           LnL: -764699.493055 rate: 0.001921 {1.051650}
+
+Root height    LnL: -764698.574278 height: 74.456124 {0.918777}
+Rate           LnL: -764698.489091 rate: 0.001922 {1.003964}
+
+Root height    LnL: -764697.610186 height: 74.456103 {0.878904}
+Rate           LnL: -764697.523791 rate: 0.001923 {0.965300}
+
+Root height    LnL: -764696.682551 height: 74.456083 {0.841240}
+Rate           LnL: -764696.595872 rate: 0.001924 {0.927919}
+
+Root height    LnL: -764695.781639 height: 74.456062 {0.814233}
+Rate           LnL: -764695.694992 rate: 0.001925 {0.900880}
+
+Root height    LnL: -764694.912064 height: 74.456042 {0.782928}
+Rate           LnL: -764694.825681 rate: 0.001926 {0.869311}
+
+Root height    LnL: -764694.072307 height: 74.456021 {0.753374}
+Rate           LnL: -764693.986181 rate: 0.001927 {0.839501}
+
+Root height    LnL: -764693.262283 height: 74.456000 {0.723897}
+Rate           LnL: -764693.176545 rate: 0.001928 {0.809636}
+
+Root height    LnL: -764692.478558 height: 74.455980 {0.697986}
+Rate           LnL: -764692.391674 rate: 0.001929 {0.784870}
+
+Root height    LnL: -764691.700648 height: 74.455959 {0.691026}
+Rate           LnL: -764691.614097 rate: 0.001930 {0.777577}
+
+Root height    LnL: -764690.946741 height: 74.455938 {0.667356}
+Rate           LnL: -764690.861680 rate: 0.001931 {0.752418}
+
+Root height    LnL: -764690.214196 height: 74.455918 {0.647484}
+Rate           LnL: -764690.130447 rate: 0.001933 {0.731233}
+
+Root height    LnL: -764689.500175 height: 74.455897 {0.630272}
+Rate           LnL: -764689.416458 rate: 0.001934 {0.713989}
+
+Root height    LnL: -764688.802094 height: 74.455876 {0.614364}
+Rate           LnL: -764688.718760 rate: 0.001935 {0.697698}
+
+Root height    LnL: -764688.114968 height: 74.455856 {0.603792}
+Rate           LnL: -764688.031926 rate: 0.001936 {0.686835}
+
+Root height    LnL: -764687.437708 height: 74.455835 {0.594217}
+Rate           LnL: -764687.355423 rate: 0.001937 {0.676502}
+
+Root height    LnL: -764686.774599 height: 74.455814 {0.580825}
+Rate           LnL: -764686.692414 rate: 0.001938 {0.663010}
+
+Root height    LnL: -764686.123344 height: 74.455793 {0.569070}
+Rate           LnL: -764686.042168 rate: 0.001939 {0.650246}
+
+Root height    LnL: -764685.485052 height: 74.455772 {0.557116}
+Rate           LnL: -764685.404776 rate: 0.001940 {0.637392}
+
+Root height    LnL: -764684.858765 height: 74.455752 {0.546011}
+Rate           LnL: -764684.779775 rate: 0.001941 {0.625001}
+
+Root height    LnL: -764684.244267 height: 74.455731 {0.535508}
+Rate           LnL: -764684.166397 rate: 0.001942 {0.613378}
+
+Root height    LnL: -764683.640730 height: 74.455710 {0.525667}
+Rate           LnL: -764683.563685 rate: 0.001943 {0.602712}
+
+Root height    LnL: -764683.047715 height: 74.455689 {0.515970}
+Rate           LnL: -764683.002923 rate: 0.001945 {0.560762}
+
+Root height    LnL: -764682.422781 height: 74.455625 {0.580142}
+Rate           LnL: -764682.353041 rate: 0.001946 {0.649882}
+
+Root height    LnL: -764681.846414 height: 74.455604 {0.506627}
+Rate           LnL: -764681.807516 rate: 0.001947 {0.545525}
+
+Root height    LnL: -764681.244094 height: 74.455540 {0.563423}
+Rate           LnL: -764681.213823 rate: 0.001948 {0.593693}
+
+Root height    LnL: -764680.648255 height: 74.455476 {0.565568}
+Rate           LnL: -764680.622193 rate: 0.001950 {0.591630}
+
+Root height    LnL: -764680.062731 height: 74.455412 {0.559462}
+Rate           LnL: -764680.061902 rate: 0.001950 {0.560291}
+
+Root height    LnL: -764679.580087 height: 74.455412 {0.481815}
+Rate           LnL: -764679.570145 rate: 0.001951 {0.491757}
+
+Root height    LnL: -764679.106511 height: 74.455412 {0.463634}
+Rate           LnL: -764679.094559 rate: 0.001951 {0.475586}
+
+Root height    LnL: -764678.640971 height: 74.455412 {0.453588}
+Rate           LnL: -764678.628359 rate: 0.001952 {0.466200}
+
+Root height    LnL: -764678.182323 height: 74.455412 {0.446036}
+Rate           LnL: -764678.169393 rate: 0.001953 {0.458966}
+
+Root height    LnL: -764677.730759 height: 74.455412 {0.438634}
+Rate           LnL: -764677.717688 rate: 0.001954 {0.451705}
+
+Root height    LnL: -764677.286933 height: 74.455412 {0.430755}
+Rate           LnL: -764677.273809 rate: 0.001955 {0.443879}
+
+Root height    LnL: -764676.850687 height: 74.455412 {0.423122}
+Rate           LnL: -764676.837542 rate: 0.001956 {0.436267}
+
+Root height    LnL: -764676.421447 height: 74.455412 {0.416096}
+Rate           LnL: -764676.408315 rate: 0.001957 {0.429227}
+
+Root height    LnL: -764675.998134 height: 74.455412 {0.410182}
+Rate           LnL: -764675.985076 rate: 0.001957 {0.423239}
+
+Root height    LnL: -764675.581546 height: 74.455412 {0.403531}
+Rate           LnL: -764675.568506 rate: 0.001958 {0.416570}
+
+Root height    LnL: -764675.170824 height: 74.455412 {0.397682}
+Rate           LnL: -764675.157918 rate: 0.001959 {0.410588}
+
+Root height    LnL: -764674.765416 height: 74.455412 {0.392502}
+Rate           LnL: -764674.752545 rate: 0.001960 {0.405373}
+
+Root height    LnL: -764674.365307 height: 74.455412 {0.387238}
+Rate           LnL: -764674.352522 rate: 0.001961 {0.400023}
+
+Root height    LnL: -764673.971713 height: 74.455412 {0.380809}
+Rate           LnL: -764673.959033 rate: 0.001962 {0.393490}
+
+Root height    LnL: -764673.577554 height: 74.455412 {0.381478}
+Rate           LnL: -764673.564938 rate: 0.001963 {0.394094}
+
+Root height    LnL: -764673.189500 height: 74.455412 {0.375438}
+Rate           LnL: -764673.176990 rate: 0.001963 {0.387949}
+
+Root height    LnL: -764672.811527 height: 74.455412 {0.365462}
+Rate           LnL: -764672.799167 rate: 0.001964 {0.377822}
+
+Root height    LnL: -764672.440239 height: 74.455412 {0.358928}
+Rate           LnL: -764672.428034 rate: 0.001965 {0.371133}
+
+Root height    LnL: -764672.072348 height: 74.455412 {0.355686}
+Rate           LnL: -764672.060227 rate: 0.001966 {0.367807}
+
+Root height    LnL: -764671.709733 height: 74.455412 {0.350495}
+Rate           LnL: -764671.697731 rate: 0.001967 {0.362496}
+
+Root height    LnL: -764671.350726 height: 74.455412 {0.347006}
+Rate           LnL: -764671.338851 rate: 0.001968 {0.358881}
+
+Root height    LnL: -764670.997596 height: 74.455412 {0.341255}
+Rate           LnL: -764670.985834 rate: 0.001968 {0.353017}
+
+Root height    LnL: -764670.648211 height: 74.455412 {0.337623}
+Rate           LnL: -764670.636601 rate: 0.001969 {0.349233}
+
+Root height    LnL: -764670.301403 height: 74.455412 {0.335198}
+Rate           LnL: -764670.289861 rate: 0.001970 {0.346740}
+
+Root height    LnL: -764669.958450 height: 74.455412 {0.331411}
+Rate           LnL: -764669.947044 rate: 0.001971 {0.342817}
+
+Root height    LnL: -764669.622393 height: 74.455412 {0.324651}
+Rate           LnL: -764669.611123 rate: 0.001972 {0.335920}
+
+Root height    LnL: -764669.289369 height: 74.455412 {0.321754}
+Rate           LnL: -764669.278243 rate: 0.001973 {0.332880}
+
+Root height    LnL: -764668.961696 height: 74.455412 {0.316547}
+Rate           LnL: -764668.950704 rate: 0.001973 {0.327539}
+
+Root height    LnL: -764668.641462 height: 74.455412 {0.309242}
+Rate           LnL: -764668.630643 rate: 0.001974 {0.320061}
+
+Root height    LnL: -764668.324879 height: 74.455412 {0.305764}
+Rate           LnL: -764668.314202 rate: 0.001975 {0.316441}
+
+Root height    LnL: -764668.011308 height: 74.455412 {0.302893}
+Rate           LnL: -764668.000713 rate: 0.001976 {0.313489}
+
+Root height    LnL: -764667.704453 height: 74.455412 {0.296260}
+Rate           LnL: -764667.694022 rate: 0.001977 {0.306691}
+
+Root height    LnL: -764667.399696 height: 74.455412 {0.294326}
+Rate           LnL: -764667.389391 rate: 0.001977 {0.304631}
+
+Root height    LnL: -764667.100347 height: 74.455412 {0.289045}
+Rate           LnL: -764667.090217 rate: 0.001978 {0.299174}
+
+Root height    LnL: -764666.803185 height: 74.455412 {0.287032}
+Rate           LnL: -764666.793106 rate: 0.001979 {0.297111}
+
+Root height    LnL: -764666.512383 height: 74.455412 {0.280723}
+Rate           LnL: -764666.502495 rate: 0.001980 {0.290611}
+
+Root height    LnL: -764666.223305 height: 74.455412 {0.279190}
+Rate           LnL: -764666.213525 rate: 0.001980 {0.288970}
+
+Root height    LnL: -764665.939624 height: 74.455412 {0.273901}
+Rate           LnL: -764665.929920 rate: 0.001981 {0.283605}
+
+Root height    LnL: -764665.658398 height: 74.455412 {0.271522}
+Rate           LnL: -764665.648839 rate: 0.001982 {0.281081}
+
+Root height    LnL: -764665.382974 height: 74.455412 {0.265865}
+Rate           LnL: -764665.373584 rate: 0.001983 {0.275256}
+
+Root height    LnL: -764665.108755 height: 74.455412 {0.264828}
+Rate           LnL: -764665.099428 rate: 0.001983 {0.274155}
+
+Root height    LnL: -764664.840101 height: 74.455412 {0.259327}
+Rate           LnL: -764664.830942 rate: 0.001984 {0.268486}
+
+Root height    LnL: -764664.572082 height: 74.455412 {0.258861}
+Rate           LnL: -764664.562957 rate: 0.001985 {0.267985}
+
+Root height    LnL: -764664.311053 height: 74.455412 {0.251904}
+Rate           LnL: -764664.302119 rate: 0.001986 {0.260838}
+
+Root height    LnL: -764664.050238 height: 74.455412 {0.251881}
+Rate           LnL: -764664.041341 rate: 0.001986 {0.260778}
+
+Root height    LnL: -764663.796270 height: 74.455412 {0.245071}
+Rate           LnL: -764663.787575 rate: 0.001987 {0.253766}
+
+Root height    LnL: -764663.543984 height: 74.455412 {0.243591}
+Rate           LnL: -764663.535365 rate: 0.001988 {0.252211}
+
+Root height    LnL: -764663.297225 height: 74.455412 {0.238140}
+Rate           LnL: -764663.288763 rate: 0.001988 {0.246602}
+
+Root height    LnL: -764663.052618 height: 74.455412 {0.236145}
+Rate           LnL: -764663.044267 rate: 0.001989 {0.244496}
+
+Root height    LnL: -764662.811226 height: 74.455412 {0.233041}
+Rate           LnL: -764662.802972 rate: 0.001990 {0.241295}
+
+Root height    LnL: -764662.573541 height: 74.455412 {0.229431}
+Rate           LnL: -764662.565409 rate: 0.001991 {0.237563}
+
+Root height    LnL: -764662.340404 height: 74.455412 {0.225005}
+Rate           LnL: -764662.332430 rate: 0.001991 {0.232979}
+
+Root height    LnL: -764662.107745 height: 74.455412 {0.224686}
+Rate           LnL: -764662.099829 rate: 0.001992 {0.232601}
+
+Root height    LnL: -764661.880258 height: 74.455412 {0.219571}
+Rate           LnL: -764661.872421 rate: 0.001993 {0.227408}
+
+Root height    LnL: -764661.654969 height: 74.455412 {0.217452}
+Rate           LnL: -764661.647271 rate: 0.001993 {0.225150}
+
+Root height    LnL: -764661.433546 height: 74.455412 {0.213725}
+Rate           LnL: -764661.425958 rate: 0.001994 {0.221313}
+
+Root height    LnL: -764661.215279 height: 74.455412 {0.210680}
+Rate           LnL: -764661.207809 rate: 0.001995 {0.218149}
+
+Root height    LnL: -764660.999545 height: 74.455412 {0.208264}
+Rate           LnL: -764660.992144 rate: 0.001995 {0.215665}
+
+Root height    LnL: -764660.784596 height: 74.455412 {0.207548}
+Rate           LnL: -764660.777288 rate: 0.001996 {0.214856}
+
+Root height    LnL: -764660.573147 height: 74.455412 {0.204141}
+Rate           LnL: -764660.565925 rate: 0.001997 {0.211363}
+
+Root height    LnL: -764660.364681 height: 74.455412 {0.201244}
+Rate           LnL: -764660.357577 rate: 0.001997 {0.208348}
+
+Root height    LnL: -764660.158442 height: 74.455412 {0.199135}
+Rate           LnL: -764660.151380 rate: 0.001998 {0.206198}
+
+Root height    LnL: -764659.955567 height: 74.455412 {0.195812}
+Rate           LnL: -764659.948636 rate: 0.001999 {0.202743}
+
+Root height    LnL: -764659.755958 height: 74.455412 {0.192678}
+Rate           LnL: -764659.749096 rate: 0.001999 {0.199540}
+
+Root height    LnL: -764659.560129 height: 74.455412 {0.188967}
+Rate           LnL: -764659.553340 rate: 0.002000 {0.195756}
+
+Root height    LnL: -764659.365855 height: 74.455412 {0.187485}
+Rate           LnL: -764659.359177 rate: 0.002000 {0.194164}
+
+Root height    LnL: -764659.176165 height: 74.455412 {0.183011}
+Rate           LnL: -764659.169633 rate: 0.002001 {0.189544}
+
+Root height    LnL: -764658.987658 height: 74.455412 {0.181975}
+Rate           LnL: -764658.981177 rate: 0.002002 {0.188456}
+
+Root height    LnL: -764658.802435 height: 74.455412 {0.178741}
+Rate           LnL: -764658.796038 rate: 0.002002 {0.185139}
+
+Root height    LnL: -764658.621613 height: 74.455412 {0.174425}
+Rate           LnL: -764658.615391 rate: 0.002003 {0.180647}
+
+Root height    LnL: -764658.440621 height: 74.455412 {0.174770}
+Rate           LnL: -764658.434410 rate: 0.002004 {0.180981}
+
+Root height    LnL: -764658.264172 height: 74.455412 {0.170238}
+Rate           LnL: -764658.258129 rate: 0.002004 {0.176281}
+
+Root height    LnL: -764658.090256 height: 74.455412 {0.167873}
+Rate           LnL: -764658.084243 rate: 0.002005 {0.173886}
+
+Root height    LnL: -764657.919321 height: 74.455412 {0.164922}
+Rate           LnL: -764657.913446 rate: 0.002005 {0.170797}
+
+Root height    LnL: -764657.749720 height: 74.455412 {0.163726}
+Rate           LnL: -764657.743911 rate: 0.002006 {0.169536}
+
+Root height    LnL: -764657.413397 height: 74.447401 {0.330513}
+Rate           LnL: -764657.407627 rate: 0.002007 {0.336284}
+
+Root height    LnL: -764656.811291 height: 74.426856 {0.596336}
+Rate           LnL: -764656.805429 rate: 0.002007 {0.602198}
+
+Root height    LnL: -764656.215442 height: 74.406493 {0.589987}
+Rate           LnL: -764656.209651 rate: 0.002008 {0.595779}
+
+Root height    LnL: -764655.621307 height: 74.386206 {0.588344}
+Rate           LnL: -764655.615518 rate: 0.002008 {0.594132}
+
+Root height    LnL: -764655.030508 height: 74.365929 {0.585011}
+Rate           LnL: -764655.024857 rate: 0.002009 {0.590661}
+
+Root height    LnL: -764654.441532 height: 74.345719 {0.583326}
+Rate           LnL: -764654.435867 rate: 0.002010 {0.588991}
+
+Root height    LnL: -764653.855273 height: 74.325521 {0.580594}
+Rate           LnL: -764653.849704 rate: 0.002010 {0.586162}
+
+Root height    LnL: -764653.270258 height: 74.305384 {0.579446}
+Rate           LnL: -764653.264690 rate: 0.002011 {0.585014}
+
+Root height    LnL: -764652.688856 height: 74.285271 {0.575834}
+Rate           LnL: -764652.683446 rate: 0.002011 {0.581244}
+
+Root height    LnL: -764652.110549 height: 74.265273 {0.572897}
+Rate           LnL: -764652.105112 rate: 0.002012 {0.578334}
+
+Root height    LnL: -764651.535214 height: 74.245310 {0.569898}
+Rate           LnL: -764651.529856 rate: 0.002012 {0.575256}
+
+Root height    LnL: -764650.962005 height: 74.225424 {0.567850}
+Rate           LnL: -764650.956666 rate: 0.002013 {0.573190}
+
+Root height    LnL: -764650.392014 height: 74.205592 {0.564652}
+Rate           LnL: -764650.386770 rate: 0.002014 {0.569896}
+
+Root height    LnL: -764649.824761 height: 74.185855 {0.562009}
+Rate           LnL: -764649.819509 rate: 0.002014 {0.567261}
+
+Root height    LnL: -764649.261392 height: 74.166169 {0.558117}
+Rate           LnL: -764649.256304 rate: 0.002015 {0.563204}
+
+Root height    LnL: -764648.701374 height: 74.146622 {0.554930}
+Rate           LnL: -764648.696228 rate: 0.002015 {0.560076}
+
+Root height    LnL: -764648.144316 height: 74.127116 {0.551913}
+Rate           LnL: -764648.139312 rate: 0.002016 {0.556916}
+
+Root height    LnL: -764647.590234 height: 74.107724 {0.549078}
+Rate           LnL: -764647.585226 rate: 0.002016 {0.554086}
+
+Root height    LnL: -764647.039375 height: 74.088381 {0.545851}
+Rate           LnL: -764647.034437 rate: 0.002017 {0.550789}
+
+Root height    LnL: -764646.490746 height: 74.069110 {0.543691}
+Rate           LnL: -764646.485844 rate: 0.002017 {0.548592}
+
+Root height    LnL: -764645.945816 height: 74.049912 {0.540029}
+Rate           LnL: -764645.941011 rate: 0.002018 {0.544834}
+
+Root height    LnL: -764645.404975 height: 74.030877 {0.536036}
+Rate           LnL: -764645.400153 rate: 0.002019 {0.540858}
+
+Root height    LnL: -764644.865790 height: 74.011896 {0.534363}
+Rate           LnL: -764644.861032 rate: 0.002019 {0.539122}
+
+Root height    LnL: -764644.330233 height: 73.992977 {0.530799}
+Rate           LnL: -764644.325532 rate: 0.002020 {0.535500}
+
+Root height    LnL: -764643.799015 height: 73.974201 {0.526517}
+Rate           LnL: -764643.794368 rate: 0.002020 {0.531164}
+
+Root height    LnL: -764643.270214 height: 73.955492 {0.524154}
+Rate           LnL: -764643.265611 rate: 0.002021 {0.528757}
+
+Root height    LnL: -764642.744728 height: 73.936849 {0.520882}
+Rate           LnL: -764642.740173 rate: 0.002021 {0.525437}
+
+Root height    LnL: -764642.222839 height: 73.918347 {0.517334}
+Rate           LnL: -764642.218332 rate: 0.002022 {0.521841}
+
+Root height    LnL: -764641.705483 height: 73.899975 {0.512849}
+Rate           LnL: -764641.701049 rate: 0.002022 {0.517283}
+
+Root height    LnL: -764641.192991 height: 73.881727 {0.508058}
+Rate           LnL: -764641.188587 rate: 0.002023 {0.512462}
+
+Root height    LnL: -764640.683737 height: 73.863582 {0.504850}
+Rate           LnL: -764640.679414 rate: 0.002023 {0.509173}
+
+Root height    LnL: -764640.177022 height: 73.845549 {0.502392}
+Rate           LnL: -764640.172717 rate: 0.002024 {0.506697}
+
+Root height    LnL: -764639.673495 height: 73.827607 {0.499222}
+Rate           LnL: -764639.669222 rate: 0.002024 {0.503495}
+
+Root height    LnL: -764639.173632 height: 73.809749 {0.495590}
+Rate           LnL: -764639.169435 rate: 0.002025 {0.499787}
+
+Root height    LnL: -764638.677442 height: 73.791990 {0.491993}
+Rate           LnL: -764638.673284 rate: 0.002025 {0.496151}
+
+Root height    LnL: -764638.183447 height: 73.774323 {0.489837}
+Rate           LnL: -764638.179314 rate: 0.002026 {0.493970}
+
+Root height    LnL: -764637.692914 height: 73.756739 {0.486400}
+Rate           LnL: -764637.688819 rate: 0.002026 {0.490495}
+
+Root height    LnL: -764637.205740 height: 73.739238 {0.483079}
+Rate           LnL: -764637.201737 rate: 0.002027 {0.487082}
+
+Root height    LnL: -764636.721361 height: 73.721842 {0.480377}
+Rate           LnL: -764636.717368 rate: 0.002027 {0.484369}
+
+Root height    LnL: -764636.241319 height: 73.704532 {0.476049}
+Rate           LnL: -764636.237410 rate: 0.002028 {0.479958}
+
+Root height    LnL: -764635.764036 height: 73.687327 {0.473374}
+Rate           LnL: -764635.760154 rate: 0.002028 {0.477256}
+
+Root height    LnL: -764635.287471 height: 73.670215 {0.472683}
+Rate           LnL: -764635.283622 rate: 0.002029 {0.476533}
+
+Root height    LnL: -764634.813649 height: 73.653190 {0.469973}
+Rate           LnL: -764634.809788 rate: 0.002029 {0.473834}
+
+Root height    LnL: -764634.342536 height: 73.636232 {0.467252}
+Rate           LnL: -764634.338720 rate: 0.002030 {0.471068}
+
+Root height    LnL: -764633.874405 height: 73.619346 {0.464315}
+Rate           LnL: -764633.870667 rate: 0.002030 {0.468053}
+
+Root height    LnL: -764633.409702 height: 73.602555 {0.460965}
+Rate           LnL: -764633.405994 rate: 0.002031 {0.464674}
+
+Root height    LnL: -764632.946659 height: 73.585847 {0.459335}
+Rate           LnL: -764632.942909 rate: 0.002031 {0.463085}
+
+Root height    LnL: -764632.486410 height: 73.569190 {0.456498}
+Rate           LnL: -764632.482713 rate: 0.002032 {0.460196}
+
+Root height    LnL: -764632.029136 height: 73.552600 {0.453577}
+Rate           LnL: -764632.025551 rate: 0.002032 {0.457162}
+
+Root height    LnL: -764631.574587 height: 73.536113 {0.450964}
+Rate           LnL: -764631.570956 rate: 0.002033 {0.454595}
+
+Root height    LnL: -764631.280878 height: 73.527035 {0.290077}
+Rate           LnL: -764631.277418 rate: 0.002033 {0.293538}
+
+Root height    LnL: -764630.772229 height: 73.507897 {0.505189}
+Rate           LnL: -764630.768703 rate: 0.002034 {0.508715}
+
+Root height    LnL: -764630.287924 height: 73.489931 {0.480778}
+Rate           LnL: -764630.284492 rate: 0.002034 {0.484211}
+
+Root height    LnL: -764629.821911 height: 73.472737 {0.462581}
+Rate           LnL: -764629.818444 rate: 0.002035 {0.466048}
+
+Root height    LnL: -764629.365757 height: 73.456013 {0.452687}
+Rate           LnL: -764629.362307 rate: 0.002035 {0.456137}
+
+Root height    LnL: -764629.076316 height: 73.446939 {0.285991}
+Rate           LnL: -764629.072935 rate: 0.002035 {0.289372}
+
+Root height    LnL: -764628.572735 height: 73.427922 {0.500200}
+Rate           LnL: -764628.569321 rate: 0.002036 {0.503614}
+
+Root height    LnL: -764628.098074 height: 73.410158 {0.471248}
+Rate           LnL: -764628.094746 rate: 0.002036 {0.474575}
+
+Root height    LnL: -764627.641774 height: 73.393200 {0.452972}
+Rate           LnL: -764627.638482 rate: 0.002037 {0.456264}
+
+Root height    LnL: -764627.197445 height: 73.376765 {0.441036}
+Rate           LnL: -764627.194147 rate: 0.002037 {0.444335}
+
+Root height    LnL: -764626.920293 height: 73.368000 {0.273853}
+Rate           LnL: -764626.917094 rate: 0.002038 {0.277053}
+
+Root height    LnL: -764626.429342 height: 73.349334 {0.487752}
+Rate           LnL: -764626.426061 rate: 0.002038 {0.491033}
+
+Root height    LnL: -764625.966138 height: 73.331912 {0.459923}
+Rate           LnL: -764625.962911 rate: 0.002039 {0.463150}
+
+Root height    LnL: -764625.521467 height: 73.315281 {0.441444}
+Rate           LnL: -764625.518331 rate: 0.002039 {0.444580}
+
+Root height    LnL: -764625.248254 height: 73.306515 {0.270077}
+Rate           LnL: -764625.245230 rate: 0.002039 {0.273101}
+
+Root height    LnL: -764624.765362 height: 73.288002 {0.479868}
+Rate           LnL: -764624.762239 rate: 0.002040 {0.482991}
+
+Root height    LnL: -764624.311564 height: 73.270813 {0.450674}
+Rate           LnL: -764624.308573 rate: 0.002040 {0.453666}
+
+Root height    LnL: -764624.037303 height: 73.261870 {0.271270}
+Rate           LnL: -764624.034343 rate: 0.002041 {0.274230}
+
+Root height    LnL: -764623.556590 height: 73.243304 {0.477752}
+Rate           LnL: -764623.553641 rate: 0.002041 {0.480702}
+
+Root height    LnL: -764623.108517 height: 73.226224 {0.445124}
+Rate           LnL: -764623.105569 rate: 0.002042 {0.448072}
+
+Root height    LnL: -764622.840028 height: 73.217322 {0.265541}
+Rate           LnL: -764622.837226 rate: 0.002042 {0.268343}
+
+Root height    LnL: -764622.364949 height: 73.198910 {0.472277}
+Rate           LnL: -764622.362055 rate: 0.002042 {0.475171}
+
+Root height    LnL: -764621.920070 height: 73.181923 {0.441985}
+Rate           LnL: -764621.917280 rate: 0.002043 {0.444774}
+
+Root height    LnL: -764621.656482 height: 73.173171 {0.260798}
+Rate           LnL: -764621.653761 rate: 0.002043 {0.263520}
+
+Root height    LnL: -764621.186105 height: 73.154877 {0.467655}
+Rate           LnL: -764621.183336 rate: 0.002044 {0.470425}
+
+Root height    LnL: -764620.749418 height: 73.138013 {0.433918}
+Rate           LnL: -764620.746763 rate: 0.002044 {0.436573}
+
+Root height    LnL: -764620.492371 height: 73.129470 {0.254392}
+Rate           LnL: -764620.489808 rate: 0.002045 {0.256955}
+
+Root height    LnL: -764620.030152 height: 73.111357 {0.459656}
+Rate           LnL: -764620.027565 rate: 0.002045 {0.462243}
+
+Root height    LnL: -764619.599859 height: 73.094735 {0.427706}
+Rate           LnL: -764619.597290 rate: 0.002045 {0.430275}
+
+Root height    LnL: -764619.346269 height: 73.086322 {0.251021}
+Rate           LnL: -764619.343680 rate: 0.002046 {0.253610}
+
+Root height    LnL: -764618.886727 height: 73.068312 {0.456953}
+Rate           LnL: -764618.884179 rate: 0.002046 {0.459501}
+
+Root height    LnL: -764618.459498 height: 73.051776 {0.424681}
+Rate           LnL: -764618.456974 rate: 0.002047 {0.427205}
+
+Root height    LnL: -764618.213263 height: 73.043423 {0.243711}
+Rate           LnL: -764618.210873 rate: 0.002047 {0.246101}
+
+Root height    LnL: -764617.760642 height: 73.025591 {0.450231}
+Rate           LnL: -764617.758206 rate: 0.002047 {0.452667}
+
+Root height    LnL: -764617.338618 height: 73.009179 {0.419587}
+Rate           LnL: -764617.336196 rate: 0.002048 {0.422010}
+
+Root height    LnL: -764617.116057 height: 73.001878 {0.220139}
+Rate           LnL: -764617.113858 rate: 0.002048 {0.222338}
+
+Root height    LnL: -764616.694227 height: 72.985327 {0.419631}
+Rate           LnL: -764616.691827 rate: 0.002048 {0.422031}
+
+Root height    LnL: -764616.452535 height: 72.977028 {0.239292}
+Rate           LnL: -764616.450335 rate: 0.002049 {0.241493}
+
+Root height    LnL: -764616.006367 height: 72.959361 {0.443967}
+Rate           LnL: -764616.004103 rate: 0.002049 {0.446232}
+
+Root height    LnL: -764615.771853 height: 72.951332 {0.232250}
+Rate           LnL: -764615.769721 rate: 0.002050 {0.234381}
+
+Root height    LnL: -764615.344857 height: 72.934396 {0.424864}
+Rate           LnL: -764615.342599 rate: 0.002050 {0.427122}
+
+Root height    LnL: -764615.102454 height: 72.925949 {0.240145}
+Rate           LnL: -764615.100372 rate: 0.002050 {0.242227}
+
+Root height    LnL: -764614.678826 height: 72.909107 {0.421546}
+Rate           LnL: -764614.676716 rate: 0.002051 {0.423656}
+
+Root height    LnL: -764614.465953 height: 72.901816 {0.210763}
+Rate           LnL: -764614.463977 rate: 0.002051 {0.212739}
+
+Root height    LnL: -764614.221221 height: 72.893173 {0.242756}
+Rate           LnL: -764614.219208 rate: 0.002051 {0.244769}
+
+Root height    LnL: -764613.778899 height: 72.875338 {0.440310}
+Rate           LnL: -764613.776893 rate: 0.002052 {0.442316}
+
+Root height    LnL: -764613.551500 height: 72.867395 {0.225393}
+Rate           LnL: -764613.549602 rate: 0.002052 {0.227291}
+
+Root height    LnL: -764613.133981 height: 72.850656 {0.415621}
+Rate           LnL: -764613.131972 rate: 0.002052 {0.417630}
+
+Root height    LnL: -764612.921763 height: 72.843319 {0.210209}
+Rate           LnL: -764612.919957 rate: 0.002053 {0.212015}
+
+Root height    LnL: -764612.695736 height: 72.835197 {0.224220}
+Rate           LnL: -764612.694015 rate: 0.002053 {0.225941}
+
+Root height    LnL: -764612.278788 height: 72.818461 {0.415227}
+Rate           LnL: -764612.276926 rate: 0.002053 {0.417090}
+
+Root height    LnL: -764612.052956 height: 72.810368 {0.223969}
+Rate           LnL: -764612.051159 rate: 0.002054 {0.225767}
+
+Root height    LnL: -764611.644991 height: 72.793922 {0.406168}
+Rate           LnL: -764611.643215 rate: 0.002054 {0.407944}
+
+Root height    LnL: -764611.438083 height: 72.786643 {0.205132}
+Rate           LnL: -764611.436364 rate: 0.002054 {0.206851}
+
+Root height    LnL: -764611.200883 height: 72.778014 {0.235481}
+Rate           LnL: -764611.199175 rate: 0.002055 {0.237188}
+
+Root height    LnL: -764610.779991 height: 72.760985 {0.419184}
+Rate           LnL: -764610.778220 rate: 0.002055 {0.420955}
+
+Root height    LnL: -764610.572373 height: 72.753656 {0.205847}
+Rate           LnL: -764610.570690 rate: 0.002055 {0.207530}
+
+Root height    LnL: -764610.331263 height: 72.744712 {0.239427}
+Rate           LnL: -764610.329615 rate: 0.002056 {0.241075}
+
+Root height    LnL: -764609.914973 height: 72.727863 {0.414642}
+Rate           LnL: -764609.913234 rate: 0.002056 {0.416381}
+
+Root height    LnL: -764609.705737 height: 72.720316 {0.207497}
+Rate           LnL: -764609.704158 rate: 0.002056 {0.209076}
+
+Root height    LnL: -764609.471896 height: 72.711627 {0.232262}
+Rate           LnL: -764609.470303 rate: 0.002057 {0.233855}
+
+Root height    LnL: -764609.236897 height: 72.702819 {0.233406}
+Rate           LnL: -764609.235373 rate: 0.002057 {0.234930}
+
+Root height    LnL: -764609.000726 height: 72.693943 {0.234648}
+Rate           LnL: -764608.999171 rate: 0.002057 {0.236202}
+
+Root height    LnL: -764608.583586 height: 72.676904 {0.415586}
+Rate           LnL: -764608.582008 rate: 0.002058 {0.417164}
+
+Root height    LnL: -764608.382091 height: 72.669636 {0.199917}
+Rate           LnL: -764608.380611 rate: 0.002058 {0.201397}
+
+Root height    LnL: -764608.167124 height: 72.661774 {0.213487}
+Rate           LnL: -764608.165631 rate: 0.002058 {0.214979}
+
+Root height    LnL: -764607.768854 height: 72.645391 {0.396778}
+Rate           LnL: -764607.767362 rate: 0.002059 {0.398269}
+
+Root height    LnL: -764607.568664 height: 72.638126 {0.198698}
+Rate           LnL: -764607.567229 rate: 0.002059 {0.200134}
+
+Root height    LnL: -764607.349544 height: 72.629881 {0.217684}
+Rate           LnL: -764607.348160 rate: 0.002059 {0.219068}
+
+Root height    LnL: -764607.113714 height: 72.620952 {0.234447}
+Rate           LnL: -764607.112323 rate: 0.002060 {0.235838}
+
+Root height    LnL: -764606.880341 height: 72.612053 {0.231982}
+Rate           LnL: -764606.878929 rate: 0.002060 {0.233393}
+
+Root height    LnL: -764606.471820 height: 72.595107 {0.407109}
+Rate           LnL: -764606.470396 rate: 0.002060 {0.408533}
+
+Root height    LnL: -764606.271554 height: 72.587848 {0.198842}
+Rate           LnL: -764606.270119 rate: 0.002060 {0.200278}
+
+Root height    LnL: -764606.066738 height: 72.580180 {0.203381}
+Rate           LnL: -764606.065413 rate: 0.002061 {0.204706}
+
+Root height    LnL: -764605.836148 height: 72.571295 {0.229265}
+Rate           LnL: -764605.834860 rate: 0.002061 {0.230553}
+
+Root height    LnL: -764605.436065 height: 72.554756 {0.398795}
+Rate           LnL: -764605.434689 rate: 0.002061 {0.400171}
+
+Root height    LnL: -764605.239488 height: 72.547500 {0.195201}
+Rate           LnL: -764605.238197 rate: 0.002062 {0.196493}
+
+Root height    LnL: -764605.023659 height: 72.539375 {0.214538}
+Rate           LnL: -764605.022333 rate: 0.002062 {0.215863}
+
+Root height    LnL: -764604.805904 height: 72.531046 {0.216429}
+Rate           LnL: -764604.804625 rate: 0.002062 {0.217708}
+
+Root height    LnL: -764604.587106 height: 72.522646 {0.217519}
+Rate           LnL: -764604.585857 rate: 0.002062 {0.218768}
+
+Root height    LnL: -764604.369468 height: 72.514248 {0.216389}
+Rate           LnL: -764604.368289 rate: 0.002063 {0.217568}
+
+Root height    LnL: -764603.975054 height: 72.497785 {0.393236}
+Rate           LnL: -764603.973765 rate: 0.002063 {0.394524}
+
+Root height    LnL: -764603.781799 height: 72.490535 {0.191966}
+Rate           LnL: -764603.780571 rate: 0.002063 {0.193193}
+
+Root height    LnL: -764603.588814 height: 72.483286 {0.191757}
+Rate           LnL: -764603.587616 rate: 0.002064 {0.192955}
+
+Root height    LnL: -764603.390958 height: 72.475747 {0.196658}
+Rate           LnL: -764603.389763 rate: 0.002064 {0.197853}
+
+Root height    LnL: -764603.166247 height: 72.467064 {0.223516}
+Rate           LnL: -764603.165057 rate: 0.002064 {0.224706}
+
+Root height    LnL: -764602.774581 height: 72.450691 {0.390476}
+Rate           LnL: -764602.773380 rate: 0.002064 {0.391676}
+
+Root height    LnL: -764602.583715 height: 72.443446 {0.189665}
+Rate           LnL: -764602.582622 rate: 0.002065 {0.190759}
+
+Root height    LnL: -764602.392687 height: 72.436201 {0.189935}
+Rate           LnL: -764602.391505 rate: 0.002065 {0.191116}
+
+Root height    LnL: -764602.202965 height: 72.428958 {0.188541}
+Rate           LnL: -764602.201855 rate: 0.002065 {0.189651}
+
+Root height    LnL: -764602.013486 height: 72.421715 {0.188369}
+Rate           LnL: -764602.012378 rate: 0.002065 {0.189477}
+
+Root height    LnL: -764601.821827 height: 72.414287 {0.190551}
+Rate           LnL: -764601.820824 rate: 0.002066 {0.191553}
+
+Root height    LnL: -764601.625902 height: 72.406673 {0.194922}
+Rate           LnL: -764601.624850 rate: 0.002066 {0.195974}
+
+Root height    LnL: -764601.426717 height: 72.398908 {0.198133}
+Rate           LnL: -764601.425702 rate: 0.002066 {0.199148}
+
+Root height    LnL: -764601.226268 height: 72.391073 {0.199434}
+Rate           LnL: -764601.225227 rate: 0.002066 {0.200475}
+
+Root height    LnL: -764601.025139 height: 72.383185 {0.200089}
+Rate           LnL: -764601.024131 rate: 0.002067 {0.201096}
+
+Root height    LnL: -764600.824000 height: 72.375287 {0.200131}
+Rate           LnL: -764600.822974 rate: 0.002067 {0.201157}
+
+Root height    LnL: -764600.621877 height: 72.367363 {0.201097}
+Rate           LnL: -764600.620849 rate: 0.002067 {0.202124}
+
+Root height    LnL: -764600.419795 height: 72.359420 {0.201055}
+Rate           LnL: -764600.418823 rate: 0.002068 {0.202026}
+
+Root height    LnL: -764600.219940 height: 72.351524 {0.198883}
+Rate           LnL: -764600.218981 rate: 0.002068 {0.199842}
+
+Root height    LnL: -764600.000921 height: 72.342769 {0.218060}
+Rate           LnL: -764599.999936 rate: 0.002068 {0.219046}
+
+Root height    LnL: -764599.776484 height: 72.333845 {0.223452}
+Rate           LnL: -764599.775500 rate: 0.002068 {0.224436}
+
+Root height    LnL: -764599.562338 height: 72.325302 {0.213161}
+Rate           LnL: -764599.561375 rate: 0.002069 {0.214125}
+
+Root height    LnL: -764599.354640 height: 72.317040 {0.206735}
+Rate           LnL: -764599.353716 rate: 0.002069 {0.207659}
+
+Root height    LnL: -764599.151839 height: 72.308958 {0.201877}
+Rate           LnL: -764599.150885 rate: 0.002069 {0.202830}
+
+Root height    LnL: -764598.950746 height: 72.300988 {0.200140}
+Rate           LnL: -764598.949826 rate: 0.002069 {0.201059}
+
+Root height    LnL: -764598.752268 height: 72.293115 {0.197559}
+Rate           LnL: -764598.751309 rate: 0.002069 {0.198517}
+
+Root height    LnL: -764598.555543 height: 72.285269 {0.195766}
+Rate           LnL: -764598.554663 rate: 0.002070 {0.196646}
+
+Root height    LnL: -764598.360914 height: 72.277506 {0.193748}
+Rate           LnL: -764598.359991 rate: 0.002070 {0.194672}
+
+Root height    LnL: -764598.167181 height: 72.269761 {0.192809}
+Rate           LnL: -764598.166425 rate: 0.002070 {0.193565}
+
+Root height    LnL: -764597.956855 height: 72.261299 {0.209570}
+Rate           LnL: -764597.955963 rate: 0.002070 {0.210463}
+
+Root height    LnL: -764597.740134 height: 72.252619 {0.215828}
+Rate           LnL: -764597.739262 rate: 0.002071 {0.216701}
+
+Root height    LnL: -764597.532698 height: 72.244309 {0.206564}
+Rate           LnL: -764597.531759 rate: 0.002071 {0.207503}
+
+Root height    LnL: -764597.331506 height: 72.236208 {0.200253}
+Rate           LnL: -764597.330688 rate: 0.002071 {0.201071}
+
+Root height    LnL: -764597.133580 height: 72.228346 {0.197108}
+Rate           LnL: -764597.132616 rate: 0.002071 {0.198072}
+
+Root height    LnL: -764596.938629 height: 72.220503 {0.193987}
+Rate           LnL: -764596.937799 rate: 0.002072 {0.194817}
+
+Root height    LnL: -764596.746236 height: 72.212787 {0.191563}
+Rate           LnL: -764596.745411 rate: 0.002072 {0.192389}
+
+Root height    LnL: -764596.555037 height: 72.205124 {0.190374}
+Rate           LnL: -764596.554224 rate: 0.002072 {0.191186}
+
+Root height    LnL: -764596.365699 height: 72.197536 {0.188525}
+Rate           LnL: -764596.364867 rate: 0.002072 {0.189357}
+
+Root height    LnL: -764596.177206 height: 72.189979 {0.187661}
+Rate           LnL: -764596.176437 rate: 0.002073 {0.188430}
+
+Root height    LnL: -764595.989108 height: 72.182486 {0.187328}
+Rate           LnL: -764595.988242 rate: 0.002073 {0.188195}
+
+Root height    LnL: -764595.803374 height: 72.175011 {0.184868}
+Rate           LnL: -764595.802603 rate: 0.002073 {0.185639}
+
+Root height    LnL: -764595.597619 height: 72.166667 {0.204984}
+Rate           LnL: -764595.596755 rate: 0.002073 {0.205848}
+
+Root height    LnL: -764595.382467 height: 72.157975 {0.214288}
+Rate           LnL: -764595.381613 rate: 0.002073 {0.215142}
+
+Root height    LnL: -764595.174344 height: 72.149542 {0.207268}
+Rate           LnL: -764595.173452 rate: 0.002074 {0.208161}
+
+Root height    LnL: -764594.970826 height: 72.141279 {0.202626}
+Rate           LnL: -764594.969992 rate: 0.002074 {0.203460}
+
+Root height    LnL: -764594.769462 height: 72.133101 {0.200530}
+Rate           LnL: -764594.768642 rate: 0.002074 {0.201349}
+
+Root height    LnL: -764594.571488 height: 72.125053 {0.197154}
+Rate           LnL: -764594.570672 rate: 0.002074 {0.197970}
+
+Root height    LnL: -764594.374369 height: 72.117129 {0.196303}
+Rate           LnL: -764594.373472 rate: 0.002075 {0.197200}
+
+Root height    LnL: -764594.180140 height: 72.109235 {0.193333}
+Rate           LnL: -764594.179333 rate: 0.002075 {0.194139}
+
+Root height    LnL: -764593.986169 height: 72.101368 {0.193164}
+Rate           LnL: -764593.985385 rate: 0.002075 {0.193948}
+
+Root height    LnL: -764593.795074 height: 72.093588 {0.190311}
+Rate           LnL: -764593.794310 rate: 0.002075 {0.191075}
+
+Root height    LnL: -764593.606362 height: 72.085945 {0.187948}
+Rate           LnL: -764593.605568 rate: 0.002076 {0.188742}
+
+Root height    LnL: -764593.418634 height: 72.078349 {0.186933}
+Rate           LnL: -764593.417767 rate: 0.002076 {0.187801}
+
+Root height    LnL: -764593.230035 height: 72.070732 {0.187732}
+Rate           LnL: -764593.229165 rate: 0.002076 {0.188602}
+
+Root height    LnL: -764593.044506 height: 72.063135 {0.184659}
+Rate           LnL: -764593.043752 rate: 0.002076 {0.185413}
+
+Root height    LnL: -764592.858192 height: 72.055590 {0.185560}
+Rate           LnL: -764592.857397 rate: 0.002076 {0.186356}
+
+Root height    LnL: -764592.674416 height: 72.048080 {0.182980}
+Rate           LnL: -764592.673711 rate: 0.002077 {0.183686}
+
+Root height    LnL: -764592.492557 height: 72.040671 {0.181153}
+Rate           LnL: -764592.491820 rate: 0.002077 {0.181891}
+
+Root height    LnL: -764592.311566 height: 72.033297 {0.180254}
+Rate           LnL: -764592.310816 rate: 0.002077 {0.181004}
+
+Root height    LnL: -764592.132302 height: 72.025962 {0.178514}
+Rate           LnL: -764592.131595 rate: 0.002077 {0.179222}
+
+Root height    LnL: -764591.955112 height: 72.018705 {0.176483}
+Rate           LnL: -764591.954434 rate: 0.002078 {0.177160}
+
+Root height    LnL: -764591.778730 height: 72.011503 {0.175704}
+Rate           LnL: -764591.777989 rate: 0.002078 {0.176445}
+
+Root height    LnL: -764591.602003 height: 72.004252 {0.175986}
+Rate           LnL: -764591.601324 rate: 0.002078 {0.176665}
+
+Root height    LnL: -764591.425480 height: 71.997052 {0.175845}
+Rate           LnL: -764591.424789 rate: 0.002078 {0.176535}
+
+Root height    LnL: -764591.249749 height: 71.989852 {0.175040}
+Rate           LnL: -764591.249020 rate: 0.002078 {0.175769}
+
+Root height    LnL: -764591.072627 height: 71.982651 {0.176393}
+Rate           LnL: -764591.071891 rate: 0.002079 {0.177130}
+
+Root height    LnL: -764590.896084 height: 71.975423 {0.175807}
+Rate           LnL: -764590.895375 rate: 0.002079 {0.176515}
+
+Root height    LnL: -764590.719547 height: 71.968202 {0.175829}
+Rate           LnL: -764590.718812 rate: 0.002079 {0.176564}
+
+Root height    LnL: -764590.543681 height: 71.960963 {0.175131}
+Rate           LnL: -764590.543008 rate: 0.002079 {0.175804}
+
+Root height    LnL: -764590.368506 height: 71.953761 {0.174502}
+Rate           LnL: -764590.367797 rate: 0.002079 {0.175211}
+
+Root height    LnL: -764590.193448 height: 71.946565 {0.174349}
+Rate           LnL: -764590.192777 rate: 0.002080 {0.175020}
+
+Root height    LnL: -764590.019872 height: 71.939343 {0.172905}
+Rate           LnL: -764590.019273 rate: 0.002080 {0.173504}
+
+Root height    LnL: -764589.845832 height: 71.932149 {0.173441}
+Rate           LnL: -764589.845333 rate: 0.002080 {0.173939}
+
+Root height    LnL: -764589.673561 height: 71.924956 {0.171772}
+Rate           LnL: -764589.673144 rate: 0.002080 {0.172189}
+
+Root height    LnL: -764589.498015 height: 71.917763 {0.175130}
+Rate           LnL: -764589.497599 rate: 0.002081 {0.175545}
+
+Root height    LnL: -764589.325066 height: 71.910572 {0.172533}
+Rate           LnL: -764589.324660 rate: 0.002081 {0.172939}
+
+Root height    LnL: -764589.151035 height: 71.903381 {0.173625}
+Rate           LnL: -764589.150678 rate: 0.002081 {0.173982}
+
+Root height    LnL: -764588.977218 height: 71.896190 {0.173460}
+Rate           LnL: -764588.976891 rate: 0.002081 {0.173787}
+
+Root height    LnL: -764588.804123 height: 71.889001 {0.172769}
+Rate           LnL: -764588.803878 rate: 0.002081 {0.173014}
+
+Root height    LnL: -764588.630024 height: 71.881812 {0.173854}
+Rate           LnL: -764588.629758 rate: 0.002082 {0.174119}
+
+Root height    LnL: -764588.455496 height: 71.874624 {0.174262}
+Rate           LnL: -764588.455208 rate: 0.002082 {0.174550}
+
+Root height    LnL: -764588.282049 height: 71.867436 {0.173159}
+Rate           LnL: -764588.281795 rate: 0.002082 {0.173413}
+
+Root height    LnL: -764588.109233 height: 71.860249 {0.172562}
+Rate           LnL: -764588.109027 rate: 0.002082 {0.172768}
+
+Root height    LnL: -764587.935953 height: 71.853063 {0.173073}
+Rate           LnL: -764587.935787 rate: 0.002082 {0.173240}
+
+Root height    LnL: -764587.763353 height: 71.845878 {0.172434}
+Rate           LnL: -764587.763209 rate: 0.002083 {0.172578}
+
+Root height    LnL: -764587.590053 height: 71.838693 {0.173156}
+Rate           LnL: -764587.589913 rate: 0.002083 {0.173296}
+
+Root height    LnL: -764587.576504 height: 71.838693 {0.013409}
+Rate           LnL: -764587.576475 rate: 0.002083 {0.013439}
+
+Root height    LnL: -764587.386987 height: 71.830745 {0.189488}
+Rate           LnL: -764587.386905 rate: 0.002083 {0.189570}
+
+Root height    LnL: -764587.205006 height: 71.823121 {0.181899}
+Rate           LnL: -764587.204972 rate: 0.002083 {0.181933}
+
+Root height    LnL: -764587.028252 height: 71.815710 {0.176720}
+Rate           LnL: -764587.028226 rate: 0.002084 {0.176746}
+
+Root height    LnL: -764586.858094 height: 71.808529 {0.170132}
+Rate           LnL: -764586.858094 rate: 0.002084 {0.170132}
+
+Root height    LnL: -764586.850905 height: 71.808529 {0.007189}
+Rate           LnL: -764586.850252 rate: 0.002084 {0.007842}
+
+Root height    LnL: -764586.682515 height: 71.801348 {0.167738}
+Rate           LnL: -764586.682234 rate: 0.002084 {0.168018}
+
+Root height    LnL: -764586.513463 height: 71.794168 {0.168771}
+Rate           LnL: -764586.513463 rate: 0.002084 {0.168771}
+
+Root height    LnL: -764586.506979 height: 71.794168 {0.006484}
+Rate           LnL: -764586.506386 rate: 0.002084 {0.007077}
+
+Root height    LnL: -764586.334187 height: 71.786848 {0.172199}
+Rate           LnL: -764586.333892 rate: 0.002084 {0.172494}
+
+Root height    LnL: -764586.163015 height: 71.779582 {0.170878}
+Rate           LnL: -764586.163011 rate: 0.002085 {0.170881}
+
+Root height    LnL: -764585.991999 height: 71.772389 {0.171012}
+Rate           LnL: -764585.991999 rate: 0.002085 {0.171012}
+
+Root height    LnL: -764585.826457 height: 71.765211 {0.165542}
+Rate           LnL: -764585.825957 rate: 0.002085 {0.166042}
+
+Root height    LnL: -764585.658251 height: 71.758035 {0.167706}
+Rate           LnL: -764585.658089 rate: 0.002085 {0.167869}
+
+Root height    LnL: -764585.488266 height: 71.750859 {0.169822}
+Rate           LnL: -764585.488266 rate: 0.002085 {0.169822}
+
+Root height    LnL: -764585.481765 height: 71.750859 {0.006501}
+Rate           LnL: -764585.481262 rate: 0.002085 {0.007004}
+
+Root height    LnL: -764585.472438 height: 71.750859 {0.008824}
+Rate           LnL: -764585.472294 rate: 0.002086 {0.008968}
+
+Root height    LnL: -764585.304380 height: 71.743684 {0.167915}
+Rate           LnL: -764585.304380 rate: 0.002086 {0.167915}
+
+Root height    LnL: -764585.138841 height: 71.736510 {0.165539}
+Rate           LnL: -764585.138267 rate: 0.002086 {0.166113}
+
+Root height    LnL: -764585.130703 height: 71.736510 {0.007564}
+Rate           LnL: -764585.130566 rate: 0.002086 {0.007701}
+
+Root height    LnL: -764584.963661 height: 71.729336 {0.166905}
+Rate           LnL: -764584.963661 rate: 0.002086 {0.166905}
+
+Root height    LnL: -764584.959036 height: 71.729336 {0.004625}
+Rate           LnL: -764584.958714 rate: 0.002086 {0.004947}
+
+Root height    LnL: -764584.792613 height: 71.722163 {0.166101}
+Rate           LnL: -764584.792613 rate: 0.002086 {0.166101}
+
+Root height    LnL: -764584.788500 height: 71.722163 {0.004113}
+Rate           LnL: -764584.788196 rate: 0.002086 {0.004417}
+
+Root height    LnL: -764584.622629 height: 71.714991 {0.165567}
+Rate           LnL: -764584.622629 rate: 0.002086 {0.165567}
+
+Root height    LnL: -764584.617788 height: 71.714991 {0.004841}
+Rate           LnL: -764584.617427 rate: 0.002087 {0.005202}
+
+Root height    LnL: -764584.611250 height: 71.714991 {0.006177}
+Rate           LnL: -764584.611250 rate: 0.002087 {0.006177}
+
+Root height    LnL: -764584.608359 height: 71.714991 {0.002891}
+Rate           LnL: -764584.608187 rate: 0.002087 {0.003064}
+
+Root height    LnL: -764584.424618 height: 71.707010 {0.183569}
+Rate           LnL: -764584.424618 rate: 0.002087 {0.183569}
+
+Root height    LnL: -764584.420364 height: 71.707010 {0.004254}
+Rate           LnL: -764584.420210 rate: 0.002087 {0.004408}
+
+Root height    LnL: -764584.244659 height: 71.699363 {0.175551}
+Rate           LnL: -764584.244659 rate: 0.002087 {0.175551}
+
+Root height    LnL: -764584.240300 height: 71.699363 {0.004360}
+Rate           LnL: -764584.240233 rate: 0.002087 {0.004426}
+
+Root height    LnL: -764584.076427 height: 71.692194 {0.163806}
+Rate           LnL: -764584.076427 rate: 0.002087 {0.163806}
+
+Root height    LnL: -764584.072757 height: 71.692194 {0.003670}
+Rate           LnL: -764584.072757 rate: 0.002087 {0.003670}
+
+Root height    LnL: -764584.070337 height: 71.692194 {0.002420}
+Rate           LnL: -764584.070093 rate: 0.002087 {0.002664}
+
+Root height    LnL: -764583.906704 height: 71.685024 {0.163389}
+Rate           LnL: -764583.906704 rate: 0.002087 {0.163389}
+
+Root height    LnL: -764583.903736 height: 71.685024 {0.002968}
+Rate           LnL: -764583.903736 rate: 0.002087 {0.002968}
+
+Root height    LnL: -764583.902125 height: 71.685024 {0.001611}
+Rate           LnL: -764583.902125 rate: 0.002087 {0.001611}
+
+Root height    LnL: -764583.901155 height: 71.685024 {0.000970}
+Rate           LnL: -764583.901077 rate: 0.002088 {0.001048}
+
+Root height    LnL: -764583.736893 height: 71.677856 {0.164184}
+Rate           LnL: -764583.736893 rate: 0.002088 {0.164184}
+
+Root height    LnL: -764583.734313 height: 71.677856 {0.002580}
+Rate           LnL: -764583.734313 rate: 0.002088 {0.002580}
+
+Root height    LnL: -764583.732333 height: 71.677856 {0.001980}
+Rate           LnL: -764583.732333 rate: 0.002088 {0.001980}
+
+Root height    LnL: -764583.730998 height: 71.677856 {0.001335}
+Rate           LnL: -764583.730840 rate: 0.002088 {0.001493}
+
+Root height    LnL: -764583.726884 height: 71.677856 {0.003955}
+Rate           LnL: -764583.726884 rate: 0.002088 {0.003955}
+
+Root height    LnL: -764583.724450 height: 71.677856 {0.002435}
+Rate           LnL: -764583.724450 rate: 0.002088 {0.002435}
+
+Root height    LnL: -764583.563761 height: 71.670688 {0.160689}
+Rate           LnL: -764583.563761 rate: 0.002088 {0.160689}
+
+Root height    LnL: -764583.562096 height: 71.670688 {0.001665}
+Rate           LnL: -764583.561987 rate: 0.002088 {0.001774}
+
+Root height    LnL: -764583.395685 height: 71.663362 {0.166302}
+Rate           LnL: -764583.395685 rate: 0.002088 {0.166302}
+
+Root height    LnL: -764583.234325 height: 71.656195 {0.161360}
+Rate           LnL: -764583.234325 rate: 0.002088 {0.161360}
+
+Root height    LnL: -764583.232297 height: 71.656195 {0.002028}
+Rate           LnL: -764583.232297 rate: 0.002088 {0.002028}
+
+Root height    LnL: -764583.230479 height: 71.656195 {0.001819}
+Rate           LnL: -764583.230430 rate: 0.002088 {0.001868}
+
+Root height    LnL: -764583.226715 height: 71.656195 {0.003714}
+Rate           LnL: -764583.226715 rate: 0.002088 {0.003714}
+
+Root height    LnL: -764583.222811 height: 71.656195 {0.003904}
+Rate           LnL: -764583.222811 rate: 0.002088 {0.003904}
+
+Root height    LnL: -764583.221362 height: 71.656195 {0.001449}
+Rate           LnL: -764583.221362 rate: 0.002088 {0.001449}
+
+Root height    LnL: -764583.220667 height: 71.656195 {0.000695}
+Rate           LnL: -764583.220667 rate: 0.002088 {0.000695}
+Root height    LnL: -764583.219504 height: 71.656195 {0.001164} *
+
+Root height    LnL: -764583.218995 height: 71.656195 {0.000509}
+Rate           LnL: -764583.218995 rate: 0.002088 {0.000509}
+
+LnL = -764583.218995
+Rate = 2.088218e-03
+Root height = 71.656195 (-26.656917)
+Correlation with branch length 0.955967
+
+LRT H0: strict clock against H1: no clock
+  p:0.000000e+00 (df: 774)
+
+
+Total runtime 1 day: 19 hours: 16 mins: 2 secs
+Rate confidence interval using profile likelihood at 0.05 level 2.083623e-03 - 2.093023e-03
+
+Total runtime 1 day: 19 hours: 31 mins: 8 secs
+
+Fatal error: cannot open file 'nexus2newick.R': No such file or directory
+
+Physher is called with the command below to get a time tree:
+	~/Downloads/physher-src.v0.2/Release/physher -i Vill_03_Feb2015_5yr.muscle.new -t ExaML_result.outTree.rtt.newick -m HKY -C strict -o vill03
+
+Physher run is completed
+
+Rooted time tree in nexus format is written in <vill03.strict.tree>

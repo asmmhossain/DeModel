@@ -1,0 +1,18 @@
+
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.480132
+Tree-Length: 53.770063
+rate A <-> C: 1.211108
+rate A <-> G: 9.772049
+rate A <-> T: 1.140183
+rate C <-> G: 1.006809
+rate C <-> T: 10.262153
+rate G <-> T: 1.000000
+
+freq pi(A): 0.376967
+freq pi(C): 0.174165
+freq pi(G): 0.230442
+freq pi(T): 0.218426
+
+

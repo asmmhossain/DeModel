@@ -1,0 +1,71 @@
+
+
+This is ExaML version 3.0.11 released by Alexandros Stamatakis, Andre Aberer, and Alexey Kozlov in April 10 2014.
+
+
+Alignment has 4800 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 0.00%
+
+ExaML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by ExaML
+GAMMA with Median model of rate heteorgeneity, ML estimate of alpha-parameter
+
+Partition: 0
+Alignment Patterns: 4800
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+ExaML was called as follows:
+
+/home/mukarram/Downloads/ExaML/examl/examl -a -B 10 -D -m GAMMA -n outTree -s input.binary -t RAxML_parsimonyTree.startTree 
+
+
+Memory Saving Option: DISABLED
+
+Best rearrangement radius: 5
+ML fast search converged at fast SPR cycle 1 with stopping criterion
+Relative Robinson-Foulds (RF) distance between respective best trees after one succseful SPR cycle: 0.006289%
+ML search convergence criterion thorough cycle 0->1 Relative Robinson-Foulds 0.019916
+ML search converged at thorough SPR cycle 2 with stopping criterion
+Relative Robinson-Foulds (RF) distance between respective best trees after one succseful SPR cycle: 0.004193%
+
+Likelihood of best tree: -837484.312999
+
+
+Evaluating 10 other good ML trees
+
+tree 1 likelihood -837484.47037856699898838996887207031250000000000000000000000000000000000000000000000000
+tree 2 likelihood -837484.47775691107381135225296020507812500000000000000000000000000000000000000000000000
+tree 3 likelihood -837484.49608849151991307735443115234375000000000000000000000000000000000000000000000000
+tree 4 likelihood -837484.50248739635571837425231933593750000000000000000000000000000000000000000000000000
+tree 5 likelihood -837484.53013350488618016242980957031250000000000000000000000000000000000000000000000000
+tree 6 likelihood -837484.57956395018845796585083007812500000000000000000000000000000000000000000000000000
+tree 7 likelihood -837484.75124792382121086120605468750000000000000000000000000000000000000000000000000000
+tree 8 likelihood -837484.88255295227281749248504638671875000000000000000000000000000000000000000000000000
+tree 9 likelihood -837484.92773819179274141788482666015625000000000000000000000000000000000000000000000000
+tree 10 likelihood -837484.93172357883304357528686523437500000000000000000000000000000000000000000000000000
+
+
+Other good trees written to file /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_01_Feb2015_5yr/RAxML_10_goodTrees.outTree
+
+
+Overall Time for 1 Inference 1974.720012
+
+Overall accumulated Time (in case of restarts): 1974.720012
+
+Likelihood   : -837484.931724
+
+
+Model parameters written to:           /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_01_Feb2015_5yr/ExaML_modelFile.outTree
+Final tree written to:                 /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_01_Feb2015_5yr/ExaML_result.outTree
+Execution Log File written to:         /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_01_Feb2015_5yr/ExaML_log.outTree
+Execution information file written to: /home/mukarram/Documents/DeModel/pangea_village_201502/Vill_01_Feb2015_5yr/ExaML_info.outTree

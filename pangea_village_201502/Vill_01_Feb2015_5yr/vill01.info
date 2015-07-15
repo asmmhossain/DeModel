@@ -1,0 +1,24 @@
+[!Physher
+Alignment: Vill_01_Feb2015_5yr.muscle.new
+Tree:      ExaML_result.outTree.rtt.newick
+Number of sequences: 957
+Alignment length: 6987
+Number of polymorphic site: 4801/6987 (0.687133)
+
+Number of patterns: 4800
+Unconstrained likelihood: -48008.806661
+Random seed: 1436274563
+
+Model: HKY
+Log-likelihood: -986445.666656
+AIC:  1976721.333311 df: 1915
+AICc: 1978168.333311 df: 1915
+BIC:  1989842.542871 df: 1915
+
+Frequencies:
+   A: 0.375922
+   C: 0.190361
+   G: 0.212208
+   T: 0.221509
+Relative rates:
+   Kappa: 8.391382 (Ts/Tv: 4.224230)
